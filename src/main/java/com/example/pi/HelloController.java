@@ -8,6 +8,6 @@ public class HelloController {
     private Label welcomeText;
     @FXML
     protected void onHelloButtonClick() {
-        welcomeText.setText(" to JavaFX Application!");
+        welcomeText.setText(" to JavaFX Applic ation!");
     }
 }
