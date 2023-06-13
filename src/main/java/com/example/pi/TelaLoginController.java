@@ -9,6 +9,6 @@ public class TelaLoginController {
 
     @FXML
     protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX !");
+        welcomeText.setText("Welcome to JavaFX 1 !");
     }
 }
