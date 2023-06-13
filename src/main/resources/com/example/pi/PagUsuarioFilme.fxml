@@ -1,14 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.pi.PagUsuarioFilme"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<Pane style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cineabc.HelloController">
+    <children>
+        <Pane prefHeight="90.0" prefWidth="1440.0" style="-fx-background-color: #1A2232;">
+            <children>
+                <Label layoutX="50.0" layoutY="30.0" text="CINE ABC" textFill="#d9d9d9">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button layoutX="50.0" layoutY="145.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Label layoutX="50.0" layoutY="107.0" text="Em cartaz" textFill="#d9d9d9">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Button layoutX="233.0" layoutY="145.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="416.0" layoutY="145.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="607.0" layoutY="145.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="803.0" layoutY="145.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="1170.0" layoutY="145.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="986.0" layoutY="145.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="50.0" layoutY="430.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="233.0" layoutY="430.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="416.0" layoutY="430.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="607.0" layoutY="430.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="803.0" layoutY="430.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="1170.0" layoutY="430.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <Button layoutX="986.0" layoutY="430.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="50.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="233.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="416.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="607.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="803.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="986.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="50.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="233.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="416.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="607.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="803.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="986.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="1170.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="1170.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/livre.png" />
+            </image>
+        </ImageView>
+    </children>
+</Pane>

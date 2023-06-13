@@ -10,7 +10,7 @@
 
 <Pane style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cineabc.HelloController">
     <children>
-        <Pane prefHeight="90.0" prefWidth="1440.0" style="-fx-background-color: #1A2232;">
+        <Pane prefHeight="90.0" prefWidth="1920.0" style="-fx-background-color: #1A2232;">
             <children>
                 <Label layoutX="50.0" layoutY="30.0" text="CINE ABC" textFill="#d9d9d9">
                     <font>
@@ -27,7 +27,7 @@
         </Label>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="50.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@../../../../../../img/livre.png" />
             </image>
         </ImageView>
         <Label layoutX="224.0" layoutY="218.0" text="Dia" textFill="#d9d9d9">
@@ -78,7 +78,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -87,7 +87,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -96,7 +96,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@C:\Users\aluno\Downloads" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -105,7 +105,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic></Button>
@@ -113,7 +113,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -122,7 +122,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -131,7 +131,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -140,7 +140,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -149,7 +149,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -158,7 +158,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -167,7 +167,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -176,7 +176,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic></Button>
@@ -184,7 +184,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -193,7 +193,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -202,7 +202,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -211,7 +211,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -220,7 +220,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -229,7 +229,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -238,7 +238,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -247,7 +247,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -256,7 +256,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -265,7 +265,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -274,7 +274,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -283,7 +283,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -292,7 +292,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -301,7 +301,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -310,7 +310,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -319,7 +319,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -328,7 +328,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -337,7 +337,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -346,7 +346,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -355,7 +355,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -364,7 +364,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -373,7 +373,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -382,7 +382,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -391,7 +391,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -400,7 +400,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -409,7 +409,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -418,7 +418,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -427,7 +427,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -436,7 +436,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -445,7 +445,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -454,7 +454,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -463,7 +463,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -472,7 +472,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -481,7 +481,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -490,7 +490,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -499,7 +499,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -508,7 +508,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -517,7 +517,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -526,7 +526,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -535,7 +535,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -544,7 +544,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -553,7 +553,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -562,7 +562,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -571,7 +571,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -580,7 +580,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -589,7 +589,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -598,7 +598,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -607,7 +607,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -616,7 +616,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -625,7 +625,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -634,7 +634,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -643,7 +643,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -652,7 +652,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -661,7 +661,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -670,7 +670,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -679,7 +679,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -688,7 +688,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -697,7 +697,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -706,7 +706,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -715,7 +715,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -724,7 +724,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -733,7 +733,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -742,7 +742,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -751,7 +751,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -760,7 +760,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -769,7 +769,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -778,7 +778,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -787,7 +787,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -796,7 +796,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -805,7 +805,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -814,7 +814,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -823,7 +823,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -832,7 +832,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -841,7 +841,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -850,7 +850,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -859,7 +859,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -868,7 +868,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -877,7 +877,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -886,7 +886,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -895,7 +895,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -904,7 +904,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -913,7 +913,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -922,7 +922,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -931,7 +931,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -940,7 +940,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -949,7 +949,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -958,7 +958,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -967,7 +967,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -976,7 +976,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -985,7 +985,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -994,7 +994,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1003,7 +1003,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1012,7 +1012,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1021,7 +1021,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1030,7 +1030,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1039,7 +1039,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1048,7 +1048,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1057,7 +1057,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1066,7 +1066,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1075,7 +1075,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1084,7 +1084,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1093,7 +1093,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1102,7 +1102,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1111,7 +1111,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1120,7 +1120,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1129,7 +1129,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1138,7 +1138,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1147,7 +1147,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1156,7 +1156,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1165,7 +1165,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1174,7 +1174,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1183,7 +1183,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1192,7 +1192,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1201,7 +1201,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1210,7 +1210,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1219,7 +1219,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1228,7 +1228,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1237,7 +1237,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1246,7 +1246,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1255,7 +1255,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1264,7 +1264,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1273,7 +1273,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1282,7 +1282,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1291,7 +1291,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1300,7 +1300,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1309,7 +1309,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1318,7 +1318,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1327,7 +1327,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1336,7 +1336,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1345,7 +1345,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1354,7 +1354,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1363,7 +1363,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1372,7 +1372,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1381,7 +1381,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1390,7 +1390,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1399,7 +1399,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1408,7 +1408,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1417,7 +1417,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1426,7 +1426,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1435,7 +1435,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1444,7 +1444,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1453,7 +1453,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1462,7 +1462,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1471,7 +1471,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1480,7 +1480,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1489,7 +1489,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1498,7 +1498,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1507,7 +1507,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1516,7 +1516,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1525,7 +1525,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1534,7 +1534,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1543,7 +1543,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1552,7 +1552,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1561,7 +1561,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1570,7 +1570,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1579,7 +1579,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1588,7 +1588,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1597,7 +1597,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1606,7 +1606,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1615,7 +1615,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1624,7 +1624,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1633,7 +1633,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1642,7 +1642,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1651,7 +1651,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1660,7 +1660,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1669,7 +1669,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1678,7 +1678,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1687,7 +1687,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1696,7 +1696,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1705,7 +1705,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1714,7 +1714,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1723,7 +1723,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1732,7 +1732,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1741,7 +1741,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1750,7 +1750,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1759,7 +1759,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1768,7 +1768,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1777,7 +1777,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1786,7 +1786,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1795,7 +1795,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1804,7 +1804,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1813,7 +1813,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1822,7 +1822,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1831,7 +1831,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1840,7 +1840,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1849,7 +1849,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1858,7 +1858,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1867,7 +1867,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1876,7 +1876,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1885,7 +1885,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1894,7 +1894,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1903,7 +1903,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1912,7 +1912,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1921,7 +1921,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1930,7 +1930,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1939,7 +1939,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1948,7 +1948,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1957,7 +1957,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1966,7 +1966,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1975,7 +1975,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1984,7 +1984,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -1993,7 +1993,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2002,7 +2002,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2011,7 +2011,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2020,7 +2020,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2029,7 +2029,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2038,7 +2038,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2047,7 +2047,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2056,7 +2056,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2065,7 +2065,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2074,7 +2074,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2083,7 +2083,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2092,7 +2092,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2101,7 +2101,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2110,7 +2110,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2119,7 +2119,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2128,7 +2128,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2137,7 +2137,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2146,7 +2146,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2155,7 +2155,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2164,7 +2164,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2173,7 +2173,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2182,7 +2182,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2191,7 +2191,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2200,7 +2200,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2209,7 +2209,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2218,7 +2218,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2227,7 +2227,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2236,7 +2236,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2245,7 +2245,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2254,7 +2254,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2263,7 +2263,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2272,7 +2272,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2281,7 +2281,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2290,7 +2290,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2299,7 +2299,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2308,7 +2308,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2317,7 +2317,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2326,7 +2326,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2335,7 +2335,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2344,7 +2344,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2353,7 +2353,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2362,7 +2362,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2371,7 +2371,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2380,7 +2380,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2389,7 +2389,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2398,7 +2398,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2407,7 +2407,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2416,7 +2416,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2425,7 +2425,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2434,7 +2434,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2443,7 +2443,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2452,7 +2452,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2461,7 +2461,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2470,7 +2470,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2479,7 +2479,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2488,7 +2488,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2497,7 +2497,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2506,7 +2506,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2515,7 +2515,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2524,7 +2524,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2533,7 +2533,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2542,7 +2542,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2551,7 +2551,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2560,7 +2560,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2569,7 +2569,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2578,7 +2578,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2587,7 +2587,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2596,7 +2596,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2605,7 +2605,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2614,7 +2614,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2623,7 +2623,7 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -2632,14 +2632,14 @@
             <graphic>
                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                        <Image url="@../../../../../../img/poltronaC.png" />
                     </image>
                 </ImageView>
             </graphic>
         </Button>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="337.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/poltronaC.png" />
+                <Image url="@../../../../../../img/poltronaC.png" />
             </image>
         </ImageView>
         <Label layoutX="369.0" layoutY="327.0" text="Disponível" textFill="#d9d9d9">
@@ -2649,7 +2649,7 @@
         </Label>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="337.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/poltronaA.png" />
+                <Image url="@../../../../../../img/poltronaA.png" />
             </image>
         </ImageView>
         <Label layoutX="369.0" layoutY="357.0" text="Escolhido" textFill="#d9d9d9">
@@ -2659,7 +2659,7 @@
         </Label>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="337.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/poltronaV.png" />
+                <Image url="@../../../../../../img/poltronaV.png" />
             </image>
         </ImageView>
         <Label layoutX="369.0" layoutY="387.0" text="Ocupado" textFill="#d9d9d9">
@@ -2667,15 +2667,185 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Button layoutX="1200.0" layoutY="583.0" mnemonicParsing="false" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
+        <Button layoutX="1350.0" layoutY="596.0" mnemonicParsing="false" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
             <font>
                 <Font size="20.0" />
             </font></Button>
         <Button layoutX="222.0" layoutY="596.0" maxWidth="24.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;" />
-        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="47.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="50.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/volta.png" />
+                <Image url="@../../../../../../img/volta.png" />
             </image>
         </ImageView>
+        <Label alignment="CENTER" layoutX="531.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="1" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="555.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="2" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="579.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="3" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="603.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="4" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="627.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="5" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="651.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="6" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="675.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="7" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="699.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="8" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="723.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="9" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="747.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="10" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="771.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="11" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="795.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="12" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="819.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="10" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="843.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="11" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="867.0" layoutY="629.0" prefHeight="24.0" prefWidth="24.0" text="12" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="169.0" prefHeight="24.0" prefWidth="24.0" text="A" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="193.0" prefHeight="24.0" prefWidth="24.0" text="B" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="217.0" prefHeight="24.0" prefWidth="24.0" text="C" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="242.0" prefHeight="24.0" prefWidth="24.0" text="D" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="389.0" prefHeight="24.0" prefWidth="24.0" text="J" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="268.0" prefHeight="24.0" prefWidth="24.0" text="E" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="341.0" prefHeight="24.0" prefWidth="24.0" text="H" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="365.0" prefHeight="24.0" prefWidth="24.0" text="I" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="317.0" prefHeight="24.0" prefWidth="24.0" text="G" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="293.0" prefHeight="24.0" prefWidth="24.0" text="F" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="413.0" prefHeight="24.0" prefWidth="24.0" text="K" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="437.0" prefHeight="24.0" prefWidth="24.0" text="L" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="461.0" prefHeight="24.0" prefWidth="24.0" text="M" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="485.0" prefHeight="24.0" prefWidth="24.0" text="N" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="509.0" prefHeight="24.0" prefWidth="24.0" text="O" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="581.0" prefHeight="24.0" prefWidth="24.0" text="R" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="605.0" prefHeight="24.0" prefWidth="24.0" text="S" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="557.0" prefHeight="24.0" prefWidth="24.0" text="Q" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="891.0" layoutY="533.0" prefHeight="24.0" prefWidth="24.0" text="P" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
     </children>
 </Pane>
