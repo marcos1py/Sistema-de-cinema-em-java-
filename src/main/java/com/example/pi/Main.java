@@ -2,6 +2,7 @@ package com.example.pi;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -17,15 +18,52 @@ public class Main extends Application {
    private static Scene pagTipoPagamentoPainel;
 
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("TelaLogin.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
+    public void start(Stage estagioPrimario) throws IOException {
+        stage = estagioPrimario;
+
+        Parent fxmlLogin = FXMLLoader.load(getClass().getResource("TelaLogin.fxml"));
+        telaLogin = new Scene(fxmlLogin, 1200, 600);
+
+        Parent fxmlPagUsuarioFilme = FXMLLoader.load(getClass().getResource("PagUsuarioFilme.fxml"));
+        pagUsuarioFilme = new Scene(fxmlPagUsuarioFilme, 1200, 600);
+
+        Parent fxmlPagFilmeComprar = FXMLLoader.load(getClass().getResource("PagFilmeComprar.fxml"));
+        pagFilmeComprar = new Scene(fxmlPagFilmeComprar, 1200, 600);
+
+        Parent fxmlPagTipoIngresso = FXMLLoader.load(getClass().getResource("PagTipoIngresso.fxml"));
+        pagTipoIngresso = new Scene(fxmlPagTipoIngresso, 1200, 600);
+
+        Parent fxmlPagTipoPagamento = FXMLLoader.load(getClass().getResource("PagTipoPagamento.fxml"));
+        pagTipoPagamento = new Scene(fxmlPagTipoPagamento, 1200, 600);
+
+        Parent fxmlPagTipoPagamentoPainel = FXMLLoader.load(getClass().getResource("PagTipoPagamentoPainel.fxml"));
+        pagTipoPagamentoPainel = new Scene(fxmlPagTipoPagamentoPainel, 1200, 600);
+
+        estagioPrimario.setScene(telaLogin);
         stage.show();
 
     }
-
+    public static void mudarTela (String scr){
+        switch (scr){
+            case "login":
+                stage.setScene(telaLogin);
+                break;
+            case "usuariofilme":
+                stage.setScene(pagUsuarioFilme);
+                break;
+            case "filmecomprar":
+                stage.setScene(pagFilmeComprar);
+                break;
+            case "tipoingresso":
+                stage.setScene(pagTipoIngresso);
+            case "pagamento":
+                stage.setScene(pagTipoPagamento);
+                break;
+            case "pagamentopainel":
+                stage.setScene(pagTipoPagamentoPainel);
+                break;
+        }
+    }
     public static void main(String[] args) {
         launch();
     }
