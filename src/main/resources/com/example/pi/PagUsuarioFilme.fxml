@@ -45,67 +45,67 @@
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="233.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="416.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="607.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="803.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="986.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="50.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="233.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="416.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="607.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="803.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="986.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="1170.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="1170.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../../../../Downloads/livre.png" />
+                <Image url="@img/livre.png" />
             </image>
         </ImageView>
     </children>
