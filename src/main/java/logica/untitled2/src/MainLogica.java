@@ -15,6 +15,7 @@ public class MainLogica {
         String nomeDelet = input.next();
         deletarFilme(filmes, nomeDelet);
 
+        System.out.println("");
         System.out.println("Lista de filmes:");
         exibirFilmes(filmes);
     }
@@ -45,9 +46,11 @@ public class MainLogica {
     }
 
     public static void exibirFilmes(String[] filmes) {
+        int conta = 1;
         for (int index = 0; index < filmes.length; index++) {
             if (filmes[index] != null) {
-                System.out.println(filmes[index]);
+                System.out.println(conta+ " - "+filmes[index]);
+                conta++;
             }
         }
     }
