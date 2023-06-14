@@ -2,7 +2,7 @@ package logica.untitled2.src;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainLogica {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String nomeFilme = "";
