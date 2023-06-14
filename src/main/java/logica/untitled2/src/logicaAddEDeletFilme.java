@@ -4,15 +4,29 @@ import java.util.Scanner;
 
 public class logicaAddEDeletFilme {
     public static void main(String[] args) {
+        Filme[] filmes = new Filme[10];
         Scanner input = new Scanner(System.in);
-        String[] filmes = new String[10];
 
-        System.out.print("Insira um filme: ");
-        String nomeFilme = input.next();
-        adicionarFilme(filmes, nomeFilme);
+        System.out.print("Insira o nome do filme: ");
+        String nomeFilme = input.nextLine();
+
+        System.out.print("Insira a categoria do filme: ");
+        String categoriaDoFilme = input.nextLine();
+
+        System.out.print("Insira a duração do filme: ");
+        String duracaoDoFilme = input.nextLine();
+
+        System.out.print("Insira a sinopse do filme: ");
+        String sinopseDoFilme = input.nextLine();
+
+        System.out.print("Insira a preço do filme: ");
+        String preçoDoFilme = input.nextLine();
+
+        Filme filme = new Filme(nomeFilme, categoriaDoFilme, duracaoDoFilme, sinopseDoFilme, preçoDoFilme);
+        adicionarFilme(filmes, filme);
 
         System.out.print("Nome do filme a deletar: ");
-        String nomeDelet = input.next();
+        String nomeDelet = input.nextLine();
         deletarFilme(filmes, nomeDelet);
 
         System.out.println("");
@@ -20,10 +34,10 @@ public class logicaAddEDeletFilme {
         exibirFilmes(filmes);
     }
 
-    public static void adicionarFilme(String[] filmes, String nomeFilme) {
+    public static void adicionarFilme(Filme[] filmes, Filme filme) {
         for (int index = 0; index < filmes.length; index++) {
             if (filmes[index] == null) {
-                filmes[index] = nomeFilme;
+                filmes[index] = filme;
                 System.out.println("Filme adicionado com sucesso!");
                 return;
             }
@@ -31,10 +45,10 @@ public class logicaAddEDeletFilme {
         System.out.println("A lista de filmes está cheia. Não é possível adicionar mais filmes.");
     }
 
-    public static void deletarFilme(String[] filmes, String nomeDelet) {
+    public static void deletarFilme(Filme[] filmes, String nomeDelet) {
         boolean deletado = false;
         for (int index = 0; index < filmes.length; index++) {
-            if (filmes[index] != null && filmes[index].equals(nomeDelet)) {
+            if (filmes[index] != null && filmes[index].getNome().equalsIgnoreCase(nomeDelet)) {
                 filmes[index] = null;
                 System.out.println("Filme removido com sucesso!");
                 deletado = true;
@@ -45,11 +59,11 @@ public class logicaAddEDeletFilme {
         }
     }
 
-    public static void exibirFilmes(String[] filmes) {
+    public static void exibirFilmes(Filme[] filmes) {
         int conta = 1;
         for (int index = 0; index < filmes.length; index++) {
             if (filmes[index] != null) {
-                System.out.println(conta+ " - "+filmes[index]);
+                System.out.println(conta + " - " + filmes[index]);
                 conta++;
             }
         }
