@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <Pane style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pi.PagTipoIngressoController">
     <children>
@@ -19,11 +20,11 @@
                 </Label>
             </children>
         </Pane>
-        <Button layoutX="1350.0" layoutY="596.0" mnemonicParsing="false" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
+        <Button layoutX="1350.0" layoutY="596.0" mnemonicParsing="false" onAction="#btprosseguirtipoingresso" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
             <font>
                 <Font size="20.0" />
             </font></Button>
-        <Button layoutX="50.0" layoutY="604.0" maxWidth="24.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
+        <Button layoutX="50.0" layoutY="604.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltartipoingresso" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -31,8 +32,9 @@
                     </image>
                 </ImageView>
             </graphic></Button>
-        <Pane layoutX="50.0" layoutY="145.0" prefHeight="163.0" prefWidth="202.0" style="-fx-background-color: #d9d9d9;">
+        <Pane layoutX="50.0" layoutY="145.0" prefHeight="172.0" prefWidth="202.0" style="-fx-background-color: #d9d9d9;">
             <children>
+            <Label fx:id="meiainteiralabel" layoutX="24.0" layoutY="137.0" prefHeight="0.0" prefWidth="18.0" />
                 <Label layoutX="14.0" layoutY="14.0" text="Nome" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
@@ -53,12 +55,16 @@
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <ComboBox layoutX="13.0" layoutY="114.0" prefWidth="150.0" visibleRowCount="2" />
                 <Label layoutX="163.0" layoutY="81.0" text="1A" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
+            <ChoiceBox fx:id="tipoingressochoicebox" layoutX="15.0" layoutY="133.0" prefWidth="150.0" />
+            <Text layoutX="15.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de ingresso:">
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
             </children>
         </Pane>
     </children>
