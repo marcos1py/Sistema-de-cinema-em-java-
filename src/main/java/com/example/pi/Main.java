@@ -67,6 +67,7 @@ public class Main extends Application {
                 break;
             case "tipoingresso":
                 stage.setScene(pagTipoIngresso);
+                break;
             case "pagamento":
                 stage.setScene(pagTipoPagamento);
                 break;
