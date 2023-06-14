@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 
 import java.time.LocalDate;
@@ -11,6 +12,10 @@ import java.time.format.DateTimeFormatter;
 
 
 public class PagCadastroController {
+
+    @FXML
+    private TextField nomeFilmeC;
+
     @FXML
     private Label avisotipoingressolabel;
 
@@ -31,8 +36,9 @@ public class PagCadastroController {
 
 
     @FXML
-    void btprosseguircadastro(ActionEvent event) {
-
+    void btsalvar(ActionEvent event) {
+        String aa = nomeFilmeC.getText();
+        System.out.println(aa);
 
     }
     @FXML
