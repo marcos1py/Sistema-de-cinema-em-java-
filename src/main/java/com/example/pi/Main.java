@@ -1,6 +1,7 @@
 package com.example.pi;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -16,6 +17,10 @@ public class Main extends Application {
    private static Scene pagTipoIngresso;
    private static Scene pagTipoPagamento;
    private static Scene pagTipoPagamentoPainel;
+
+   private static Scene pagCadastro;
+
+   private static Scene pagEstatisticas;
 
     @Override
     public void start(Stage estagioPrimario) throws IOException {
@@ -39,6 +44,12 @@ public class Main extends Application {
         Parent fxmlPagTipoPagamentoPainel = FXMLLoader.load(getClass().getResource("PagTipoPagamentoPainel.fxml"));
         pagTipoPagamentoPainel = new Scene(fxmlPagTipoPagamentoPainel, 1200, 600);
 
+        Parent fxmlPagCadastro = FXMLLoader.load(getClass().getResource("PagCadastro.fxml"));
+        pagCadastro = new Scene(fxmlPagCadastro, 1200, 600);
+
+        Parent fxmlPagEstatisticas = FXMLLoader.load(getClass().getResource("PagEstatisticas.fxml"));
+        pagEstatisticas = new Scene(fxmlPagEstatisticas, 1200, 600);
+
         estagioPrimario.setScene(telaLogin);
         stage.show();
 
@@ -61,6 +72,12 @@ public class Main extends Application {
                 break;
             case "pagamentopainel":
                 stage.setScene(pagTipoPagamentoPainel);
+                break;
+            case "cadastro":
+                stage.setScene(pagCadastro);
+                break;
+            case "estatisticas":
+                stage.setScene(pagEstatisticas);
                 break;
         }
     }
