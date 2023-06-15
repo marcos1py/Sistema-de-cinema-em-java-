@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 public class PagUsuarioFilmeController {
     @FXML
     void btus1(ActionEvent event) {
-        Main.mudarTela("filmecomprar");
+    Main.mudarTela("filmecomprar");
     }
 
     @FXML
@@ -46,7 +46,7 @@ public class PagUsuarioFilmeController {
 
     @FXML
     void btus4(ActionEvent event) {
-        Main.mudarTela("filmecomprar");
+
     }
 
     @FXML
