@@ -16,6 +16,9 @@ import java.util.ResourceBundle;
 
 
 public class PagCadastroController{
+    private  String[] horarios ={"Inteira", "Meia"};
+
+    private  String[] salas = {"Sala 1", "Sala 2", "Sala 3","Sala 4", "Sala 5", "Sala 6"};
     @FXML
     private ChoiceBox<String> choiceboxhorario;
 
@@ -39,9 +42,8 @@ public class PagCadastroController{
     @FXML
     private DatePicker datepicker;
 
-    private  String[] horarios ={"Inteira", "Meia"};
 
-    private  String[] salas = {"Sala 1", "Sala 2", "Sala 3","Sala 4", "Sala 5", "Sala 6"};
+
     @FXML
     void btvoltarcadastro(ActionEvent event) {
 
