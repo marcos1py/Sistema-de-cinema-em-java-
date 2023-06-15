@@ -21,6 +21,7 @@ import java.time.format.DateTimeFormatter;
 public class PagCadastroController {
 
     private Filme[] filmes = new Filme[10];
+    private PagUsuarioFilmeController usuarioFilmeController;
 
     @FXML
     private Button btnOpenFile;
@@ -92,6 +93,8 @@ public class PagCadastroController {
             imageView.setFitWidth(144);
             imageView.setFitHeight(216);
             img_do_filme_tela_de_cadastro.setGraphic(imageView);
+
+
         }
     }
 
@@ -119,7 +122,7 @@ public class PagCadastroController {
         System.out.println("Sala: " + sala);
         System.out.println("Horário: " + horario);
         String idadeMinima = "10";
-
+        System.out.println("-------------------------------------------------------");
         Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima);
 
         logicaAddEDeletFilme.adicionarFilme(filmes, filme);
@@ -145,4 +148,5 @@ public class PagCadastroController {
         // Adicione os valores dos horários ao ChoiceBox dos horários
         choiceboxhorario.getItems().addAll("12:00", "15:00", "18:00");
     }
+
 }
