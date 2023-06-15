@@ -56,7 +56,10 @@ public class PagUsuarioFilmeController {
     @FXML
     private Button btus9;
 
-
+    @FXML
+    void btadmin(ActionEvent event) {
+        Main.mudarTela("login");
+    }
     @FXML
     void btus10(ActionEvent event) {
         Main.mudarTela("filmecomprar");
@@ -94,7 +97,7 @@ public class PagUsuarioFilmeController {
 
     @FXML
     void btus4(ActionEvent event) {
-
+        Main.mudarTela("filmecomprar");
     }
 
     @FXML
