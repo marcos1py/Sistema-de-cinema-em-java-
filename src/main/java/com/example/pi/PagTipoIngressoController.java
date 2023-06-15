@@ -29,7 +29,7 @@ public class PagTipoIngressoController implements Initializable {
 
     @FXML
     void btvoltartipoingresso(ActionEvent event) {
-        Main.mudarTela("usuariofilme");
+        Main.mudarTela("filmecomprar");
     }
 
 

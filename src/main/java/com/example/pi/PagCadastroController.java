@@ -50,6 +50,12 @@ public class PagCadastroController{
 
     @FXML
     void btvoltarcadastro(ActionEvent event) {
+
+    }
+
+
+    @FXML
+    void btsalvar(ActionEvent event) {
 //        switch (PagUsuarioFilmeController.bt){
 //            case 0:
 //                PagUsuarioFilmeController.btus1.setOpacity(1);
@@ -94,13 +100,6 @@ public class PagCadastroController{
 //                PagUsuarioFilmeController.btus14.setOpacity(1);
 //                break;
 //        }
-
-    }
-
-
-    @FXML
-    void btsalvar(ActionEvent event) {
-
 
     }
     @FXML
