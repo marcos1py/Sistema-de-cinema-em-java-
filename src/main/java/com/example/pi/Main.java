@@ -50,7 +50,7 @@ public class Main extends Application {
         Parent fxmlPagEstatisticas = FXMLLoader.load(getClass().getResource("PagEstatisticas.fxml"));
         pagEstatisticas = new Scene(fxmlPagEstatisticas, 1200, 600);
 
-        estagioPrimario.setScene(pagCadastro);
+        estagioPrimario.setScene(pagFilmeComprar);
         stage.show();
 
     }
