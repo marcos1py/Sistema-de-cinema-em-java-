@@ -1,5 +1,8 @@
 package com.example.pi;
 
+import logica.untitled2.src.Filme;
+import logica.untitled2.src.logicaAddEDeletFilme;
+
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -16,6 +19,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class PagCadastroController {
+
+    private Filme[] filmes = new Filme[10];
 
     @FXML
     private Button btnOpenFile;
@@ -83,7 +88,6 @@ public class PagCadastroController {
             // Criar uma nova imagem com base no caminho do arquivo selecionado
             Image novaImagem = new Image("file:" + caminhoImagem);
 
-
             ImageView imageView = new ImageView(novaImagem);
             imageView.setFitWidth(144);
             imageView.setFitHeight(216);
@@ -101,16 +105,25 @@ public class PagCadastroController {
         String horario = choiceboxhorario.getValue();
         String valorInteira = valorDaInteiraCadastro.getText();
         String valorMeia = valorDaMeiaCadastro.getText();
+        String genero = textGenero.getText();
 
         // Faça o que for necessário com as variáveis obtidas
-        System.out.println("Sinopse: " + sinopse);
-        System.out.println("Data: " + data);
-        System.out.println("Duração do Filme: " + duracao);
+        System.out.println("-------------------------------------------------------");
         System.out.println("Nome do Filme: " + nomeFilme);
-        System.out.println("Sala: " + sala);
-        System.out.println("Horário: " + horario);
+        System.out.println("categoria do Filme: " + genero);
+        System.out.println("Duração do Filme: " + duracao);
+        System.out.println("Sinopse: " + sinopse);
         System.out.println("Valor da Inteira: " + valorInteira);
         System.out.println("Valor da Meia: " + valorMeia);
+        System.out.println("Data: " + data);
+        System.out.println("Sala: " + sala);
+        System.out.println("Horário: " + horario);
+        String idadeMinima = "10";
+
+        Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima);
+
+        logicaAddEDeletFilme.adicionarFilme(filmes, filme);
+        logicaAddEDeletFilme.exibirFilmes(filmes);
     }
 
     @FXML

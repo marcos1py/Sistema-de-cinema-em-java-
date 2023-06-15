@@ -1,5 +1,6 @@
 package logica.untitled2.src;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class logicaAddEDeletFilme {
@@ -19,13 +20,26 @@ public class logicaAddEDeletFilme {
         System.out.print("Insira a sinopse do filme: ");
         String sinopseDoFilme = input.nextLine();
 
-        System.out.print("Insira a preço do filme: ");
-        String preçoDoFilme = input.nextLine();
+        System.out.print("Insira o valor da entrada inteira do filme: ");
+        String valorInteira = input.nextLine();
 
-        System.out.print("Insira a idade Minima do filme: ");
+        System.out.print("Insira o valor da entrada meia do filme: ");
+        String valorMeia = input.nextLine();
+
+        System.out.print("Insira a data de exibição do filme: ");
+        LocalDate dataExibicao = LocalDate.parse("2023-04-10");
+
+
+        System.out.print("Insira a sala de exibição do filme: ");
+        String salaExibicao = input.nextLine();
+
+        System.out.print("Insira o horário de exibição do filme: ");
+        String horarioExibicao = input.nextLine();
+
+        System.out.print("Insira a idade mínima do filme: ");
         String idadeMinima = input.nextLine();
 
-        Filme filme = new Filme(nomeFilme, categoriaDoFilme, duracaoDoFilme, sinopseDoFilme, preçoDoFilme, idadeMinima);
+        Filme filme = new Filme(nomeFilme, categoriaDoFilme, duracaoDoFilme, sinopseDoFilme, valorInteira, valorMeia, dataExibicao, salaExibicao, horarioExibicao, idadeMinima);
         adicionarFilme(filmes, filme);
 
         System.out.print("Nome do filme a deletar: ");
@@ -41,6 +55,7 @@ public class logicaAddEDeletFilme {
         for (int index = 0; index < filmes.length; index++) {
             if (filmes[index] == null) {
                 filmes[index] = filme;
+                System.out.println(filmes[index]);
                 System.out.println("Filme adicionado com sucesso!");
                 return;
             }

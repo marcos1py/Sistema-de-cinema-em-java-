@@ -1,21 +1,29 @@
 package logica.untitled2.src;
 
+import java.time.LocalDate;
+
 public class Filme {
     private String nome;
     private String categoria;
     private String duracao;
     private String sinopse;
-
-    private  String preço;
-
+    private String valorInteira;
+    private String valorMeia;
+    private LocalDate data;
+    private String sala;
+    private String horario;
     private String idadeMinima;
 
-    public Filme(String nome, String categoria, String duracao, String sinopse, String preço,String idadeMinima) {
+    public Filme(String nome, String categoria, String duracao, String sinopse, String valorInteira, String valorMeia, LocalDate data, String sala, String horario, String idadeMinima) {
         this.nome = nome;
         this.categoria = categoria;
         this.duracao = duracao;
         this.sinopse = sinopse;
-        this.preço = preço;
+        this.valorInteira = valorInteira;
+        this.valorMeia = valorMeia;
+        this.data = data;
+        this.sala = sala;
+        this.horario = horario;
         this.idadeMinima = idadeMinima;
     }
 
@@ -34,16 +42,33 @@ public class Filme {
     public String getSinopse() {
         return sinopse;
     }
-    public String getPreço() {
-        return preço;
+
+    public String getValorInteira() {
+        return valorInteira;
     }
 
-    public String getIdadeMinima(){
+    public String getValorMeia() {
+        return valorMeia;
+    }
+
+    public String getIdadeMinima() {
         return idadeMinima;
+    }
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public String getSala() {
+        return sala;
+    }
+
+    public String getHorario() {
+        return horario;
     }
 
     @Override
     public String toString() {
-        return "Nome: " + nome + " | Categoria: " + categoria + " | Duração: " + duracao + " | Sinopse: " + sinopse+ " | Preço: " + preço;
+        return "Nome: " + nome + " | Categoria: " + categoria + " | Duração: " + duracao + " | Sinopse: " + sinopse + " | Valor Meia: " + valorMeia;
     }
 }
