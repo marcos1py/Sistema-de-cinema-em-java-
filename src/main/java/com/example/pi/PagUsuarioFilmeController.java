@@ -7,51 +7,52 @@ import javafx.scene.control.Button;
 public class PagUsuarioFilmeController {
 
     @FXML
-    public static Button btus1;
+    public Button btus1;
 
     @FXML
-    public static Button btus10;
-
-    @FXML
-    public static Button btus11;
-
-    @FXML
-    public static Button btus12;
-
-    @FXML
-    public static Button btus13;
-
-    @FXML
-    public static Button btus14;
-
-    @FXML
-    public static Button btus2;
-
-    @FXML
-    public static Button btus3;
-
-    @FXML
-    public static Button btus4;
-
-    @FXML
-    public static Button btus5;
-
-    @FXML
-    public static Button btus6;
-
-    @FXML
-    public static Button btus7;
-
-    @FXML
-    public static Button btus8;
-
-    @FXML
-    public static Button btus9;
-    
-    @FXML
-    void btus1(ActionEvent event) {
-    Main.mudarTela("filmecomprar");
+    public void btus1(ActionEvent event) {
+        Main.mudarTela("filmecomprar");
     }
+
+    @FXML
+    private Button btus10;
+
+    @FXML
+    private Button btus11;
+
+    @FXML
+    private Button btus12;
+
+    @FXML
+    private Button btus13;
+
+    @FXML
+    private Button btus14;
+
+    @FXML
+    private Button btus2;
+
+    @FXML
+    private Button btus3;
+
+    @FXML
+    private Button btus4;
+
+    @FXML
+    private Button btus5;
+
+    @FXML
+    private Button btus6;
+
+    @FXML
+    private Button btus7;
+
+    @FXML
+    private Button btus8;
+
+    @FXML
+    private Button btus9;
+
 
     @FXML
     void btus10(ActionEvent event) {

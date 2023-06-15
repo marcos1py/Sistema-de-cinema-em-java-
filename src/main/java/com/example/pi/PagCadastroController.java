@@ -1,28 +1,34 @@
 package com.example.pi;
 
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+import javafx.stage.FileChooser.ExtensionFilter;
 
-import java.net.URL;
+import java.io.File;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ResourceBundle;
 
+public class PagCadastroController {
 
-public class PagCadastroController{
-    private  String[] horarios ={"Inteira", "Meia"};
+    @FXML
+    private Button btnOpenFile;
 
-    private  String[] salas = {"Sala 1", "Sala 2", "Sala 3","Sala 4", "Sala 5", "Sala 6"};
+    @FXML
+    private TextArea SinopseCadastro;
 
+    @FXML
+    private Label avisocadastrolabel;
 
+    @FXML
+    private Button btnSalvar;
 
-    public boolean novoFilme;
     @FXML
     private ChoiceBox<String> choiceboxhorario;
 
@@ -30,78 +36,88 @@ public class PagCadastroController{
     private ChoiceBox<String> choiceboxsala;
 
     @FXML
-    private TextField nomeFilmeC;
-
-    @FXML
-    private Label avisotipoingressolabel;
-
-    @FXML
-    private Label salacadastrolabel;
-    @FXML
     private Label datacadastrolabel;
 
-
-    @FXML
-    private Label horariocadastrolabel;
     @FXML
     private DatePicker datepicker;
 
-
+    @FXML
+    private TextField duraçaoDoFilmeCadastro;
 
     @FXML
-    void btvoltarcadastro(ActionEvent event) {
+    private Label horariocadastrolabel;
 
+    @FXML
+    private TextField nomeFilmeCadastro;
+
+    @FXML
+    private Label salacadastrolabel;
+
+    @FXML
+    private TextField textGenero;
+
+    @FXML
+    private TextField valorDaInteiraCadastro;
+
+    @FXML
+    private TextField valorDaMeiaCadastro;
+
+    @FXML
+    private Button img_do_filme_tela_de_cadastro;
+
+    @FXML
+    void img_do_filme(ActionEvent event) {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Selecionar imagem");
+        fileChooser.getExtensionFilters().addAll(
+                new ExtensionFilter("Imagens", "*.png", "*.jpg", "*.jpeg")
+        );
+
+        Stage stage = (Stage) btnOpenFile.getScene().getWindow();
+        File selectedFile = fileChooser.showOpenDialog(stage);
+
+        if (selectedFile != null) {
+            String caminhoImagem = selectedFile.getAbsolutePath();
+            System.out.println("Caminho da imagem: " + caminhoImagem);
+
+            // Criar uma nova imagem com base no caminho do arquivo selecionado
+            Image novaImagem = new Image("file:" + caminhoImagem);
+
+
+            ImageView imageView = new ImageView(novaImagem);
+            imageView.setFitWidth(144);
+            imageView.setFitHeight(216);
+            img_do_filme_tela_de_cadastro.setGraphic(imageView);
+        }
     }
-
 
     @FXML
     void btsalvar(ActionEvent event) {
-//        switch (PagUsuarioFilmeController.bt){
-//            case 0:
-//                PagUsuarioFilmeController.btus1.setOpacity(1);
-//                break;
-//            case 1:
-//                PagUsuarioFilmeController.btus2.setOpacity(1);
-//                break;
-//            case 2:
-//                PagUsuarioFilmeController.btus3.setOpacity(1);
-//                break;
-//            case 3:
-//                PagUsuarioFilmeController.btus4.setOpacity(1);
-//                break;
-//            case 4:
-//                PagUsuarioFilmeController.btus5.setOpacity(1);
-//                break;
-//            case 5:
-//                PagUsuarioFilmeController.btus6.setOpacity(1);
-//                break;
-//            case 6:
-//                PagUsuarioFilmeController.btus7.setOpacity(1);
-//                break;
-//            case 7:
-//                PagUsuarioFilmeController.btus8.setOpacity(1);
-//                break;
-//            case 8:
-//                PagUsuarioFilmeController.btus9.setOpacity(1);
-//                break;
-//            case 9:
-//                PagUsuarioFilmeController.btus10.setOpacity(1);
-//                break;
-//            case 10:
-//                PagUsuarioFilmeController.btus11.setOpacity(1);
-//                break;
-//            case 11:
-//                PagUsuarioFilmeController.btus12.setOpacity(1);
-//                break;
-//            case 12:
-//                PagUsuarioFilmeController.btus13.setOpacity(1);
-//                break;
-//            case 13:
-//                PagUsuarioFilmeController.btus14.setOpacity(1);
-//                break;
-//        }
+        String sinopse = SinopseCadastro.getText();
+        LocalDate data = datepicker.getValue();
+        String duracao = duraçaoDoFilmeCadastro.getText();
+        String nomeFilme = nomeFilmeCadastro.getText();
+        String sala = choiceboxsala.getValue();
+        String horario = choiceboxhorario.getValue();
+        String valorInteira = valorDaInteiraCadastro.getText();
+        String valorMeia = valorDaMeiaCadastro.getText();
 
+        // Faça o que for necessário com as variáveis obtidas
+        System.out.println("Sinopse: " + sinopse);
+        System.out.println("Data: " + data);
+        System.out.println("Duração do Filme: " + duracao);
+        System.out.println("Nome do Filme: " + nomeFilme);
+        System.out.println("Sala: " + sala);
+        System.out.println("Horário: " + horario);
+        System.out.println("Valor da Inteira: " + valorInteira);
+        System.out.println("Valor da Meia: " + valorMeia);
     }
+
+    @FXML
+    void btvoltarcadastro(ActionEvent event) {
+        Main.mudarTela("usuariofilme");
+    }
+
     @FXML
     void pegarData(ActionEvent event) {
         LocalDate dataCine = datepicker.getValue();
@@ -109,8 +125,11 @@ public class PagCadastroController{
         datacadastrolabel.setText(dataFormatada);
     }
 
-
-
-
+    @FXML
+    public void initialize() {
+        // Adicione os valores das salas ao ChoiceBox das salas
+        choiceboxsala.getItems().addAll("Sala 1", "Sala 2", "Sala 3");
+        // Adicione os valores dos horários ao ChoiceBox dos horários
+        choiceboxhorario.getItems().addAll("12:00", "15:00", "18:00");
+    }
 }
-
