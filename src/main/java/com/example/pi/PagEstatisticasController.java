@@ -1,8 +1,12 @@
 package com.example.pi;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+
 public class PagEstatisticasController {
-    //aaaa
-    //ssdd
-    //s
+    @FXML
+    void btcadastroestatistica(ActionEvent event) {
+        Main.mudarTela("cadastro");
+    }
 
 }

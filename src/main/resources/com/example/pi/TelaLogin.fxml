@@ -22,7 +22,7 @@
                 </Button>
                 <Text fill="#d9d9d9" layoutX="230.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CINE ABC">
                     <font>
-                        <Font size="20.0" />
+                        <Font name="System Bold" size="20.0" />
                     </font>
                 </Text>
                 <Text fill="#d9d9d9" layoutX="230.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Admin">
@@ -36,11 +36,11 @@
                </font>
             </Label>
             <PasswordField fx:id="txtsenha" layoutX="163.0" layoutY="232.0" prefHeight="30.0" prefWidth="219.0" />
-              <Button layoutX="260.0" layoutY="419.0" maxWidth="24.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
+              <Button layoutX="260.0" layoutY="419.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltarlogin" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
                   <graphic>
-                      <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                      <ImageView fx:id="voltarlogin" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                           <image>
-                              <Image url="@../../../../../../img/volta.png" />
+                              <Image url="@img/volta.png" />
                           </image>
                       </ImageView>
                   </graphic>
