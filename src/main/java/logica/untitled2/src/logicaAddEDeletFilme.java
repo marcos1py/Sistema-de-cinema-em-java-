@@ -22,7 +22,10 @@ public class logicaAddEDeletFilme {
         System.out.print("Insira a preço do filme: ");
         String preçoDoFilme = input.nextLine();
 
-        Filme filme = new Filme(nomeFilme, categoriaDoFilme, duracaoDoFilme, sinopseDoFilme, preçoDoFilme);
+        System.out.print("Insira a idade Minima do filme: ");
+        String idadeMinima = input.nextLine();
+
+        Filme filme = new Filme(nomeFilme, categoriaDoFilme, duracaoDoFilme, sinopseDoFilme, preçoDoFilme, idadeMinima);
         adicionarFilme(filmes, filme);
 
         System.out.print("Nome do filme a deletar: ");
