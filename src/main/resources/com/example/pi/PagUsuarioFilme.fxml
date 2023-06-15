@@ -17,64 +17,64 @@
                 </Label>
             </children>
         </Pane>
-        <Button layoutX="50.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus1" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
-         <graphic>
-            <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
-         </graphic></Button>
         <Label layoutX="50.0" layoutY="107.0" text="Em cartaz" textFill="#d9d9d9">
             <font>
                 <Font name="System Bold" size="15.0" />
             </font>
         </Label>
-        <Button layoutX="233.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus2" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+        <Button fx:id="btus1" layoutX="50.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus1" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+         <graphic>
+            <ImageView fitHeight="216.0" fitWidth="144.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+        <Button fx:id="btus2" layoutX="233.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus2" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+         <graphic>
+            <ImageView fitHeight="216.0" fitWidth="144.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+        <Button fx:id="btus3" layoutX="416.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus3" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+         <graphic>
+            <ImageView fitHeight="216.0" fitWidth="144.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+        <Button fx:id="btus4" layoutX="607.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus4" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+         <graphic>
+            <ImageView fitHeight="216.0" fitWidth="144.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+        <Button fx:id="btus5" layoutX="803.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus5" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+         <graphic>
+            <ImageView fitHeight="216.0" fitWidth="144.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+        <Button fx:id="btus7" layoutX="1170.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus7" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
          <graphic>
             <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
          </graphic></Button>
-        <Button layoutX="416.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus3" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+        <Button fx:id="btus6" layoutX="986.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus6" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
          <graphic>
             <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
          </graphic></Button>
-        <Button layoutX="607.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus4" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+        <Button fx:id="btus8" layoutX="50.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus8" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
          <graphic>
             <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
          </graphic></Button>
-        <Button layoutX="803.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus5" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+        <Button fx:id="btus9" layoutX="233.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus9" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+         <graphic>
+            <ImageView fitHeight="216.0" fitWidth="144.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+        <Button fx:id="btus10" layoutX="416.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus10" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+         <graphic>
+            <ImageView fitHeight="216.0" fitWidth="144.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+        <Button fx:id="btus11" layoutX="607.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus11" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+         <graphic>
+            <ImageView fitHeight="216.0" fitWidth="144.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+        <Button fx:id="btus12" layoutX="803.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus12" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
          <graphic>
             <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
          </graphic></Button>
-        <Button layoutX="1170.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus7" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+        <Button fx:id="btus14" layoutX="1170.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus14" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
          <graphic>
             <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
          </graphic></Button>
-        <Button layoutX="986.0" layoutY="145.0" mnemonicParsing="false" onAction="#btus6" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
-         <graphic>
-            <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
-         </graphic></Button>
-        <Button layoutX="50.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus8" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
-         <graphic>
-            <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
-         </graphic></Button>
-        <Button layoutX="233.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus9" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
-         <graphic>
-            <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
-         </graphic></Button>
-        <Button layoutX="416.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus10" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
-         <graphic>
-            <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
-         </graphic></Button>
-        <Button layoutX="607.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus11" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
-         <graphic>
-            <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
-         </graphic></Button>
-        <Button layoutX="803.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus12" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
-         <graphic>
-            <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
-         </graphic></Button>
-        <Button layoutX="1170.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus14" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
-         <graphic>
-            <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
-         </graphic></Button>
-        <Button layoutX="986.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus13" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
+        <Button fx:id="btus13" layoutX="986.0" layoutY="430.0" mnemonicParsing="false" onAction="#btus13" opacity="0.0" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;">
          <graphic>
             <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
          </graphic></Button>

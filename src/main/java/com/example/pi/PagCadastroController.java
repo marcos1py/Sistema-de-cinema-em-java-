@@ -19,6 +19,10 @@ public class PagCadastroController{
     private  String[] horarios ={"Inteira", "Meia"};
 
     private  String[] salas = {"Sala 1", "Sala 2", "Sala 3","Sala 4", "Sala 5", "Sala 6"};
+
+
+
+    public boolean novoFilme;
     @FXML
     private ChoiceBox<String> choiceboxhorario;
 
@@ -46,15 +50,57 @@ public class PagCadastroController{
 
     @FXML
     void btvoltarcadastro(ActionEvent event) {
-
+//        switch (PagUsuarioFilmeController.bt){
+//            case 0:
+//                PagUsuarioFilmeController.btus1.setOpacity(1);
+//                break;
+//            case 1:
+//                PagUsuarioFilmeController.btus2.setOpacity(1);
+//                break;
+//            case 2:
+//                PagUsuarioFilmeController.btus3.setOpacity(1);
+//                break;
+//            case 3:
+//                PagUsuarioFilmeController.btus4.setOpacity(1);
+//                break;
+//            case 4:
+//                PagUsuarioFilmeController.btus5.setOpacity(1);
+//                break;
+//            case 5:
+//                PagUsuarioFilmeController.btus6.setOpacity(1);
+//                break;
+//            case 6:
+//                PagUsuarioFilmeController.btus7.setOpacity(1);
+//                break;
+//            case 7:
+//                PagUsuarioFilmeController.btus8.setOpacity(1);
+//                break;
+//            case 8:
+//                PagUsuarioFilmeController.btus9.setOpacity(1);
+//                break;
+//            case 9:
+//                PagUsuarioFilmeController.btus10.setOpacity(1);
+//                break;
+//            case 10:
+//                PagUsuarioFilmeController.btus11.setOpacity(1);
+//                break;
+//            case 11:
+//                PagUsuarioFilmeController.btus12.setOpacity(1);
+//                break;
+//            case 12:
+//                PagUsuarioFilmeController.btus13.setOpacity(1);
+//                break;
+//            case 13:
+//                PagUsuarioFilmeController.btus14.setOpacity(1);
+//                break;
+//        }
 
     }
 
 
     @FXML
     void btsalvar(ActionEvent event) {
-        String aa = nomeFilmeC.getText();
-        System.out.println(aa);
+
 
     }
     @FXML
