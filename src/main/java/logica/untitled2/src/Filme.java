@@ -66,7 +66,7 @@ public class Filme {
     public String getHorario() {
         return horario;
     }
-
+//sa
     @Override
     public String toString() {
         return "Nome: " + nome + " | Categoria: " + categoria + " | Duração: " + duracao + " | Sinopse: " + sinopse + " | Valor Meia: " + valorMeia;
