@@ -21,6 +21,7 @@ public class Main extends Application {
     private static Scene pagEstatisticas;
 
     private PagUsuarioFilmeController usuarioFilmeController;
+    private PagFilmeComprarController filmeComprarController;
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -33,9 +34,12 @@ public class Main extends Application {
         Parent fxmlPagUsuarioFilme = loaderUsuarioFilme.load();
         usuarioFilmeController = loaderUsuarioFilme.getController();
 
-        pagUsuarioFilme = new Scene(fxmlPagUsuarioFilme, 1200, 600);
+        FXMLLoader loaderFilmeComprar = new FXMLLoader(getClass().getResource("PagFilmeComprar.fxml"));
+        Parent fxmlPagFilmeComprar = loaderFilmeComprar.load();
+        filmeComprarController = loaderFilmeComprar.getController();
+        usuarioFilmeController.setFilmeComprarController(filmeComprarController);
 
-        Parent fxmlPagFilmeComprar = FXMLLoader.load(getClass().getResource("PagFilmeComprar.fxml"));
+        pagUsuarioFilme = new Scene(fxmlPagUsuarioFilme, 1200, 600);
         pagFilmeComprar = new Scene(fxmlPagFilmeComprar, 1200, 600);
 
         Parent fxmlPagTipoIngresso = FXMLLoader.load(getClass().getResource("PagTipoIngresso.fxml"));
@@ -49,7 +53,6 @@ public class Main extends Application {
 
         PagCadastroController cadastroController = loaderPagCadastro.getController();
         cadastroController.setUsuarioFilmeController(usuarioFilmeController);
-
         pagCadastro = new Scene(fxmlPagCadastro, 1200, 600);
 
         Parent fxmlPagEstatisticas = FXMLLoader.load(getClass().getResource("PagEstatisticas.fxml"));
@@ -62,8 +65,6 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
-
 
     public static void mudarTela(String scr) {
         switch (scr) {
@@ -93,6 +94,4 @@ public class Main extends Application {
                 break;
         }
     }
-
-
 }

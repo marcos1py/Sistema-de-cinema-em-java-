@@ -1,10 +1,11 @@
-package logica.untitled2.src;
+package com.example.pi;
 
-public class logicaAddEDeletFilme {
-    public static void main(String[] args) {
-    }
+import logica.untitled2.src.Filme;
 
-    public static void adicionarFilme(Filme[] filmes, Filme filme) {
+public class FilmeRepository {
+    private static Filme[] filmes = new Filme[14];
+
+    public static void adicionarFilme(Filme filme) {
         for (int index = 0; index < filmes.length; index++) {
             if (filmes[index] == null) {
                 filmes[index] = filme;
@@ -16,7 +17,7 @@ public class logicaAddEDeletFilme {
         System.out.println("A lista de filmes está cheia. Não é possível adicionar mais filmes.");
     }
 
-    public static void deletarFilme(Filme[] filmes, String nomeDelet) {
+    public static void deletarFilme(String nomeDelet) {
         boolean deletado = false;
         for (int index = 0; index < filmes.length; index++) {
             if (filmes[index] != null && filmes[index].getNome().equalsIgnoreCase(nomeDelet)) {
@@ -30,7 +31,7 @@ public class logicaAddEDeletFilme {
         }
     }
 
-    public static void exibirFilmes(Filme[] filmes) {
+    public static void exibirFilmes() {
         int conta = 1;
         for (int index = 0; index < filmes.length; index++) {
             if (filmes[index] != null) {
@@ -39,4 +40,14 @@ public class logicaAddEDeletFilme {
             }
         }
     }
+    public static String nome_do_filme(Integer numero) {
+        for (int index = 0; index < filmes.length; index++) {
+            if (filmes[index] != null) {
+                String nomeFilme = filmes[numero].getNome();
+                return nomeFilme;
+            }
+        }
+        return null; // Se nenhum filme for encontrado, retorne null ou uma mensagem de erro adequada.
+    }
+
 }

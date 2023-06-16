@@ -1,15 +1,13 @@
 package com.example.pi;
+import logica.untitled2.src.logicaAddEDeletFilme;
+
+import logica.untitled2.src.Filme;
+
 
 
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import logica.untitled2.src.Filme;
-import logica.untitled2.src.logicaAddEDeletFilme;
-
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -20,15 +18,12 @@ import javafx.stage.Stage;
 import javafx.stage.FileChooser.ExtensionFilter;
 
 import java.io.File;
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class PagCadastroController {
     private PagUsuarioFilmeController usuarioFilmeController;
     private int indiceBotao = 1;
-
-    private Filme[] filmes = new Filme[14];
 
     @FXML
     private Button btnOpenFile;
@@ -92,7 +87,6 @@ public class PagCadastroController {
         File selectedFile = fileChooser.showOpenDialog(stage);
 
         if (selectedFile != null) {
-
             caminhoImagem = selectedFile.getAbsolutePath();
             System.out.println("Caminho da imagem: " + caminhoImagem);
 
@@ -103,13 +97,11 @@ public class PagCadastroController {
             imageView.setFitWidth(144);
             imageView.setFitHeight(216);
             img_do_filme_tela_de_cadastro.setGraphic(imageView);
-
         }
     }
 
     @FXML
     void btsalvar(ActionEvent event) {
-
         String sinopse = SinopseCadastro.getText();
         LocalDate data = datepicker.getValue();
         String duracao = duraçaoDoFilmeCadastro.getText();
@@ -133,10 +125,10 @@ public class PagCadastroController {
         System.out.println("Horário: " + horario);
         String idadeMinima = "10";
         System.out.println("-------------------------------------------------------");
-        Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima);
 
-        logicaAddEDeletFilme.adicionarFilme(filmes, filme);
-        logicaAddEDeletFilme.exibirFilmes(filmes);
+        Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima);
+        FilmeRepository.adicionarFilme(filme);
+        FilmeRepository.exibirFilmes();
 
         // add a img
         System.out.println("Caminho da imagem: " + caminhoImagem);
@@ -149,8 +141,6 @@ public class PagCadastroController {
 
         // Incrementar o índice para o próximo botão
         indiceBotao++;
-
-
     }
 
     @FXML
@@ -176,6 +166,4 @@ public class PagCadastroController {
     public void setUsuarioFilmeController(PagUsuarioFilmeController usuarioFilmeController) {
         this.usuarioFilmeController = usuarioFilmeController;
     }
-
-
 }
