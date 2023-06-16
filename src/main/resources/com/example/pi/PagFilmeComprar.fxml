@@ -165,5 +165,80 @@
          </effect>
       </Button>
       <Button layoutX="377.0" layoutY="397.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" />
+      <Label alignment="CENTER" layoutX="689.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="1" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="734.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="2" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="775.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="3" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="818.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="4" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="860.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="5" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="905.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="6" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="948.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="7" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="992.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="8" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="194.0" prefHeight="24.0" prefWidth="24.0" text="G" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="229.0" prefHeight="24.0" prefWidth="24.0" text="F" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="264.0" prefHeight="24.0" prefWidth="24.0" text="E" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="299.0" prefHeight="24.0" prefWidth="24.0" text="D" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="334.0" prefHeight="24.0" prefWidth="24.0" text="C" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="369.0" prefHeight="24.0" prefWidth="24.0" text="B" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="404.0" prefHeight="24.0" prefWidth="24.0" text="A" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
     </children>
 </Pane>
