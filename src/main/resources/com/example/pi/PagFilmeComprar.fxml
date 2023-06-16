@@ -205,17 +205,17 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="1030.0" layoutY="194.0" prefHeight="24.0" prefWidth="24.0" text="G" textFill="#d9d9d9">
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="194.0" prefHeight="24.0" prefWidth="24.0" text="A" textFill="#d9d9d9">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="1030.0" layoutY="229.0" prefHeight="24.0" prefWidth="24.0" text="F" textFill="#d9d9d9">
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="229.0" prefHeight="24.0" prefWidth="24.0" text="B" textFill="#d9d9d9">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="1030.0" layoutY="264.0" prefHeight="24.0" prefWidth="24.0" text="E" textFill="#d9d9d9">
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="264.0" prefHeight="24.0" prefWidth="24.0" text="C" textFill="#d9d9d9">
          <font>
             <Font size="15.0" />
          </font>
@@ -225,17 +225,17 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="1030.0" layoutY="334.0" prefHeight="24.0" prefWidth="24.0" text="C" textFill="#d9d9d9">
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="334.0" prefHeight="24.0" prefWidth="24.0" text="E" textFill="#d9d9d9">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="1030.0" layoutY="369.0" prefHeight="24.0" prefWidth="24.0" text="B" textFill="#d9d9d9">
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="369.0" prefHeight="24.0" prefWidth="24.0" text="F" textFill="#d9d9d9">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="1030.0" layoutY="404.0" prefHeight="24.0" prefWidth="24.0" text="A" textFill="#d9d9d9">
+      <Label alignment="CENTER" layoutX="1030.0" layoutY="404.0" prefHeight="24.0" prefWidth="24.0" text="G" textFill="#d9d9d9">
          <font>
             <Font size="15.0" />
          </font>
