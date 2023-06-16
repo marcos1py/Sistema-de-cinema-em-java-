@@ -3,11 +3,14 @@ package com.example.pi;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 
 public class PagUsuarioFilmeController {
 
+
+
     @FXML
-    public Button btus1;
+    public Button btus1a; // Alterado para visibilidade pública
 
     @FXML
     public void btus1(ActionEvent event) {
@@ -121,5 +124,6 @@ public class PagUsuarioFilmeController {
     void btus9(ActionEvent event) {
         Main.mudarTela("filmecomprar");
     }
+
 
 }
