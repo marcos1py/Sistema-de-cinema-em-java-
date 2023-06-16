@@ -1,54 +1,7 @@
 package logica.untitled2.src;
 
-import java.time.LocalDate;
-import java.util.Scanner;
-
 public class logicaAddEDeletFilme {
     public static void main(String[] args) {
-        Filme[] filmes = new Filme[10];
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Insira o nome do filme: ");
-        String nomeFilme = input.nextLine();
-
-        System.out.print("Insira a categoria do filme: ");
-        String categoriaDoFilme = input.nextLine();
-
-        System.out.print("Insira a duração do filme: ");
-        String duracaoDoFilme = input.nextLine();
-
-        System.out.print("Insira a sinopse do filme: ");
-        String sinopseDoFilme = input.nextLine();
-
-        System.out.print("Insira o valor da entrada inteira do filme: ");
-        String valorInteira = input.nextLine();
-
-        System.out.print("Insira o valor da entrada meia do filme: ");
-        String valorMeia = input.nextLine();
-
-        System.out.print("Insira a data de exibição do filme: ");
-        LocalDate dataExibicao = LocalDate.parse("2023-04-10");
-
-
-        System.out.print("Insira a sala de exibição do filme: ");
-        String salaExibicao = input.nextLine();
-
-        System.out.print("Insira o horário de exibição do filme: ");
-        String horarioExibicao = input.nextLine();
-
-        System.out.print("Insira a idade mínima do filme: ");
-        String idadeMinima = input.nextLine();
-
-        Filme filme = new Filme(nomeFilme, categoriaDoFilme, duracaoDoFilme, sinopseDoFilme, valorInteira, valorMeia, dataExibicao, salaExibicao, horarioExibicao, idadeMinima);
-        adicionarFilme(filmes, filme);
-
-        System.out.print("Nome do filme a deletar: ");
-        String nomeDelet = input.nextLine();
-        deletarFilme(filmes, nomeDelet);
-
-        System.out.println("");
-        System.out.println("Lista de filmes:");
-        exibirFilmes(filmes);
     }
 
     public static void adicionarFilme(Filme[] filmes, Filme filme) {
@@ -82,6 +35,7 @@ public class logicaAddEDeletFilme {
         for (int index = 0; index < filmes.length; index++) {
             if (filmes[index] != null) {
                 System.out.println(conta + " - " + filmes[index]);
+
                 conta++;
             }
         }

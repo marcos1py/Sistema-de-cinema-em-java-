@@ -1,7 +1,8 @@
 package com.example.pi;
 
 
-
+import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import logica.untitled2.src.Filme;
@@ -25,11 +26,9 @@ import java.time.format.DateTimeFormatter;
 
 public class PagCadastroController {
     private PagUsuarioFilmeController usuarioFilmeController;
+    private int indiceBotao = 1;
 
-
-
-
-    private Filme[] filmes = new Filme[10];
+    private Filme[] filmes = new Filme[14];
 
     @FXML
     private Button btnOpenFile;
@@ -79,6 +78,7 @@ public class PagCadastroController {
     @FXML
     private Button img_do_filme_tela_de_cadastro;
 
+    private String caminhoImagem;
 
     @FXML
     void img_do_filme(ActionEvent event) {
@@ -93,7 +93,7 @@ public class PagCadastroController {
 
         if (selectedFile != null) {
 
-            String caminhoImagem = selectedFile.getAbsolutePath();
+            caminhoImagem = selectedFile.getAbsolutePath();
             System.out.println("Caminho da imagem: " + caminhoImagem);
 
             // Criar uma nova imagem com base no caminho do arquivo selecionado
@@ -103,8 +103,7 @@ public class PagCadastroController {
             imageView.setFitWidth(144);
             imageView.setFitHeight(216);
             img_do_filme_tela_de_cadastro.setGraphic(imageView);
-            System.out.println(usuarioFilmeController);
-            usuarioFilmeController.atualizarImagemBotao(imageView);
+
         }
     }
 
@@ -139,10 +138,20 @@ public class PagCadastroController {
         logicaAddEDeletFilme.adicionarFilme(filmes, filme);
         logicaAddEDeletFilme.exibirFilmes(filmes);
 
-        usuarioFilmeController.atualizarFODA("Novo texto do Label");
+        // add a img
+        System.out.println("Caminho da imagem: " + caminhoImagem);
+        Image novaImagem = new Image("file:" + caminhoImagem);
+        ImageView imageView = new ImageView(novaImagem);
+        imageView.setFitWidth(144);
+        imageView.setFitHeight(216);
+
+        usuarioFilmeController.atualizarImagemBotao(indiceBotao, imageView);
+
+        // Incrementar o índice para o próximo botão
+        indiceBotao++;
+
+
     }
-
-
 
     @FXML
     void btvoltarcadastro(ActionEvent event) {
@@ -162,10 +171,11 @@ public class PagCadastroController {
         choiceboxsala.getItems().addAll("Sala 1", "Sala 2", "Sala 3");
         // Adicione os valores dos horários ao ChoiceBox dos horários
         choiceboxhorario.getItems().addAll("12:00", "15:00", "18:00");
-
     }
+
     public void setUsuarioFilmeController(PagUsuarioFilmeController usuarioFilmeController) {
         this.usuarioFilmeController = usuarioFilmeController;
     }
+
 
 }
