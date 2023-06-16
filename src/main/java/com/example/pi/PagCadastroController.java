@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 import javafx.stage.FileChooser.ExtensionFilter;
 
 import java.io.File;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -99,7 +100,7 @@ public class PagCadastroController {
     }
 
     @FXML
-    void btsalvar(ActionEvent event) {
+    public void btsalvar(ActionEvent event) throws IOException {
         String sinopse = SinopseCadastro.getText();
         LocalDate data = datepicker.getValue();
         String duracao = duraçaoDoFilmeCadastro.getText();
