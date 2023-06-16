@@ -1,10 +1,13 @@
 package com.example.pi;
+import java.util.ArrayList;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
+
+import java.util.List;
 
 public class PagFilmeComprarController {
     @FXML
@@ -190,16 +193,29 @@ public class PagFilmeComprarController {
 
     @FXML
     private Label nomeFilmeComprar;
-    private void handleButtonClick(Button button) {
+    private int contadorPoltronas = 0; // Variável para contar as poltronas selecionadas
+
+    private List<String> cadeirasVerdes = new ArrayList<>(); // Lista para armazenar os IDs das cadeiras verdes
+
+    @FXML
+    void handleButtonClick(Button button) {
         Color currentColor = (Color) button.getBackground().getFills().get(0).getFill();
+        String cadeiraID = button.getId();
 
         if (currentColor.equals(Color.GREEN)) {
             button.setStyle("-fx-background-color: white;");
+            contadorPoltronas--;
+            cadeirasVerdes.remove(cadeiraID);
         } else {
             button.setStyle("-fx-background-color: green;");
-            System.out.println("CADEIRAS: "+ button );
+            contadorPoltronas++;
+            cadeirasVerdes.add(cadeiraID);
         }
+
+        System.out.println("Contagem de poltronas: " + contadorPoltronas);
+        System.out.println("Cadeiras verdes: " + cadeirasVerdes);
     }
+
     @FXML
     void A1(ActionEvent event) {
         handleButtonClick(A1);
