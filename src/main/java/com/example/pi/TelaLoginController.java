@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
 public class TelaLoginController {
 
@@ -13,19 +14,23 @@ public class TelaLoginController {
 
 
     @FXML
+    private ImageView voltarlogin;
+
+    @FXML
     private PasswordField txtsenha;
+    @FXML
+    void btvoltarlogin(ActionEvent event) {
+        Main.mudarTela("usuariofilme");
+    }
 
     @FXML
     void login(ActionEvent event) {
         if(txtsenha.getText().equals("1234")){
-            Main.mudarTela("usuariofilme");
+            Main.mudarTela("estatisticas");
         }
         else{
-            if (txtsenha.getText().equals("1212")){
-                Main.mudarTela("cadastro");
-            }else {
+
                 senhaincorretalabel.setText("Senha Incorreta");
             }
         }
     }
-}

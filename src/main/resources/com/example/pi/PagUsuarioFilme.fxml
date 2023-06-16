@@ -79,7 +79,7 @@
             <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
          </graphic></Button>
 
-        <Button layoutX="1350.0" layoutY="22.5" mnemonicParsing="false" style="-fx-background-color: #00FFFF;" text="Admin" textFill="#1a2232">
+        <Button layoutX="1350.0" layoutY="22.5" mnemonicParsing="false" onAction="#btadmin" style="-fx-background-color: #00FFFF;" text="Admin" textFill="#1a2232">
             <font>
                 <Font size="20.0" />
             </font></Button>
