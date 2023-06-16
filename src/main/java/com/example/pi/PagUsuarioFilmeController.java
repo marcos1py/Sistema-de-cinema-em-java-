@@ -8,7 +8,7 @@ import javafx.scene.image.ImageView;
 
 public class PagUsuarioFilmeController {
     @FXML
-    static Label foda;
+    public Label foda;
 
     @FXML
     public Button btus1; // Alterado para visibilidade pública
@@ -138,5 +138,8 @@ public class PagUsuarioFilmeController {
         System.out.println(btus1);
         System.out.println(btus2);
 
+    }
+    public void  atualizarFODA(String texto){
+        foda.setText(texto);
     }
 }

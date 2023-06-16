@@ -110,6 +110,7 @@ public class PagCadastroController {
 
     @FXML
     void btsalvar(ActionEvent event) {
+
         String sinopse = SinopseCadastro.getText();
         LocalDate data = datepicker.getValue();
         String duracao = duraçaoDoFilmeCadastro.getText();
@@ -138,7 +139,7 @@ public class PagCadastroController {
         logicaAddEDeletFilme.adicionarFilme(filmes, filme);
         logicaAddEDeletFilme.exibirFilmes(filmes);
 
-
+        usuarioFilmeController.atualizarFODA("Novo texto do Label");
     }
 
 
