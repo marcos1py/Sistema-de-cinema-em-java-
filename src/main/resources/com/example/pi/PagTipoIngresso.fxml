@@ -20,7 +20,7 @@
                 </Label>
             </children>
         </Pane>
-        <Button layoutX="1350.0" layoutY="596.0" mnemonicParsing="false" onAction="#btprosseguirtipoingresso" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
+        <Button layoutX="1316.0" layoutY="596.0" mnemonicParsing="false" onAction="#btprosseguirtipoingresso" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
             <font>
                 <Font size="20.0" />
             </font></Button>

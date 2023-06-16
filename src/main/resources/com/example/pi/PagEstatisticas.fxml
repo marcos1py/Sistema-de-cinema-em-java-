@@ -7,21 +7,21 @@
 
 <Pane prefHeight="674.0" prefWidth="1440.0" style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pi.PagEstatisticasController">
     <children>
-        <Pane prefHeight="90.0" prefWidth="1440.0" style="-fx-background-color: #1A2232;">
+        <Pane prefHeight="90.0" prefWidth="1920.0" style="-fx-background-color: #1A2232;">
             <children>
-                <Label layoutX="50.0" layoutY="30.0" text="CINE ABC" textFill="#d9d9d9">
+                <Label layoutX="100.0" layoutY="30.0" text="CINE ABC" textFill="#d9d9d9">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Label>
-            <Button layoutX="1148.0" layoutY="24.0" mnemonicParsing="false" onAction="#btcadastroestatistica" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: #00FFFF;" text="CadastrarFilme" textFill="#1a2232">
+            <Button layoutX="1260.0" layoutY="24.0" mnemonicParsing="false" onAction="#btcadastroestatistica" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: #00FFFF;" text="Cadastrar Filme" textFill="#1a2232">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
             </children>
         </Pane>
-      <Pane layoutX="109.0" layoutY="235.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #B2FAA6; -fx-border-color: #24FF00;">
+      <Pane layoutX="378.0" layoutY="257.0" prefHeight="116.0" prefWidth="250.0" style="-fx-background-color: #B2FAA6; -fx-border-color: #24FF00;">
          <children>
             <Label layoutX="10.0" layoutY="31.0" prefHeight="65.0" prefWidth="250.0" text="Sessão 0">
                <font>
@@ -30,32 +30,32 @@
             </Label>
          </children>
       </Pane>
-      <Label layoutX="125.0" layoutY="174.0" text="Sessão mais ocupada" textFill="WHITE">
+      <Label layoutX="393.0" layoutY="214.0" text="Sessão mais ocupada" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="932.0" layoutY="174.0" text="Sessão menos ocupada" textFill="WHITE">
+      <Label layoutX="910.0" layoutY="214.0" text="Sessão menos ocupada" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="130.0" layoutY="398.0" text="Filme mais vendido" textFill="WHITE">
+      <Label layoutX="405.0" layoutY="438.0" text="Filme mais vendido" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="958.0" layoutY="398.0" text="Filme menos vendido" textFill="WHITE">
+      <Label layoutX="921.0" layoutY="438.0" text="Filme menos vendido" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="443.0" layoutY="102.0" text="Dashboard Financeiro do Cinema" textFill="WHITE">
+      <Label layoutX="473.0" layoutY="130.0" text="Dashboard Financeiro do Cinema" textFill="WHITE">
          <font>
             <Font name="System Bold" size="38.0" />
          </font>
       </Label>
-      <Pane layoutX="943.0" layoutY="235.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #FF7979; -fx-border-color: red;">
+      <Pane layoutX="906.0" layoutY="257.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #FF7979; -fx-border-color: red;">
          <children>
             <Label layoutX="8.0" layoutY="26.0" prefHeight="65.0" prefWidth="250.0" text="Sessão 1">
                <font>
@@ -64,7 +64,7 @@
             </Label>
          </children>
       </Pane>
-      <Pane layoutX="943.0" layoutY="465.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #FF7979; -fx-border-color: red;">
+      <Pane layoutX="906.0" layoutY="487.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #FF7979; -fx-border-color: red;">
          <children>
             <Label layoutX="8.0" layoutY="25.0" prefHeight="65.0" prefWidth="250.0" text="AAAAA">
                <font>
@@ -73,7 +73,7 @@
             </Label>
          </children>
       </Pane>
-      <Pane layoutX="109.0" layoutY="465.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #B2FAA6; -fx-border-color: #24FF00;">
+      <Pane layoutX="378.0" layoutY="487.0" prefHeight="116.0" prefWidth="250.0" style="-fx-background-color: #B2FAA6; -fx-border-color: #24FF00;">
          <children>
             <Label layoutX="8.0" layoutY="13.0" prefHeight="90.0" prefWidth="250.0" text="Homem-Aranha aaaaaaaaaaaaaaaaaaaaaaaaaaa">
                <font>
