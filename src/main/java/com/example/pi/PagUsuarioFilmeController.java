@@ -3,14 +3,15 @@ package com.example.pi;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
 public class PagUsuarioFilmeController {
-
-
+    @FXML
+    static Label foda;
 
     @FXML
-    public Button btus1a; // Alterado para visibilidade pública
+    public Button btus1; // Alterado para visibilidade pública
 
     @FXML
     public void btus1(ActionEvent event) {
@@ -56,10 +57,18 @@ public class PagUsuarioFilmeController {
     @FXML
     private Button btus9;
 
+    public void setLabelText(String text) {
+        foda.setText(text);
+    }
+
     @FXML
     void btadmin(ActionEvent event) {
         Main.mudarTela("login");
     }
+
+
+
+
     @FXML
     void btus10(ActionEvent event) {
         Main.mudarTela("filmecomprar");
@@ -124,6 +133,10 @@ public class PagUsuarioFilmeController {
     void btus9(ActionEvent event) {
         Main.mudarTela("filmecomprar");
     }
+    public void atualizarImagemBotao(ImageView imageView) {
+        btus1.setGraphic(imageView);
+        System.out.println(btus1);
+        System.out.println(btus2);
 
-
+    }
 }

@@ -25,12 +25,12 @@
                 </Label>
             </children>
         </Pane>
-        <Button fx:id="btnSalvar" layoutX="1350.0" layoutY="638.0" mnemonicParsing="false" onAction="#btsalvar" style="-fx-background-color: #00FFFF;" text="Salvar" textFill="#1a2232">
+        <Button fx:id="btnSalvar" layoutX="679.0" layoutY="356.0" mnemonicParsing="false" onAction="#btsalvar" style="-fx-background-color: #00FFFF;" text="Salvar" textFill="#1a2232">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button layoutX="100.0" layoutY="650.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltarcadastro" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
+        <Button layoutX="35.0" layoutY="325.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltarcadastro" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                     <image>

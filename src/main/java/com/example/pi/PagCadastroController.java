@@ -1,5 +1,9 @@
 package com.example.pi;
 
+
+
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import logica.untitled2.src.Filme;
 import logica.untitled2.src.logicaAddEDeletFilme;
 
@@ -20,9 +24,12 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class PagCadastroController {
+    private PagUsuarioFilmeController usuarioFilmeController;
+
+
+
 
     private Filme[] filmes = new Filme[10];
-    private PagUsuarioFilmeController usuarioFilmeController;
 
     @FXML
     private Button btnOpenFile;
@@ -72,6 +79,7 @@ public class PagCadastroController {
     @FXML
     private Button img_do_filme_tela_de_cadastro;
 
+
     @FXML
     void img_do_filme(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
@@ -84,6 +92,7 @@ public class PagCadastroController {
         File selectedFile = fileChooser.showOpenDialog(stage);
 
         if (selectedFile != null) {
+
             String caminhoImagem = selectedFile.getAbsolutePath();
             System.out.println("Caminho da imagem: " + caminhoImagem);
 
@@ -94,13 +103,13 @@ public class PagCadastroController {
             imageView.setFitWidth(144);
             imageView.setFitHeight(216);
             img_do_filme_tela_de_cadastro.setGraphic(imageView);
-
-
+            System.out.println(usuarioFilmeController);
+            usuarioFilmeController.atualizarImagemBotao(imageView);
         }
     }
 
     @FXML
-    public void btsalvar(ActionEvent event) throws IOException {
+    void btsalvar(ActionEvent event) {
         String sinopse = SinopseCadastro.getText();
         LocalDate data = datepicker.getValue();
         String duracao = duraçaoDoFilmeCadastro.getText();
@@ -114,7 +123,7 @@ public class PagCadastroController {
         // Faça o que for necessário com as variáveis obtidas
         System.out.println("-------------------------------------------------------");
         System.out.println("Nome do Filme: " + nomeFilme);
-        System.out.println("categoria do Filme: " + genero);
+        System.out.println("Categoria do Filme: " + genero);
         System.out.println("Duração do Filme: " + duracao);
         System.out.println("Sinopse: " + sinopse);
         System.out.println("Valor da Inteira: " + valorInteira);
@@ -128,7 +137,11 @@ public class PagCadastroController {
 
         logicaAddEDeletFilme.adicionarFilme(filmes, filme);
         logicaAddEDeletFilme.exibirFilmes(filmes);
+
+
     }
+
+
 
     @FXML
     void btvoltarcadastro(ActionEvent event) {
@@ -148,6 +161,10 @@ public class PagCadastroController {
         choiceboxsala.getItems().addAll("Sala 1", "Sala 2", "Sala 3");
         // Adicione os valores dos horários ao ChoiceBox dos horários
         choiceboxhorario.getItems().addAll("12:00", "15:00", "18:00");
+
+    }
+    public void setUsuarioFilmeController(PagUsuarioFilmeController usuarioFilmeController) {
+        this.usuarioFilmeController = usuarioFilmeController;
     }
 
 }

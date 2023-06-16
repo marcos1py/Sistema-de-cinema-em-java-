@@ -250,8 +250,11 @@ public class PagFilmeComprarController {
     void A5(ActionEvent event) {
         handleButtonClick(A5);
     }
-
+    public void setNomeFilme(String nomeFilme) {
+        nomeFilmeComprarLabel.setText(nomeFilme);
+    }
     // Evento de clique para o botão A6
+
     @FXML
     void A6(ActionEvent event) {
         handleButtonClick(A6);
