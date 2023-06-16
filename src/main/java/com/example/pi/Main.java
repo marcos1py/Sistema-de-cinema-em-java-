@@ -16,10 +16,7 @@ public class Main extends Application {
    private static Scene pagFilmeComprar;
    private static Scene pagTipoIngresso;
    private static Scene pagTipoPagamento;
-   private static Scene pagTipoPagamentoPainel;
-
    private static Scene pagCadastro;
-
    private static Scene pagEstatisticas;
 
     @Override
@@ -41,16 +38,13 @@ public class Main extends Application {
         Parent fxmlPagTipoPagamento = FXMLLoader.load(getClass().getResource("PagTipoPagamento.fxml"));
         pagTipoPagamento = new Scene(fxmlPagTipoPagamento, 1200, 600);
 
-        Parent fxmlPagTipoPagamentoPainel = FXMLLoader.load(getClass().getResource("PagTipoPagamentoPainel.fxml"));
-        pagTipoPagamentoPainel = new Scene(fxmlPagTipoPagamentoPainel, 1200, 600);
-
         Parent fxmlPagCadastro = FXMLLoader.load(getClass().getResource("PagCadastro.fxml"));
         pagCadastro = new Scene(fxmlPagCadastro, 1200, 600);
 
         Parent fxmlPagEstatisticas = FXMLLoader.load(getClass().getResource("PagEstatisticas.fxml"));
         pagEstatisticas = new Scene(fxmlPagEstatisticas, 1200, 600);
 
-        estagioPrimario.setScene(pagFilmeComprar);
+        estagioPrimario.setScene(pagUsuarioFilme);
         stage.show();
 
     }
@@ -70,9 +64,6 @@ public class Main extends Application {
                 break;
             case "pagamento":
                 stage.setScene(pagTipoPagamento);
-                break;
-            case "pagamentopainel":
-                stage.setScene(pagTipoPagamentoPainel);
                 break;
             case "cadastro":
                 stage.setScene(pagCadastro);

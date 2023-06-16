@@ -19,15 +19,15 @@
                 </Label>
             </children>
         </Pane>
-        <Button layoutX="1316.0" layoutY="596.0" mnemonicParsing="false" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
+        <Button layoutX="1336.0" layoutY="596.0" mnemonicParsing="false" style="-fx-background-color: #00FFFF;" text="Concluir" textFill="#1a2232">
             <font>
                 <Font size="20.0" />
             </font></Button>
-        <Button layoutX="100.0" layoutY="604.0" maxWidth="24.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
+        <Button layoutX="100.0" layoutY="604.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltarpagamento" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../img/volta.png" />
+                        <Image url="@img/volta.png" />
                     </image>
                 </ImageView>
             </graphic></Button>

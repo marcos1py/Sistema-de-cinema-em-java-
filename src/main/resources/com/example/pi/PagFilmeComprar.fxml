@@ -75,17 +75,17 @@
             </font>
         </Label>
         <Separator layoutX="753.0" layoutY="155.0" prefWidth="200.0" />
-        <Label layoutX="423.0" layoutY="387.0" text="Disponível" textFill="#d9d9d9">
+        <Label layoutX="427.0" layoutY="399.0" text="Disponível" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="426.0" layoutY="356.0" text="Escolhido" textFill="#d9d9d9">
+        <Label layoutX="427.0" layoutY="364.0" text="Escolhido" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="427.0" layoutY="328.0" text="Ocupado" textFill="#d9d9d9">
+        <Label layoutX="427.0" layoutY="329.0" text="Ocupado" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>

@@ -67,5 +67,10 @@
                </font></Text>
             </children>
         </Pane>
+      <Label fx:id="avisotipoingressolabel" layoutX="100.0" layoutY="335.0" prefHeight="21.0" prefWidth="288.0" textFill="#d92727">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
     </children>
 </Pane>
