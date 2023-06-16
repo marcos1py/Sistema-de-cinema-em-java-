@@ -11,7 +11,11 @@ import java.util.List;
 
 public class PagFilmeComprarController {
     @FXML
-    private Label nomeFilmeComprarLabel;
+    Label nomeFilmeComprarLabel;
+
+    public void mostrarNome (String filme){
+        nomeFilmeComprar.setText(filme);
+    }
 
     private static PagFilmeComprarController instance;
 
