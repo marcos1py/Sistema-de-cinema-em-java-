@@ -33,7 +33,7 @@
             </graphic></Button>
         <VBox alignment="TOP_CENTER" layoutX="74.0" layoutY="272.0" prefHeight="255.0" prefWidth="1262.0">
             <children>
-                <Label text="Escolha o método de pagamento" textFill="#d9d9d9">
+                <Label tex="Escolha o método de pagamento" textFill="#d9d9d9">
                     <font>
                         <Font size="20.0" />
                     </font>

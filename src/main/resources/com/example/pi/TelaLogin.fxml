@@ -20,7 +20,7 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Text fill="#d9d9d9" layoutX="230.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CINE ABC">
+                <Text fill="#d9d9d9" layoutX="227.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CINE ABC">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
