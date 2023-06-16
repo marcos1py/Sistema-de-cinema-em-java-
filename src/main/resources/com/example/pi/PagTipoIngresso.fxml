@@ -13,7 +13,7 @@
     <children>
         <Pane prefHeight="90.0" prefWidth="1920.0" style="-fx-background-color: #1A2232;">
             <children>
-                <Label layoutX="50.0" layoutY="30.0" text="CINE ABC" textFill="#d9d9d9">
+                <Label layoutX="100.0" layoutY="30.0" text="CINE ABC" textFill="#d9d9d9">
                     <font>
                         <Font size="20.0" />
                     </font>
@@ -24,7 +24,7 @@
             <font>
                 <Font size="20.0" />
             </font></Button>
-        <Button layoutX="50.0" layoutY="604.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltartipoingresso" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
+        <Button layoutX="100.0" layoutY="604.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltartipoingresso" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -32,7 +32,7 @@
                     </image>
                 </ImageView>
             </graphic></Button>
-        <Pane layoutX="50.0" layoutY="145.0" prefHeight="172.0" prefWidth="202.0" style="-fx-background-color: #d9d9d9;">
+        <Pane layoutX="100.0" layoutY="145.0" prefHeight="172.0" prefWidth="202.0" style="-fx-background-color: #d9d9d9;">
             <children>
             <Label fx:id="meiainteiralabel" layoutX="24.0" layoutY="137.0" prefHeight="0.0" prefWidth="18.0" />
                 <Label layoutX="14.0" layoutY="14.0" text="Nome" textFill="#1a2232">
