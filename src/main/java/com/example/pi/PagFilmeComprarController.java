@@ -12,6 +12,19 @@ import java.util.List;
 public class PagFilmeComprarController {
     @FXML
     Label nomeFilmeComprarLabel;
+    @FXML
+    private Label nomeFilmeComprar;
+
+    public void setAtualiza_dados(String text) {
+
+        nomeFilmeComprar.setText(text);
+        //img_ta_select_cadeira.setGraphic();
+    }
+
+
+    @FXML
+    private Button img_ta_select_cadeira;
+
 
     public void mostrarNome (String filme){
         nomeFilmeComprar.setText(filme);
@@ -195,8 +208,7 @@ public class PagFilmeComprarController {
     @FXML
     private Button G8;
 
-    @FXML
-    private Label nomeFilmeComprar;
+
     private int contadorPoltronas = 0; // Variável para contar as poltronas selecionadas
 
     private List<String> cadeirasVerdes = new ArrayList<>(); // Lista para armazenar os IDs das cadeiras verdes
