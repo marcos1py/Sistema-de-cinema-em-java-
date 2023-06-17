@@ -580,9 +580,6 @@ public class PagFilmeComprarController {
             int totalMeias = Integer.parseInt(total_de_meias.getText());
             Repositorio.lerValores();
             msg_de_erro.setOpacity(0);
-            System.out.println("ssssssssssssssssssssssss");
-            System.out.println(contadorPoltronas);
-            System.out.println(totalMeias);
             if (totalMeias > contadorPoltronas){
                 System.out.println("tem mais meias doq ingresso");
                 msg_erro2.setOpacity(1);
