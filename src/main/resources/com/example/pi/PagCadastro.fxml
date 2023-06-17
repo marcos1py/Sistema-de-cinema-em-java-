@@ -97,7 +97,10 @@
       <TextField fx:id="valorDaMeiaCadastro" layoutX="232.0" layoutY="535.25" />
       <Button fx:id="btnOpenFile" layoutX="567.0" layoutY="351.0" mnemonicParsing="false" onAction="#img_do_filme" text="imagem" />
       <Button fx:id="img_do_filme_tela_de_cadastro" layoutX="567.0" layoutY="115.25" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
-      <Label layoutX="777.0" layoutY="372.0" text="VOCE ESCREVEL ALGO ERRADO!!!!" textAlignment="CENTER" textFill="RED" underline="true" />
-      <Label layoutX="777.0" layoutY="347.0" text="A SALA NESSE HORARIO JA ESTA UTILIZADA" textAlignment="CENTER" textFill="RED" underline="true" />
+      <Label layoutX="777.0" layoutY="372.0" opacity="0.0" text="VOCE ESCREVEL ALGO ERRADO!!!!" textAlignment="CENTER" textFill="RED" underline="true" />
+      <Label layoutX="649.0" layoutY="410.0" text="So vai salvar mais de um filme se escolher horaios diferentes" textAlignment="CENTER" textFill="RED" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
     </children>
 </Pane>
