@@ -7,11 +7,16 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
+import javafx.util.converter.IntegerStringConverter;
 
 import java.util.List;
+
+
 
 public class PagFilmeComprarController {
     @FXML
@@ -239,10 +244,14 @@ public class PagFilmeComprarController {
     @FXML
     private Button G8;
 
+    @FXML
+    private Label totalSelecionado;
+
 
     private int contadorPoltronas = 0; // Variável para contar as poltronas selecionadas
 
     private List<String> cadeirasVerdes = new ArrayList<>(); // Lista para armazenar os IDs das cadeiras verdes
+
 
     @FXML
     void handleButtonClick(Button button) {
@@ -252,12 +261,16 @@ public class PagFilmeComprarController {
         if (currentColor.equals(Color.GREEN)) {
             button.setStyle("-fx-background-color: white;");
             contadorPoltronas--;
+            totalSelecionado.setText(Integer.toString(contadorPoltronas));
             cadeirasVerdes.remove(cadeiraID);
         } else {
             button.setStyle("-fx-background-color: green;");
             contadorPoltronas++;
+            totalSelecionado.setText(Integer.toString(contadorPoltronas));
             cadeirasVerdes.add(cadeiraID);
         }
+
+        Repositorio.salvarValores(contadorPoltronas, cadeirasVerdes);
 
         System.out.println("Contagem de poltronas: " + contadorPoltronas);
         System.out.println("Cadeiras verdes: " + cadeirasVerdes);
@@ -555,12 +568,105 @@ public class PagFilmeComprarController {
 
 
     @FXML
+    private Label msg_de_erro;
+
+    @FXML
+    private Label msg_erro2;
+    @FXML
     void btprosseguircomrpra(ActionEvent event) {
-        Main.mudarTela("tipoingresso");
+        msg_de_erro.setOpacity(0);
+        msg_erro2.setOpacity(0);
+        try {
+            int totalMeias = Integer.parseInt(total_de_meias.getText());
+            Repositorio.lerValores();
+            msg_de_erro.setOpacity(0);
+            System.out.println("ssssssssssssssssssssssss");
+            System.out.println(contadorPoltronas);
+            System.out.println(totalMeias);
+            if (totalMeias > contadorPoltronas){
+                System.out.println("tem mais meias doq ingresso");
+                msg_erro2.setOpacity(1);
+            }else {
+                msg_de_erro.setOpacity(0);
+                msg_erro2.setOpacity(0);
+                Main.mudarTela("tipoingresso");
+            }
+        } catch (NumberFormatException e) {
+            msg_de_erro.setOpacity(1);
+            System.out.println("Erro ao converter o valor das meias para um número inteiro.");
+        }
     }
 
     @FXML
     void btvoltarcompra(ActionEvent event) {
+        cadeirasVerdes = new ArrayList<>();
+        contadorPoltronas = 0;
+        Repositorio.resetarValores();
+        totalSelecionado.setText(Integer.toString(contadorPoltronas));
+            // Defina a cor branca para todas as poltronas
+        A1.setStyle("-fx-background-color: white;");
+        A2.setStyle("-fx-background-color: white;");
+        A3.setStyle("-fx-background-color: white;");
+        A4.setStyle("-fx-background-color: white;");
+        A5.setStyle("-fx-background-color: white;");
+        A6.setStyle("-fx-background-color: white;");
+        A7.setStyle("-fx-background-color: white;");
+        A8.setStyle("-fx-background-color: white;");
+        B1.setStyle("-fx-background-color: white;");
+        B2.setStyle("-fx-background-color: white;");
+        B3.setStyle("-fx-background-color: white;");
+        B4.setStyle("-fx-background-color: white;");
+        B5.setStyle("-fx-background-color: white;");
+        B6.setStyle("-fx-background-color: white;");
+        B7.setStyle("-fx-background-color: white;");
+        B8.setStyle("-fx-background-color: white;");
+        C1.setStyle("-fx-background-color: white;");
+        C2.setStyle("-fx-background-color: white;");
+        C3.setStyle("-fx-background-color: white;");
+        C4.setStyle("-fx-background-color: white;");
+        C5.setStyle("-fx-background-color: white;");
+        C6.setStyle("-fx-background-color: white;");
+        C7.setStyle("-fx-background-color: white;");
+        C8.setStyle("-fx-background-color: white;");
+        D1.setStyle("-fx-background-color: white;");
+        D2.setStyle("-fx-background-color: white;");
+        D3.setStyle("-fx-background-color: white;");
+        D4.setStyle("-fx-background-color: white;");
+        D5.setStyle("-fx-background-color: white;");
+        D6.setStyle("-fx-background-color: white;");
+        D7.setStyle("-fx-background-color: white;");
+        D8.setStyle("-fx-background-color: white;");
+        E1.setStyle("-fx-background-color: white;");
+        E2.setStyle("-fx-background-color: white;");
+        E3.setStyle("-fx-background-color: white;");
+        E4.setStyle("-fx-background-color: white;");
+        E5.setStyle("-fx-background-color: white;");
+        E6.setStyle("-fx-background-color: white;");
+        E7.setStyle("-fx-background-color: white;");
+        E8.setStyle("-fx-background-color: white;");
+        F1.setStyle("-fx-background-color: white;");
+        F2.setStyle("-fx-background-color: white;");
+        F3.setStyle("-fx-background-color: white;");
+        F4.setStyle("-fx-background-color: white;");
+        F5.setStyle("-fx-background-color: white;");
+        F6.setStyle("-fx-background-color: white;");
+        F7.setStyle("-fx-background-color: white;");
+        F8.setStyle("-fx-background-color: white;");
+        G1.setStyle("-fx-background-color: white;");
+        G2.setStyle("-fx-background-color: white;");
+        G3.setStyle("-fx-background-color: white;");
+        G4.setStyle("-fx-background-color: white;");
+        G5.setStyle("-fx-background-color: white;");
+        G6.setStyle("-fx-background-color: white;");
+        G7.setStyle("-fx-background-color: white;");
+        G8.setStyle("-fx-background-color: white;");
+
         Main.mudarTela("usuariofilme");
     }
+    @FXML
+    private TextField total_de_meias;
+
+
+    // Resto do seu código...
 }
+
