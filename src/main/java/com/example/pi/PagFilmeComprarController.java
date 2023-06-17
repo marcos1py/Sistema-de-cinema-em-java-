@@ -40,6 +40,19 @@ public class PagFilmeComprarController {
             data_do_filme.setText("A data do filme não está disponível.");
         }
     }
+
+    public void setAtualizar_Horas(String horario){
+        if (horario != null) {
+            horario_filme_comprar.setText(horario);
+        } else {
+            horario_filme_comprar.setText("Filme não encontrado");
+        }
+    }
+
+    @FXML
+    private Label horario_filme_comprar;
+
+
     @FXML
     private Label data_do_filme;
 

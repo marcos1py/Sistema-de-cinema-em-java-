@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pi.PagFilmeComprarController">
+<Pane fx:id="hora" style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pi.PagFilmeComprarController">
     <children>
         <Pane prefHeight="90.0" prefWidth="1920.0" style="-fx-background-color: #1A2232;">
             <children>
@@ -26,7 +26,7 @@
                 <Font name="System Bold" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="274.0" layoutY="267.0" text="Horários" textFill="#d9d9d9">
+        <Label fx:id="horario_filme_comprar" layoutX="382.0" layoutY="266.0" text="Horário" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
@@ -36,24 +36,6 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="483.0" layoutY="269.0" text="00:00" textFill="#d9d9d9">
-            <font>
-                <Font size="15.0" />
-            </font>
-        </Label>
-        <Button layoutX="380.0" layoutY="266.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="49.0" style="-fx-border-color: #00FFFF; -fx-background-color: 0;" />
-        <Label layoutX="385.0" layoutY="269.0" text="00:00" textFill="#d9d9d9">
-            <font>
-                <Font size="15.0" />
-            </font>
-        </Label>
-        <Button layoutX="427.0" layoutY="266.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="49.0" style="-fx-border-color: #00FFFF; -fx-background-color: 0;" />
-        <Label layoutX="434.0" layoutY="269.0" text="00:00" textFill="#d9d9d9">
-            <font>
-                <Font size="15.0" />
-            </font>
-        </Label>
-        <Button layoutX="476.0" layoutY="266.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="49.0" style="-fx-border-color: #00FFFF; -fx-background-color: 0;" />
         <Label layoutX="274.0" layoutY="331.0" text="Descrição:" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
@@ -226,6 +208,16 @@
          </font>
       </Label>
       <Label alignment="CENTER" layoutX="1030.0" layoutY="404.0" prefHeight="24.0" prefWidth="24.0" text="G" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="266.0" text="Horário" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="217.0" text="Data" textFill="#d9d9d9">
          <font>
             <Font size="15.0" />
          </font>

@@ -90,5 +90,14 @@ public class FilmeRepository {
         }
         return null; // Retorne null se o índice estiver fora dos limites ou se o filme não existir.
     }
+    public static String getHorarioDoFilme(int index) {
+        if (index >= 0 && index < filmes.length) {
+            Filme filme = filmes[index];
+            if (filme != null) {
+                return filme.getHorario();
+            }
+        }
+        return null; // Retorne null se o índice estiver fora dos limites ou se o filme não existir.
+    }
 
 }

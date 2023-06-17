@@ -97,6 +97,9 @@ public class PagUsuarioFilmeController {
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
 
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -116,6 +119,9 @@ public class PagUsuarioFilmeController {
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
 
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -134,6 +140,10 @@ public class PagUsuarioFilmeController {
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
+
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -154,6 +164,9 @@ public class PagUsuarioFilmeController {
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
 
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -171,6 +184,9 @@ public class PagUsuarioFilmeController {
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
 
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -186,6 +202,9 @@ public class PagUsuarioFilmeController {
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
+
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
         Main.mudarTela("filmecomprar");
     }
@@ -206,6 +225,9 @@ public class PagUsuarioFilmeController {
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
 
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -222,6 +244,9 @@ public class PagUsuarioFilmeController {
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
+
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
         Main.mudarTela("filmecomprar");
     }
@@ -240,6 +265,9 @@ public class PagUsuarioFilmeController {
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
 
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -256,6 +284,9 @@ public class PagUsuarioFilmeController {
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
+
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
         Main.mudarTela("filmecomprar");
     }
@@ -274,6 +305,9 @@ public class PagUsuarioFilmeController {
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
 
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -290,6 +324,9 @@ public class PagUsuarioFilmeController {
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
+
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
         Main.mudarTela("filmecomprar");
     }
@@ -308,6 +345,9 @@ public class PagUsuarioFilmeController {
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
 
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -324,6 +364,9 @@ public class PagUsuarioFilmeController {
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
+
+        String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
+        filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
         Main.mudarTela("filmecomprar");
     }
