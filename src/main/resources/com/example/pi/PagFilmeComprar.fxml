@@ -26,17 +26,12 @@
                 <Font name="System Bold" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="274.0" layoutY="218.0" text="Dia" textFill="#d9d9d9">
-            <font>
-                <Font size="15.0" />
-            </font>
-        </Label>
         <Label layoutX="274.0" layoutY="267.0" text="Horários" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="387.0" layoutY="218.0" text="00/00" textFill="#d9d9d9">
+        <Label fx:id="data_do_filme" layoutX="387.0" layoutY="218.0" text="00/00" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>

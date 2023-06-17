@@ -1,10 +1,14 @@
 package com.example.pi;
+import java.time.LocalDate;
 import java.util.ArrayList;
-
+import java.io.FileReader;
+import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 
 import java.util.List;
@@ -18,17 +22,31 @@ public class PagFilmeComprarController {
     public void setAtualiza_dados(String text) {
 
         nomeFilmeComprar.setText(text);
-        //img_ta_select_cadeira.setGraphic();
+
     }
 
+    public void setAtualizar_Img(String caminho) {
+        Image imagem = new Image(caminho);
+        ImageView imageView = new ImageView(imagem);
+        imageView.setFitWidth(144); // Defina a largura desejada da imagem
+        imageView.setFitHeight(216); // Defina a altura desejada da imagem
+        img_ta_select_cadeira.setGraphic(imageView);
+    }
+
+    public void setAtualizar_Data(LocalDate data) {
+        if (data != null) {
+            data_do_filme.setText(data.toString());
+        } else {
+            data_do_filme.setText("A data do filme não está disponível.");
+        }
+    }
+    @FXML
+    private Label data_do_filme;
 
     @FXML
     private Button img_ta_select_cadeira;
 
 
-    public void mostrarNome (String filme){
-        nomeFilmeComprar.setText(filme);
-    }
 
     private static PagFilmeComprarController instance;
 

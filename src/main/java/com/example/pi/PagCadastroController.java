@@ -18,10 +18,16 @@ import javafx.stage.Stage;
 import javafx.stage.FileChooser.ExtensionFilter;
 
 import java.io.File;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class PagCadastroController {
+    private Map<Integer, String> caminhosImagens = new HashMap<>();
     private PagUsuarioFilmeController usuarioFilmeController;
     private int indiceBotao = 1;
 
@@ -126,9 +132,7 @@ public class PagCadastroController {
         String idadeMinima = "10";
         System.out.println("-------------------------------------------------------");
 
-        Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima);
-        FilmeRepository.adicionarFilme(filme);
-        FilmeRepository.exibirFilmes();
+
 
         // add a img
         System.out.println("Caminho da imagem: " + caminhoImagem);
@@ -137,12 +141,31 @@ public class PagCadastroController {
         imageView.setFitWidth(144);
         imageView.setFitHeight(216);
 
-        usuarioFilmeController.atualizarImagemBotao(indiceBotao, imageView);
 
-        // Incrementar o índice para o próximo botão
-        indiceBotao++;
+
+        caminhosImagens.put(indiceBotao, caminhoImagem);
+
+        Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima,caminhoImagem);
+
+        FilmeRepository.exibirFilmes();
+
+        Boolean verifica_se_da_para_colocar_filme = FilmeRepository.adicionarFilme(filme);
+
+        if (verifica_se_da_para_colocar_filme) {
+            imageView.setFitWidth(144);
+            imageView.setFitHeight(216);
+            usuarioFilmeController.atualizarImagemBotao(indiceBotao, imageView);
+            System.out.println("indiceBotao_'''''''''''''''''''''''''''''''''''''''''''''''"+indiceBotao);
+            indiceBotao++;
+        }
+
     }
 
+
+    public void salvarCaminhoImagem(int indiceBotao, String caminhoImagem) {
+        // Salvar o valor de caminhoImagem no mapa
+        caminhosImagens.put(indiceBotao, caminhoImagem);
+    }
     @FXML
     void btvoltarcadastro(ActionEvent event) {
         Main.mudarTela("usuariofilme");
