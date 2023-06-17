@@ -23,12 +23,13 @@ public class Main extends Application {
     private PagUsuarioFilmeController usuarioFilmeController;
     private PagFilmeComprarController filmeComprarController;
 
+    private PagTipoIngressoController tipoIngressoController;
     @Override
     public void start(Stage primaryStage) throws IOException {
         stage = primaryStage;
 
         Parent fxmlLogin = FXMLLoader.load(getClass().getResource("TelaLogin.fxml"));
-        telaLogin = new Scene(fxmlLogin, 1200, 600);
+        telaLogin = new Scene(fxmlLogin, 1400, 800);
 
         FXMLLoader loaderUsuarioFilme = new FXMLLoader(getClass().getResource("PagUsuarioFilme.fxml"));
         Parent fxmlPagUsuarioFilme = loaderUsuarioFilme.load();
@@ -39,24 +40,23 @@ public class Main extends Application {
         filmeComprarController = loaderFilmeComprar.getController();
         usuarioFilmeController.setFilmeComprarController(filmeComprarController);
 
-        pagUsuarioFilme = new Scene(fxmlPagUsuarioFilme, 1200, 600);
-        pagFilmeComprar = new Scene(fxmlPagFilmeComprar, 1200, 600);
+        pagUsuarioFilme = new Scene(fxmlPagUsuarioFilme, 1400, 800);
+        pagFilmeComprar = new Scene(fxmlPagFilmeComprar, 1400, 800);
 
         Parent fxmlPagTipoIngresso = FXMLLoader.load(getClass().getResource("PagTipoIngresso.fxml"));
-        pagTipoIngresso = new Scene(fxmlPagTipoIngresso, 1200, 600);
-
+        pagTipoIngresso = new Scene(fxmlPagTipoIngresso, 1400, 800);
         Parent fxmlPagTipoPagamento = FXMLLoader.load(getClass().getResource("PagTipoPagamento.fxml"));
-        pagTipoPagamento = new Scene(fxmlPagTipoPagamento, 1200, 600);
+        pagTipoPagamento = new Scene(fxmlPagTipoPagamento, 1400, 800);
 
         FXMLLoader loaderPagCadastro = new FXMLLoader(getClass().getResource("PagCadastro.fxml"));
         Parent fxmlPagCadastro = loaderPagCadastro.load();
 
         PagCadastroController cadastroController = loaderPagCadastro.getController();
         cadastroController.setUsuarioFilmeController(usuarioFilmeController);
-        pagCadastro = new Scene(fxmlPagCadastro, 1200, 600);
+        pagCadastro = new Scene(fxmlPagCadastro, 1400, 800);
 
         Parent fxmlPagEstatisticas = FXMLLoader.load(getClass().getResource("PagEstatisticas.fxml"));
-        pagEstatisticas = new Scene(fxmlPagEstatisticas, 1200, 600);
+        pagEstatisticas = new Scene(fxmlPagEstatisticas, 1400, 800);
 
         primaryStage.setScene(pagCadastro);
         primaryStage.show();

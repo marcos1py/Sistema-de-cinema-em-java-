@@ -100,7 +100,11 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus2(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(1);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
+
+
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(1);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -110,7 +114,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus3(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(2);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(2);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -120,7 +126,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus4(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(3);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(3);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -130,7 +138,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus5(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(4);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(4);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -140,8 +150,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus6(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(5);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
-
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
         String atualiza_Nome = FilmeRepository.nome_do_filme(5);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
         Main.mudarTela("filmecomprar");
@@ -150,7 +161,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus7(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(6);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(6);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -160,7 +173,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus8(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(7);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(7);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -170,7 +185,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus9(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(8);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(8);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -180,7 +197,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus10(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(9);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(9);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -190,7 +209,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus11(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(10);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(10);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -200,7 +221,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus12(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(11);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(11);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -210,7 +233,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus13(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(12);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(12);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
@@ -220,7 +245,9 @@ public class PagUsuarioFilmeController {
     @FXML
     void btus14(ActionEvent event) {
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(13);
-        filmeComprarController.setAtualizar_Img(caminhoImagem);
+        if (caminhoImagem != null){
+            filmeComprarController.setAtualizar_Img(caminhoImagem);
+        }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(13);
         filmeComprarController.setAtualiza_dados(atualiza_Nome);
