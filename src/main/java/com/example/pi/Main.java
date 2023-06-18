@@ -45,8 +45,7 @@ public class Main extends Application {
 
         Parent fxmlPagTipoIngresso = FXMLLoader.load(getClass().getResource("PagTipoIngresso.fxml"));
         pagTipoIngresso = new Scene(fxmlPagTipoIngresso, 1400, 800);
-        Parent fxmlPagTipoPagamento = FXMLLoader.load(getClass().getResource("PagTipoPagamento.fxml"));
-        pagTipoPagamento = new Scene(fxmlPagTipoPagamento, 1400, 800);
+
 
         FXMLLoader loaderPagCadastro = new FXMLLoader(getClass().getResource("PagCadastro.fxml"));
         Parent fxmlPagCadastro = loaderPagCadastro.load();
@@ -79,12 +78,6 @@ public class Main extends Application {
                 break;
             case "tipoingresso":
                 stage.setScene(pagTipoIngresso);
-                break;
-            case "pagamento":
-                stage.setScene(pagTipoPagamento);
-                break;
-            case "pagamentopainel":
-                stage.setScene(pagTipoPagamentoPainel);
                 break;
             case "cadastro":
                 stage.setScene(pagCadastro);
