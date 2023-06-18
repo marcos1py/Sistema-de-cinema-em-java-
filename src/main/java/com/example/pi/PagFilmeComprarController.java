@@ -1,10 +1,13 @@
 package com.example.pi;
+import java.io.BufferedReader;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.io.FileReader;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -19,6 +22,17 @@ import java.util.List;
 
 
 public class PagFilmeComprarController {
+    private Scene scene;
+
+    // Method to set the scene
+    public void setScene(Scene scene) {
+        this.scene = scene;
+    }
+    private Main main;
+
+    public void setMain(Main main) {
+        this.main = main;
+    }
     @FXML
     Label nomeFilmeComprarLabel;
     @FXML
@@ -600,19 +614,21 @@ public class PagFilmeComprarController {
     @FXML
     private Label msg_erro2;
     @FXML
-    void btprosseguircomrpra(ActionEvent event) {
+    void btprosseguircompra(ActionEvent event) {
         msg_de_erro.setOpacity(0);
         msg_erro2.setOpacity(0);
         try {
             int totalMeias = Integer.parseInt(total_de_meias.getText());
-            Repositorio.lerValores();
-            msg_de_erro.setOpacity(0);
-            if (totalMeias > contadorPoltronas){
-                System.out.println("tem mais meias doq ingresso");
+
+            if (totalMeias > contadorPoltronas) {
+                System.out.println("Tem mais meias do que ingressos.");
                 msg_erro2.setOpacity(1);
-            }else {
+            } else {
                 msg_de_erro.setOpacity(0);
                 msg_erro2.setOpacity(0);
+                Repositorio.lerValores(); // salvar no arquivo poltronas
+                //marcarCadeirasVermelhas(); ta dano erro
+                //desabilitarCadeiras(); ta dano erro
                 Main.mudarTela("tipoingresso");
             }
         } catch (NumberFormatException e) {
@@ -620,6 +636,37 @@ public class PagFilmeComprarController {
             System.out.println("Erro ao converter o valor das meias para um número inteiro.");
         }
     }
+
+
+    public void marcarCadeirasVermelhas() {
+        try (BufferedReader reader = new BufferedReader(new FileReader("poltronas.txt"))) {
+            String linha = reader.readLine();
+            String[] poltronas = linha.substring(1, linha.length() - 1).split(",");
+
+            for (String poltrona : poltronas) {
+                System.out.println("teste");
+                System.out.println(poltrona);
+                Node node = scene.lookup("#" + poltrona.trim());
+                if (node instanceof Button) {
+                    Button button = (Button) node;
+                    button.setStyle("-fx-background-color: red;");
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao ler as poltronas: " + e.getMessage());
+        }
+    }
+
+    private void desabilitarCadeiras() {
+        List<Node> nodes = new ArrayList<>(scene.getRoot().lookupAll(".button"));
+        for (Node node : nodes) {
+            Button button = (Button) node;
+            if (button.getStyle().contains("-fx-background-color: red;")) {
+                button.setDisable(true);
+            }
+        }
+    }
+
 
     @FXML
     void btvoltarcompra(ActionEvent event) {
