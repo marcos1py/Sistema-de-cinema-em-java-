@@ -46,24 +46,10 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="483.0" layoutY="269.0" text="00:00" textFill="#d9d9d9">
-            <font>
-                <Font size="15.0" />
-            </font>
-        </Label>
-        <Button layoutX="380.0" layoutY="266.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="49.0" style="-fx-border-color: #00FFFF; -fx-background-color: 0;" />
-        <Label layoutX="385.0" layoutY="269.0" text="00:00" textFill="#d9d9d9">
-            <font>
-                <Font size="15.0" />
-            </font>
-        </Label>
-        <Button layoutX="427.0" layoutY="266.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="49.0" style="-fx-border-color: #00FFFF; -fx-background-color: 0;" />
-        <Label layoutX="434.0" layoutY="269.0" text="00:00" textFill="#d9d9d9">
-            <font>
-                <Font size="15.0" />
-            </font>
-        </Label>
-        <Button layoutX="476.0" layoutY="266.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="49.0" style="-fx-border-color: #00FFFF; -fx-background-color: 0;" />
+        <Button fx:id="horario1" layoutX="377.0" layoutY="261.0" mnemonicParsing="false" onAction="#horario1" prefHeight="33.0" prefWidth="61.0" style="-fx-border-color: #00FFFF; -fx-background-color: 0;" text="00:00" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
         <Label layoutX="274.0" layoutY="331.0" text="Descrição:" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
@@ -240,5 +226,15 @@
             <Font size="15.0" />
          </font>
       </Label>
+      <Button fx:id="horario2" layoutX="438.0" layoutY="261.0" mnemonicParsing="false" onAction="#horario2" prefHeight="33.0" prefWidth="61.0" style="-fx-border-color: #00FFFF; -fx-background-color: 0;" text="00:00" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="horario3" layoutX="499.0" layoutY="261.0" mnemonicParsing="false" onAction="#horario3" prefHeight="33.0" prefWidth="61.0" style="-fx-border-color: #00FFFF; -fx-background-color: 0;" text="00:00" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
     </children>
 </Pane>
