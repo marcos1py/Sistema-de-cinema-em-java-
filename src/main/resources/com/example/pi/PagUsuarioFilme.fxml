@@ -80,10 +80,5 @@
             <font>
                 <Font size="20.0" />
             </font></Button>
-      <Label fx:id="foda" layoutX="242.0" layoutY="107.0" text="tem q mudar" textFill="#d9d9d9">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Label>
     </children>
 </Pane>

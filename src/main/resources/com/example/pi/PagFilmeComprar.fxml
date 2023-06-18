@@ -254,5 +254,35 @@
             <Font size="15.0" />
          </font>
       </Label>
+      <Button layoutX="1382.0" layoutY="387.0" mnemonicParsing="false" onAction="#btpix" style="-fx-background-color: #00FFFF;" text="Pix" textFill="#1a2232">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1293.0" layoutY="387.0" mnemonicParsing="false" onAction="#btdinheiro" style="-fx-background-color: #00FFFF;" text="Dinheiro" textFill="#1a2232">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1212.0" layoutY="387.0" mnemonicParsing="false" onAction="#btcredito" style="-fx-background-color: #00FFFF;" text="Crédito" textFill="#1a2232">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1135.0" layoutY="387.0" mnemonicParsing="false" onAction="#btdebito" style="-fx-background-color: #00FFFF;" text="Débito" textFill="#1a2232">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="1137.0" layoutY="350.0" text="Valor a ser pago R$:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelcomprar" layoutX="1207.0" layoutY="452.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
     </children>
 </Pane>

@@ -64,7 +64,25 @@ public class PagFilmeComprarController {
     @FXML
     private Button img_ta_select_cadeira;
 
+    @FXML
+    private Label labelcomprar;
 
+    @FXML
+    public void btpix(ActionEvent event){
+        labelcomprar.setText("Por favor, escaneie o Qrcode a seguir:");
+    }
+    @FXML
+    public void btdebito(ActionEvent event){
+        labelcomprar.setText("Por favor, insira ou aproxime o cartão de débito:");
+    }
+    @FXML
+    public void btcredito(ActionEvent event){
+        labelcomprar.setText("Por favor, insira ou aproxime o cartão de crédito:");
+    }
+    @FXML
+    public void btdinheiro(ActionEvent event){
+        labelcomprar.setText("Por favor, entregue o dinheiro ao caixa:");
+    }
 
     private static PagFilmeComprarController instance;
 
