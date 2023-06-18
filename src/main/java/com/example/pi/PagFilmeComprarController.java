@@ -271,6 +271,7 @@ public class PagFilmeComprarController {
     private List<String> cadeirasVerdes = new ArrayList<>(); // Lista para armazenar os IDs das cadeiras verdes
 
 
+
     @FXML
     void handleButtonClick(Button button) {
         Color currentColor = (Color) button.getBackground().getFills().get(0).getFill();
@@ -337,6 +338,7 @@ public class PagFilmeComprarController {
     // Evento de clique para o botão A7
     @FXML
     void A7(ActionEvent event) {
+
         handleButtonClick(A7);
     }
 
@@ -536,6 +538,7 @@ public class PagFilmeComprarController {
 
     @FXML
     void F7(ActionEvent event) {
+
         handleButtonClick(F7);
     }
 
@@ -614,11 +617,12 @@ public class PagFilmeComprarController {
 
     @FXML
     void btvoltarcompra(ActionEvent event) {
+        Repositorio.resetarValores();
         cadeirasVerdes = new ArrayList<>();
         contadorPoltronas = 0;
-        Repositorio.resetarValores();
+
         totalSelecionado.setText(Integer.toString(contadorPoltronas));
-            // Defina a cor branca para todas as poltronas
+        // Defina a cor branca para todas as poltronas
         A1.setStyle("-fx-background-color: white;");
         A2.setStyle("-fx-background-color: white;");
         A3.setStyle("-fx-background-color: white;");
