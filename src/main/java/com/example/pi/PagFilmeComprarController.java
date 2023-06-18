@@ -196,18 +196,8 @@ public class PagFilmeComprarController {
     private Button G8;
 
     @FXML
-    private Button horario1;
-
-    @FXML
-    private Button horario2;
-
-    @FXML
-    private Button horario3;
-
-    @FXML
     private Label nomeFilmeComprar;
     private int contadorPoltronas = 0; // Variável para contar as poltronas selecionadas
-    public static String horaEscolhida = "";
 
     private List<String> cadeirasVerdes = new ArrayList<>(); // Lista para armazenar os IDs das cadeiras verdes
 
@@ -526,38 +516,5 @@ public class PagFilmeComprarController {
     @FXML
     void btvoltarcompra(ActionEvent event) {
         Main.mudarTela("usuariofilme");
-    }
-
-
-    @FXML
-    void horario1(ActionEvent event) {
-        horario1.setStyle("-fx-text-fill:  #1A2232; -fx-background-color:  #00FFFF");
-
-        horario2.setStyle("-fx-border-color:  #00FFFF; -fx-background-color:  0");
-        horario3.setStyle("-fx-border-color:  #00FFFF; -fx-background-color:  0");
-
-        horaEscolhida = String.valueOf(horario1);
-    }
-
-    @FXML
-    void horario2(ActionEvent event) {
-        horario2.setStyle("-fx-text-fill:  #1A2232; -fx-background-color:  #00FFFF");
-
-        horario1.setStyle("-fx-border-color:  #00FFFF; -fx-background-color:  0");
-        horario3.setStyle("-fx-border-color:  #00FFFF; -fx-background-color:  0");
-
-        horaEscolhida = String.valueOf(horario2);
-
-    }
-
-    @FXML
-    void horario3(ActionEvent event) {
-        horario3.setStyle("-fx-text-fill:  #1A2232; -fx-background-color:  #00FFFF");
-
-        horario1.setStyle("-fx-border-color:  #00FFFF; -fx-background-color:  0");
-        horario2.setStyle("-fx-border-color:  #00FFFF; -fx-background-color:  0");
-
-        horaEscolhida = String.valueOf(horario3);
-
     }
 }

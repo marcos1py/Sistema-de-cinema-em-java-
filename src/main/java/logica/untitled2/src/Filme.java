@@ -13,8 +13,9 @@ public class Filme {
     private String sala;
     private String horario;
     private String idadeMinima;
+    private String caminho_da_img;
 
-    public Filme(String nome, String categoria, String duracao, String sinopse, String valorInteira, String valorMeia, LocalDate data, String sala, String horario, String idadeMinima) {
+    public Filme(String nome, String categoria, String duracao, String sinopse, String valorInteira, String valorMeia, LocalDate data, String sala, String horario, String idadeMinima, String caminho_da_img) {
         this.nome = nome;
         this.categoria = categoria;
         this.duracao = duracao;
@@ -25,6 +26,7 @@ public class Filme {
         this.sala = sala;
         this.horario = horario;
         this.idadeMinima = idadeMinima;
+        this.caminho_da_img = caminho_da_img;
     }
 
     public String getNome() {
@@ -66,7 +68,11 @@ public class Filme {
     public String getHorario() {
         return horario;
     }
+    public String getCaminho_da_img() {
+        return caminho_da_img;
+    }
 
+//sa
     @Override
     public String toString() {
         return "Nome: " + nome + " | Categoria: " + categoria + " | Duração: " + duracao + " | Sinopse: " + sinopse + " | Valor Meia: " + valorMeia;

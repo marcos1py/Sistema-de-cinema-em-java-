@@ -10,21 +10,34 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class PagTipoIngressoController implements Initializable {
+public class PagTipoIngressoController  {
     boolean vef = false;
     @FXML
     private Label avisotipoingressolabel;
 
+    @FXML
+    private Label cadeirasingresso;
+
+    @FXML
+    private Label dataingresso;
+
+    @FXML
+    private Label horarioingresso;
+
+    @FXML
+    private Label nomeingresso;
+
+    @FXML
+    private Label salaingresso;
+
+    @FXML
+    private Label valoringresso;
 
     @FXML
     private Label meiainteiralabel;
 
 
-    @FXML
-    private ChoiceBox<String> tipoingressochoicebox;
 
-
-    private String[] tiposIngresso = {"Inteira", "Meia"};
 
 
     @FXML
@@ -33,26 +46,13 @@ public class PagTipoIngressoController implements Initializable {
     }
 
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        tipoingressochoicebox.getItems().addAll(tiposIngresso);
-        tipoingressochoicebox.setOnAction(this::pegarTipo);
-    }
-    public void pegarTipo(ActionEvent event){
-        String meiaouinteira1 = tipoingressochoicebox.getValue();
-        meiainteiralabel.setText(meiaouinteira1);
-        vef = true;
-    }
+
 
 
     @FXML
     void btprosseguirtipoingresso(ActionEvent event) {
-        if (vef == true){
-            Main.mudarTela("pagamento");
-        }
-        else{
-            avisotipoingressolabel.setText("Por favor, escolha o tipo de Ingresso");
-        }
+
+            Main.mudarTela("usuariofilme");
 
 
     }}

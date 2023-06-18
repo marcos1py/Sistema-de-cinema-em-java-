@@ -1,10 +1,13 @@
 package com.example.pi;
-
-import logica.untitled2.src.Filme;
 import logica.untitled2.src.logicaAddEDeletFilme;
 
-import javafx.scene.image.Image;
+import logica.untitled2.src.Filme;
+
+
+
+import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
+import javafx.scene.image.Image;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,11 +21,15 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class PagCadastroController {
-
-    private Filme[] filmes = new Filme[10];
+    private Map<Integer, String> caminhosImagens = new HashMap<>();
     private PagUsuarioFilmeController usuarioFilmeController;
+    private int indiceBotao = 1;
 
     @FXML
     private Button btnOpenFile;
@@ -72,6 +79,8 @@ public class PagCadastroController {
     @FXML
     private Button img_do_filme_tela_de_cadastro;
 
+    private String caminhoImagem;
+
     @FXML
     void img_do_filme(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
@@ -84,7 +93,7 @@ public class PagCadastroController {
         File selectedFile = fileChooser.showOpenDialog(stage);
 
         if (selectedFile != null) {
-            String caminhoImagem = selectedFile.getAbsolutePath();
+            caminhoImagem = selectedFile.getAbsolutePath();
             System.out.println("Caminho da imagem: " + caminhoImagem);
 
             // Criar uma nova imagem com base no caminho do arquivo selecionado
@@ -94,13 +103,11 @@ public class PagCadastroController {
             imageView.setFitWidth(144);
             imageView.setFitHeight(216);
             img_do_filme_tela_de_cadastro.setGraphic(imageView);
-
-
         }
     }
 
     @FXML
-    public void btsalvar(ActionEvent event) throws IOException {
+    void btsalvar(ActionEvent event) {
         String sinopse = SinopseCadastro.getText();
         LocalDate data = datepicker.getValue();
         String duracao = duraçaoDoFilmeCadastro.getText();
@@ -114,7 +121,7 @@ public class PagCadastroController {
         // Faça o que for necessário com as variáveis obtidas
         System.out.println("-------------------------------------------------------");
         System.out.println("Nome do Filme: " + nomeFilme);
-        System.out.println("categoria do Filme: " + genero);
+        System.out.println("Categoria do Filme: " + genero);
         System.out.println("Duração do Filme: " + duracao);
         System.out.println("Sinopse: " + sinopse);
         System.out.println("Valor da Inteira: " + valorInteira);
@@ -124,12 +131,41 @@ public class PagCadastroController {
         System.out.println("Horário: " + horario);
         String idadeMinima = "10";
         System.out.println("-------------------------------------------------------");
-        Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima);
 
-        logicaAddEDeletFilme.adicionarFilme(filmes, filme);
-        logicaAddEDeletFilme.exibirFilmes(filmes);
+
+
+        // add a img
+        System.out.println("Caminho da imagem: " + caminhoImagem);
+        Image novaImagem = new Image("file:" + caminhoImagem);
+        ImageView imageView = new ImageView(novaImagem);
+        imageView.setFitWidth(144);
+        imageView.setFitHeight(216);
+
+
+
+        caminhosImagens.put(indiceBotao, caminhoImagem);
+
+        Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima,caminhoImagem);
+
+        FilmeRepository.exibirFilmes();
+
+        Boolean verifica_se_da_para_colocar_filme = FilmeRepository.adicionarFilme(filme);
+
+        if (verifica_se_da_para_colocar_filme) {
+            imageView.setFitWidth(144);
+            imageView.setFitHeight(216);
+            usuarioFilmeController.atualizarImagemBotao(indiceBotao, imageView);
+            System.out.println("indiceBotao_'''''''''''''''''''''''''''''''''''''''''''''''"+indiceBotao);
+            indiceBotao++;
+        }
+
     }
 
+
+    public void salvarCaminhoImagem(int indiceBotao, String caminhoImagem) {
+        // Salvar o valor de caminhoImagem no mapa
+        caminhosImagens.put(indiceBotao, caminhoImagem);
+    }
     @FXML
     void btvoltarcadastro(ActionEvent event) {
         Main.mudarTela("usuariofilme");
@@ -150,4 +186,7 @@ public class PagCadastroController {
         choiceboxhorario.getItems().addAll("12:00", "15:00", "18:00");
     }
 
+    public void setUsuarioFilmeController(PagUsuarioFilmeController usuarioFilmeController) {
+        this.usuarioFilmeController = usuarioFilmeController;
+    }
 }
