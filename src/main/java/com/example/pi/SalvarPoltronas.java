@@ -47,7 +47,7 @@ public class SalvarPoltronas {
 
     public static String lerArquivo(String filePath) {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-            String line = reader.readLine();
+            String line = reader.readLine(); //teste
             return line;
         } catch (IOException e) {
             System.out.println("Ocorreu um erro ao ler o arquivo: " + e.getMessage());
