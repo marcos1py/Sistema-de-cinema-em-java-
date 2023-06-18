@@ -57,7 +57,8 @@ public class PagFilmeComprarController {
     @FXML
     private Label horario_filme_comprar;
 
-
+    @FXML
+    private ImageView imgqrcode;
     @FXML
     private Label data_do_filme;
 
@@ -70,19 +71,24 @@ public class PagFilmeComprarController {
     @FXML
     public void btpix(ActionEvent event){
         labelcomprar.setText("Por favor, escaneie o Qrcode a seguir:");
+        imgqrcode.setVisible(true);
     }
     @FXML
     public void btdebito(ActionEvent event){
         labelcomprar.setText("Por favor, insira ou aproxime o cartão de débito:");
+        imgqrcode.setVisible(false);
     }
     @FXML
     public void btcredito(ActionEvent event){
         labelcomprar.setText("Por favor, insira ou aproxime o cartão de crédito:");
+        imgqrcode.setVisible(false);
     }
     @FXML
     public void btdinheiro(ActionEvent event){
         labelcomprar.setText("Por favor, entregue o dinheiro ao caixa:");
+        imgqrcode.setVisible(false);
     }
+
 
     private static PagFilmeComprarController instance;
 

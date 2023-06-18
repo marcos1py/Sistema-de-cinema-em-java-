@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -32,39 +31,42 @@
                     </image>
                 </ImageView>
             </graphic></Button>
-        <Pane layoutX="100.0" layoutY="145.0" prefHeight="172.0" prefWidth="202.0" style="-fx-background-color: #d9d9d9;">
+        <Pane layoutX="100.0" layoutY="145.0" prefHeight="278.0" prefWidth="305.0" style="-fx-background-color: #d9d9d9;">
             <children>
-            <Label fx:id="meiainteiralabel" layoutX="24.0" layoutY="137.0" prefHeight="0.0" prefWidth="18.0" />
-                <Label layoutX="14.0" layoutY="14.0" text="Nome" textFill="#1a2232">
+                <Label fx:id="nomeingresso" layoutX="14.0" layoutY="14.0" text="Nome" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <Label layoutX="15.0" layoutY="35.0" text="00/00" textFill="#1a2232">
+                <Label fx:id="dataingresso" layoutX="15.0" layoutY="35.0" text="00/00" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <Label layoutX="15.0" layoutY="60.0" text="00:00" textFill="#1a2232">
+                <Label fx:id="horarioingresso" layoutX="15.0" layoutY="60.0" text="00:00" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <Label layoutX="13.0" layoutY="81.0" text="Sala 0" textFill="#1a2232">
+                <Label fx:id="salaingresso" layoutX="13.0" layoutY="81.0" text="Sala 0" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <Label layoutX="163.0" layoutY="81.0" text="1A" textFill="#1a2232">
+                <Label fx:id="cadeirasingresso" layoutX="163.0" layoutY="81.0" text="1A" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
-            <ChoiceBox fx:id="tipoingressochoicebox" layoutX="15.0" layoutY="133.0" prefWidth="150.0" />
-            <Text layoutX="15.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de ingresso:">
+            <Text fontSmoothingType="LCD" layoutX="15.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor pago:">
                <font>
                   <Font size="15.0" />
                </font></Text>
+            <Label fx:id="valoringresso" layoutX="41.0" layoutY="146.0" text="R$: ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
             </children>
         </Pane>
       <Label fx:id="avisotipoingressolabel" layoutX="100.0" layoutY="335.0" prefHeight="21.0" prefWidth="288.0" textFill="#d92727">
