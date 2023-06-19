@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Repositorio {
     private static final String NOME_ARQUIVO = "dados.txt";
@@ -33,7 +34,8 @@ public class Repositorio {
         }
     }
 
-    public static void lerValores() {
+    public static void lerValores(int id) {
+
         try (BufferedReader reader = new BufferedReader(new FileReader(NOME_ARQUIVO))) {
             String linha;
             List<String> poltronas = new ArrayList<>();
@@ -45,15 +47,16 @@ public class Repositorio {
                 }
             }
 
-            salvarPoltronas(poltronas);
-            System.out.println("Valores lidos com sucesso e salvos no arquivo 'poltronas.txt'.");
+            salvarPoltronas(id, poltronas);
+            System.out.println("Valores lidos com sucesso e salvos no arquivo 'poltronas_" + id + ".txt'.");
         } catch (IOException e) {
             System.out.println("Erro ao ler os valores: " + e.getMessage());
         }
     }
 
-    private static void salvarPoltronas(List<String> poltronas) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(ARQUIVO_POLTRONAS))) {
+    private static void salvarPoltronas(int id, List<String> poltronas) {
+        String nomeArquivo = "poltoronas_" + id + ".txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo))) {
             StringBuilder linha = new StringBuilder();
             linha.append("[");
 
@@ -69,7 +72,7 @@ public class Repositorio {
 
             writer.write(linha.toString());
 
-            System.out.println("Poltronas salvas com sucesso no arquivo 'poltronas.txt'.");
+            System.out.println("Poltronas salvas com sucesso no arquivo 'poltoronas_" + id + ".txt'.");
         } catch (IOException e) {
             System.out.println("Erro ao salvar as poltronas: " + e.getMessage());
         }
@@ -80,6 +83,18 @@ public class Repositorio {
             writer.write("");
         } catch (IOException e) {
             System.out.println("Erro ao resetar os valores: " + e.getMessage());
+        }
+    }
+
+    public static void exemplo(int id) {
+        String nomeArquivo = "poltoronas_" + id + ".txt";
+        try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
+            String linha;
+            while ((linha = reader.readLine()) != null) {
+                System.out.println(linha);
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao ler o arquivo 'poltoronas_" + id + ".txt': " + e.getMessage());
         }
     }
 }

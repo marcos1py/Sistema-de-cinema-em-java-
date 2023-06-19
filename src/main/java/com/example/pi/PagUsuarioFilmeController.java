@@ -82,7 +82,6 @@ public class PagUsuarioFilmeController {
 
     @FXML
     void btus1(ActionEvent event) {
-
         int id = 0;
 
         String caminhoImagem = FilmeRepository.getCaminhoDaImagem(id);
@@ -92,7 +91,7 @@ public class PagUsuarioFilmeController {
 
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -114,7 +113,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -136,7 +135,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -159,7 +158,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -179,7 +178,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -198,7 +197,7 @@ public class PagUsuarioFilmeController {
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -220,7 +219,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -240,7 +239,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -260,7 +259,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -280,7 +279,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -300,7 +299,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -320,7 +319,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -340,7 +339,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);
@@ -360,7 +359,7 @@ public class PagUsuarioFilmeController {
         }
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(13);
-        filmeComprarController.setAtualiza_dados(atualiza_Nome);
+        filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
 
         LocalDate dataFilme = FilmeRepository.getDataDoFilme(id);
         filmeComprarController.setAtualizar_Data(dataFilme);

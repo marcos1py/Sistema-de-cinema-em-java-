@@ -289,5 +289,6 @@
                 <Font size="15.0" />
             </font>
         </Label>
+      <Label fx:id="id_filme" layoutX="422.0" layoutY="125.0" text="1" textFill="WHITE" />
     </children>
 </Pane>
