@@ -290,5 +290,15 @@
             </font>
         </Label>
       <Label fx:id="id_filme" layoutX="422.0" layoutY="125.0" text="1" textFill="WHITE" />
+      <Label fx:id="data_do_filme1" layoutX="387.0" layoutY="184.0" text="Sala" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="183.0" text="Sala" textFill="#d9d9d9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
     </children>
 </Pane>
