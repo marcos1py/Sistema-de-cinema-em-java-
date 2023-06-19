@@ -27,6 +27,7 @@ public class TelaLoginController {
     void login(ActionEvent event) {
         if(txtsenha.getText().equals("1234")){
             Main.mudarTela("estatisticas");
+            txtsenha.setText(null);
         }
         else{
 
