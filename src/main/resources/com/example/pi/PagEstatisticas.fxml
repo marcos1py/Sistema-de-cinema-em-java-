@@ -40,12 +40,12 @@
             </Label>
          </children>
       </Pane>
-      <Label layoutX="393.0" layoutY="214.0" text="Sessão mais ocupada" textFill="WHITE">
+      <Label fx:id="sessao_mais_ocupada" layoutX="393.0" layoutY="214.0" text="Sessão mais ocupada" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="910.0" layoutY="214.0" text="Sessão menos ocupada" textFill="WHITE">
+      <Label fx:id="sessao_menos_ocupada" layoutX="910.0" layoutY="214.0" text="Sessão menos ocupada" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>

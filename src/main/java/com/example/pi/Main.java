@@ -25,6 +25,7 @@ public class Main extends Application {
     private PagFilmeComprarController filmeComprarController;
     private PagTipoIngressoController tipoIngressoController;
 
+
     @Override
     public void start(Stage primaryStage) throws IOException {
         stage = primaryStage;
@@ -58,7 +59,10 @@ public class Main extends Application {
         pagCadastro = new Scene(fxmlPagCadastro, 1400, 800);
 
         Parent fxmlPagEstatisticas = FXMLLoader.load(getClass().getResource("PagEstatisticas.fxml"));
+
         pagEstatisticas = new Scene(fxmlPagEstatisticas, 1400, 800);
+
+
         ResetarArquivos.resetar_tudo();
         primaryStage.setScene(pagCadastro);
         primaryStage.show();
