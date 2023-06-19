@@ -1,21 +1,111 @@
 package com.example.pi;
+import java.io.BufferedReader;
+import java.time.LocalDate;
 import java.util.ArrayList;
-
+import javafx.scene.control.Button;
+import javafx.scene.paint.Color;
+import java.io.FileReader;
+import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
+import javafx.util.converter.IntegerStringConverter;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 
 public class PagFilmeComprarController {
+    private Scene scene;
+
+    // Method to set the scene
+    public void setScene(Scene scene) {
+        this.scene = scene;
+    }
+    private Main main;
+
+    public void setMain(Main main) {
+        this.main = main;
+    }
     @FXML
     Label nomeFilmeComprarLabel;
+    @FXML
+    private Label nomeFilmeComprar;
 
-    public void mostrarNome (String filme){
-        nomeFilmeComprar.setText(filme);
+    public void setAtualiza_dados(String text) {
+
+        nomeFilmeComprar.setText(text);
+
     }
+
+    public void setAtualizar_Img(String caminho) {
+        Image imagem = new Image(caminho);
+        ImageView imageView = new ImageView(imagem);
+        imageView.setFitWidth(144); // Defina a largura desejada da imagem
+        imageView.setFitHeight(216); // Defina a altura desejada da imagem
+        img_ta_select_cadeira.setGraphic(imageView);
+    }
+
+    public void setAtualizar_Data(LocalDate data) {
+        if (data != null) {
+            data_do_filme.setText(data.toString());
+        } else {
+            data_do_filme.setText("A data do filme não está disponível.");
+        }
+    }
+
+    public void setAtualizar_Horas(String horario){
+        if (horario != null) {
+            horario_filme_comprar.setText(horario);
+        } else {
+            horario_filme_comprar.setText("Filme não encontrado");
+        }
+    }
+
+    @FXML
+    private Label horario_filme_comprar;
+
+    @FXML
+    private ImageView imgqrcode;
+    @FXML
+    private Label data_do_filme;
+
+    @FXML
+    private Button img_ta_select_cadeira;
+
+    @FXML
+    private Label labelcomprar;
+
+    @FXML
+    public void btpix(ActionEvent event){
+        labelcomprar.setText("Por favor, escaneie o Qrcode a seguir:");
+        imgqrcode.setVisible(true);
+    }
+    @FXML
+    public void btdebito(ActionEvent event){
+        labelcomprar.setText("Por favor, insira ou aproxime o cartão de débito:");
+        imgqrcode.setVisible(false);
+    }
+    @FXML
+    public void btcredito(ActionEvent event){
+        labelcomprar.setText("Por favor, insira ou aproxime o cartão de crédito:");
+        imgqrcode.setVisible(false);
+    }
+    @FXML
+    public void btdinheiro(ActionEvent event){
+        labelcomprar.setText("Por favor, entregue o dinheiro ao caixa:");
+        imgqrcode.setVisible(false);
+    }
+
 
     private static PagFilmeComprarController instance;
 
@@ -27,8 +117,7 @@ public class PagFilmeComprarController {
         return instance;
     }
 
-    @FXML
-    private Button A1;
+
 
     @FXML
     private Button A2;
@@ -196,21 +285,14 @@ public class PagFilmeComprarController {
     private Button G8;
 
     @FXML
-    private Button horario1;
+    private Label totalSelecionado;
 
-    @FXML
-    private Button horario2;
 
-    @FXML
-    private Button horario3;
-
-    @FXML
-    private Label nomeFilmeComprar;
     private int contadorPoltronas = 0; // Variável para contar as poltronas selecionadas
 
-    public static String horaEscolhida = "";
-
     private List<String> cadeirasVerdes = new ArrayList<>(); // Lista para armazenar os IDs das cadeiras verdes
+
+
 
     @FXML
     void handleButtonClick(Button button) {
@@ -220,12 +302,16 @@ public class PagFilmeComprarController {
         if (currentColor.equals(Color.GREEN)) {
             button.setStyle("-fx-background-color: white;");
             contadorPoltronas--;
+            totalSelecionado.setText(Integer.toString(contadorPoltronas));
             cadeirasVerdes.remove(cadeiraID);
         } else {
             button.setStyle("-fx-background-color: green;");
             contadorPoltronas++;
+            totalSelecionado.setText(Integer.toString(contadorPoltronas));
             cadeirasVerdes.add(cadeiraID);
         }
+
+        Repositorio.salvarValores(contadorPoltronas, cadeirasVerdes);
 
         System.out.println("Contagem de poltronas: " + contadorPoltronas);
         System.out.println("Cadeiras verdes: " + cadeirasVerdes);
@@ -233,7 +319,7 @@ public class PagFilmeComprarController {
 
     @FXML
     void A1(ActionEvent event) {
-        handleButtonClick(A1);
+        handleButtonClick(A1a);
     }
 
     // Evento de clique para o botão A2
@@ -261,8 +347,11 @@ public class PagFilmeComprarController {
     void A5(ActionEvent event) {
         handleButtonClick(A5);
     }
-
+    public void setNomeFilme(String nomeFilme) {
+        nomeFilmeComprarLabel.setText(nomeFilme);
+    }
     // Evento de clique para o botão A6
+
     @FXML
     void A6(ActionEvent event) {
         handleButtonClick(A6);
@@ -271,6 +360,7 @@ public class PagFilmeComprarController {
     // Evento de clique para o botão A7
     @FXML
     void A7(ActionEvent event) {
+
         handleButtonClick(A7);
     }
 
@@ -470,6 +560,7 @@ public class PagFilmeComprarController {
 
     @FXML
     void F7(ActionEvent event) {
+
         handleButtonClick(F7);
     }
 
@@ -520,43 +611,173 @@ public class PagFilmeComprarController {
 
 
     @FXML
-    void btprosseguircomrpra(ActionEvent event) {
-        Main.mudarTela("tipoingresso");
+    private Label msg_de_erro;
+
+    @FXML
+    private Label msg_erro2;
+    @FXML
+    void btprosseguircompra(ActionEvent event) {
+        msg_de_erro.setOpacity(0);
+        msg_erro2.setOpacity(0);
+        try {
+            int totalMeias = Integer.parseInt(total_de_meias.getText());
+
+            if (totalMeias > contadorPoltronas) {
+                System.out.println("Tem mais meias do que ingressos.");
+                msg_erro2.setOpacity(1);
+            } else {
+                msg_de_erro.setOpacity(0);
+                msg_erro2.setOpacity(0);
+                Repositorio.lerValores(); // salvar no arquivo poltronas
+                marcarCadeirasVermelhas();
+                //desabilitarCadeiras(); ta dano erro
+                Main.mudarTela("tipoingresso");
+            }
+        } catch (NumberFormatException e) {
+            msg_de_erro.setOpacity(1);
+            System.out.println("Erro ao converter o valor das meias para um número inteiro.");
+        }
     }
+
+
+    @FXML
+    private Button A1a;
+    @FXML
+    private Button A1;
+    public void marcarCadeirasVermelhas() {
+        Map<String, Button> mapaPoltronas = new HashMap<>();
+
+        // ... Código para criar e armazenar os botões no mapa ...
+
+        try (BufferedReader reader = new BufferedReader(new FileReader("poltronas.txt"))) {
+            String linha = reader.readLine();
+            String[] poltronas = linha.substring(1, linha.length() - 1).split(",");
+
+            for (String poltrona : poltronas) {
+                Button botao = new Button("");; // Obtém o botão correspondente do mapa
+
+                botao.setId(poltrona);
+
+                System.out.println(A1a+ " " + botao);
+                botao.setDisable(true);
+                muda_pls(A1a);
+                if (botao.getId().equals(A1a.getId())){
+                    A1a.setStyle("-fx-background-color: red;");
+                    A1a.setDisable(true);
+                }
+                if (botao.getId().equals(A2.getId())){
+                    A2.setStyle("-fx-background-color: red;");
+                    A2.setDisable(true);
+                }
+                if (botao.getId().equals(A3.getId())){
+                    A3.setStyle("-fx-background-color: red;");
+                    A3.setDisable(true);
+                }
+                if (botao.getId().equals(A4.getId())){
+                    A4.setStyle("-fx-background-color: red;");
+                    A4.setDisable(true);
+                }
+                if (botao.getId().equals(A5.getId())){
+                    A5.setStyle("-fx-background-color: red;");
+                    A5.setDisable(true);
+                }
+
+
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao ler as poltronas: " + e.getMessage());
+        }
+    }
+
+    public void muda_pls (Button id){
+        id.setStyle("-fx-background-color: red;");
+
+    }
+
+
+
+    private void desabilitarCadeiras() {
+        List<Node> nodes = new ArrayList<>(scene.getRoot().lookupAll(".button"));
+        for (Node node : nodes) {
+            Button button = (Button) node;
+            if (button.getStyle().contains("-fx-background-color: red;")) {
+                button.setDisable(true);
+            }
+        }
+    }
+
 
     @FXML
     void btvoltarcompra(ActionEvent event) {
+        Repositorio.resetarValores();
+        cadeirasVerdes = new ArrayList<>();
+        contadorPoltronas = 0;
+
+        totalSelecionado.setText(Integer.toString(contadorPoltronas));
+        // Defina a cor branca para todas as poltronas
+        A1a.setStyle("-fx-background-color: white;");
+        A2.setStyle("-fx-background-color: white;");
+        A3.setStyle("-fx-background-color: white;");
+        A4.setStyle("-fx-background-color: white;");
+        A5.setStyle("-fx-background-color: white;");
+        A6.setStyle("-fx-background-color: white;");
+        A7.setStyle("-fx-background-color: white;");
+        A8.setStyle("-fx-background-color: white;");
+        B1.setStyle("-fx-background-color: white;");
+        B2.setStyle("-fx-background-color: white;");
+        B3.setStyle("-fx-background-color: white;");
+        B4.setStyle("-fx-background-color: white;");
+        B5.setStyle("-fx-background-color: white;");
+        B6.setStyle("-fx-background-color: white;");
+        B7.setStyle("-fx-background-color: white;");
+        B8.setStyle("-fx-background-color: white;");
+        C1.setStyle("-fx-background-color: white;");
+        C2.setStyle("-fx-background-color: white;");
+        C3.setStyle("-fx-background-color: white;");
+        C4.setStyle("-fx-background-color: white;");
+        C5.setStyle("-fx-background-color: white;");
+        C6.setStyle("-fx-background-color: white;");
+        C7.setStyle("-fx-background-color: white;");
+        C8.setStyle("-fx-background-color: white;");
+        D1.setStyle("-fx-background-color: white;");
+        D2.setStyle("-fx-background-color: white;");
+        D3.setStyle("-fx-background-color: white;");
+        D4.setStyle("-fx-background-color: white;");
+        D5.setStyle("-fx-background-color: white;");
+        D6.setStyle("-fx-background-color: white;");
+        D7.setStyle("-fx-background-color: white;");
+        D8.setStyle("-fx-background-color: white;");
+        E1.setStyle("-fx-background-color: white;");
+        E2.setStyle("-fx-background-color: white;");
+        E3.setStyle("-fx-background-color: white;");
+        E4.setStyle("-fx-background-color: white;");
+        E5.setStyle("-fx-background-color: white;");
+        E6.setStyle("-fx-background-color: white;");
+        E7.setStyle("-fx-background-color: white;");
+        E8.setStyle("-fx-background-color: white;");
+        F1.setStyle("-fx-background-color: white;");
+        F2.setStyle("-fx-background-color: white;");
+        F3.setStyle("-fx-background-color: white;");
+        F4.setStyle("-fx-background-color: white;");
+        F5.setStyle("-fx-background-color: white;");
+        F6.setStyle("-fx-background-color: white;");
+        F7.setStyle("-fx-background-color: white;");
+        F8.setStyle("-fx-background-color: white;");
+        G1.setStyle("-fx-background-color: white;");
+        G2.setStyle("-fx-background-color: white;");
+        G3.setStyle("-fx-background-color: white;");
+        G4.setStyle("-fx-background-color: white;");
+        G5.setStyle("-fx-background-color: white;");
+        G6.setStyle("-fx-background-color: white;");
+        G7.setStyle("-fx-background-color: white;");
+        G8.setStyle("-fx-background-color: white;");
+
         Main.mudarTela("usuariofilme");
     }
-
-
     @FXML
-    void horario1(ActionEvent event) {
-        horario1.setStyle("-fx-text-fill : #1A2232; -fx-background-color : #00FFFF");
+    private TextField total_de_meias;
 
-        horario2.setStyle("-fx-border-color : #00FFFF; -fx-background-color : 0");
-        horario3.setStyle("-fx-border-color : #00FFFF; -fx-background-color : 0");
 
-        horaEscolhida = String.valueOf(horario1);
-    }
-
-    @FXML
-    void horario2(ActionEvent event) {
-        horario2.setStyle("-fx-text-fill : #1A2232; -fx-background-color : #00FFFF");
-
-        horario1.setStyle("-fx-border-color : #00FFFF; -fx-background-color : 0");
-        horario3.setStyle("-fx-border-color : #00FFFF; -fx-background-color : 0");
-
-        horaEscolhida = String.valueOf(horario2);
-    }
-
-    @FXML
-    void horario3(ActionEvent event) {
-        horario3.setStyle("-fx-text-fill : #1A2232; -fx-background-color : #00FFFF");
-
-        horario1.setStyle("-fx-border-color : #00FFFF; -fx-background-color : 0");
-        horario2.setStyle("-fx-border-color : #00FFFF; -fx-background-color : 0");
-
-        horaEscolhida = String.valueOf(horario3);
-    }
+    // Resto do seu código...
 }
+

@@ -2,7 +2,7 @@ package com.example.pi;
 import logica.untitled2.src.logicaAddEDeletFilme;
 
 import logica.untitled2.src.Filme;
-
+import com.example.pi.Validador;
 
 
 import javafx.scene.control.Button;
@@ -30,6 +30,9 @@ public class PagCadastroController {
     private Map<Integer, String> caminhosImagens = new HashMap<>();
     private PagUsuarioFilmeController usuarioFilmeController;
     private int indiceBotao = 1;
+
+    TextField textField = new TextField();
+
 
     @FXML
     private Button btnOpenFile;
@@ -184,6 +187,7 @@ public class PagCadastroController {
         choiceboxsala.getItems().addAll("Sala 1", "Sala 2", "Sala 3");
         // Adicione os valores dos horários ao ChoiceBox dos horários
         choiceboxhorario.getItems().addAll("12:00", "15:00", "18:00");
+        Validador.mskNumero(valorDaInteiraCadastro);
     }
 
     public void setUsuarioFilmeController(PagUsuarioFilmeController usuarioFilmeController) {
