@@ -642,8 +642,7 @@ public class PagFilmeComprarController {
 
     @FXML
     private Button A1a;
-    @FXML
-    private Button A1;
+
     public void marcarCadeirasVermelhas() {
         Map<String, Button> mapaPoltronas = new HashMap<>();
 
@@ -658,9 +657,6 @@ public class PagFilmeComprarController {
 
                 botao.setId(poltrona);
 
-                System.out.println(A1a+ " " + botao);
-                botao.setDisable(true);
-                muda_pls(A1a);
                 if (botao.getId().equals(A1a.getId())){
                     A1a.setStyle("-fx-background-color: red;");
                     A1a.setDisable(true);
