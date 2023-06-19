@@ -181,7 +181,19 @@ public class PagCadastroController {
     @FXML
     void btvoltarcadastro(ActionEvent event) {
         Main.mudarTela("usuariofilme");
+        resetarinput();
 
+    }
+    public void resetarinput(){
+        textGenero.setText("");
+        nomeFilmeCadastro.setText("");
+        duraçaoDoFilmeCadastro.setText("");
+        valorDaInteiraCadastro.setText("");
+        valorDaMeiaCadastro.setText("");
+        choiceboxhorario.setValue("");
+        choiceboxsala.setValue("");
+        SinopseCadastro.setText("");
+        datepicker.setValue(null);
 
     }
 
