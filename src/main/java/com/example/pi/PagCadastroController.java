@@ -51,6 +51,11 @@ public class PagCadastroController {
 
     @FXML
     private ChoiceBox<String> choiceboxsala;
+    @FXML
+    private Label labelhora;
+
+    @FXML
+    private Label labelsala;
 
     @FXML
     private Label datacadastrolabel;
@@ -108,6 +113,8 @@ public class PagCadastroController {
             img_do_filme_tela_de_cadastro.setGraphic(imageView);
         }
     }
+    @FXML
+    private Label avisolabel;
 
     @FXML
     void btsalvar(ActionEvent event) {
@@ -135,33 +142,35 @@ public class PagCadastroController {
         String idadeMinima = "10";
         System.out.println("-------------------------------------------------------");
 
+        if (sinopse == (null) || data == null || duracao == null || nomeFilme == null || sala == null || horario == null || valorInteira == null || valorMeia == null || genero == null) {
+            avisolabel.setText("Por favor, preencha todos os campos corretamente");
+        }else {
+            avisolabel.setText(null);
 
-
-        // add a img
-        System.out.println("Caminho da imagem: " + caminhoImagem);
-        Image novaImagem = new Image("file:" + caminhoImagem);
-        ImageView imageView = new ImageView(novaImagem);
-        imageView.setFitWidth(144);
-        imageView.setFitHeight(216);
-
-
-
-        caminhosImagens.put(indiceBotao, caminhoImagem);
-
-        Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima,caminhoImagem);
-
-        FilmeRepository.exibirFilmes();
-
-        Boolean verifica_se_da_para_colocar_filme = FilmeRepository.adicionarFilme(filme);
-
-        if (verifica_se_da_para_colocar_filme) {
+            // add a img
+            System.out.println("Caminho da imagem: " + caminhoImagem);
+            Image novaImagem = new Image("file:" + caminhoImagem);
+            ImageView imageView = new ImageView(novaImagem);
             imageView.setFitWidth(144);
             imageView.setFitHeight(216);
-            usuarioFilmeController.atualizarImagemBotao(indiceBotao, imageView);
-            System.out.println("indiceBotao_'''''''''''''''''''''''''''''''''''''''''''''''"+indiceBotao);
-            indiceBotao++;
-        }
 
+
+            caminhosImagens.put(indiceBotao, caminhoImagem);
+
+            Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima, caminhoImagem);
+
+            FilmeRepository.exibirFilmes();
+
+            Boolean verifica_se_da_para_colocar_filme = FilmeRepository.adicionarFilme(filme);
+
+            if (verifica_se_da_para_colocar_filme) {
+                imageView.setFitWidth(144);
+                imageView.setFitHeight(216);
+                usuarioFilmeController.atualizarImagemBotao(indiceBotao, imageView);
+                System.out.println("indiceBotao_'''''''''''''''''''''''''''''''''''''''''''''''" + indiceBotao);
+                indiceBotao++;
+            }
+        }
     }
 
 
@@ -172,6 +181,8 @@ public class PagCadastroController {
     @FXML
     void btvoltarcadastro(ActionEvent event) {
         Main.mudarTela("usuariofilme");
+
+
     }
 
     @FXML
@@ -184,10 +195,22 @@ public class PagCadastroController {
     @FXML
     public void initialize() {
         // Adicione os valores das salas ao ChoiceBox das salas
-        choiceboxsala.getItems().addAll("Sala 1", "Sala 2", "Sala 3");
+        choiceboxsala.getItems().addAll("Sala 1", "Sala 2", "Sala 3","Sala 4");
         // Adicione os valores dos horários ao ChoiceBox dos horários
-        choiceboxhorario.getItems().addAll("12:00", "15:00", "18:00");
+        choiceboxhorario.getItems().addAll("12:00", "15:00", "18:00","21:00");
+        choiceboxsala.setOnAction(this::pegarLabel1);
         Validador.mskNumero(valorDaInteiraCadastro);
+        Validador.mskNumero(valorDaMeiaCadastro);
+        Validador.mskLetra(textGenero);
+        Validador.mskNumero(duraçaoDoFilmeCadastro);
+
+
+
+    }
+
+    public void pegarLabel1(ActionEvent event){
+        String valor = choiceboxsala.getValue();
+        labelsala.setText(valor);
     }
 
     public void setUsuarioFilmeController(PagUsuarioFilmeController usuarioFilmeController) {

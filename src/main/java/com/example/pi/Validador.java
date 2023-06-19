@@ -26,7 +26,16 @@ public class Validador {
         Validador.limiteTamanhoCampo(valorDaInteiraCadastro, 6);
         valorDaInteiraCadastro.lengthProperty().addListener((observable, valorAntigo, valorNovo) -> {
             String textoDigitado = valorDaInteiraCadastro.getText();
-            textoDigitado = textoDigitado.replaceAll("[^0-9]", "");
+            textoDigitado = textoDigitado.replaceAll("[^0-9.0]", "");
+            valorDaInteiraCadastro.setText(textoDigitado);
+            Validador.posicionarCursor(valorDaInteiraCadastro);
+        });
+    }
+    public static void  mskLetra(TextField valorDaInteiraCadastro) {
+        Validador.limiteTamanhoCampo(valorDaInteiraCadastro, 20);
+        valorDaInteiraCadastro.lengthProperty().addListener((observable, valorAntigo, valorNovo) -> {
+            String textoDigitado = valorDaInteiraCadastro.getText();
+            textoDigitado = textoDigitado.replaceAll("[0-9]", "");
             valorDaInteiraCadastro.setText(textoDigitado);
             Validador.posicionarCursor(valorDaInteiraCadastro);
         });
