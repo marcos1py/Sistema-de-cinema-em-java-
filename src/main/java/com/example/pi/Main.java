@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import com.example.pi.ResetarArquivos;
 public class Main extends Application {
 
     private static Stage stage;
@@ -22,8 +23,8 @@ public class Main extends Application {
 
     private PagUsuarioFilmeController usuarioFilmeController;
     private PagFilmeComprarController filmeComprarController;
-
     private PagTipoIngressoController tipoIngressoController;
+
     @Override
     public void start(Stage primaryStage) throws IOException {
         stage = primaryStage;
@@ -43,9 +44,11 @@ public class Main extends Application {
         pagUsuarioFilme = new Scene(fxmlPagUsuarioFilme, 1400, 800);
         pagFilmeComprar = new Scene(fxmlPagFilmeComprar, 1400, 800);
 
-        Parent fxmlPagTipoIngresso = FXMLLoader.load(getClass().getResource("PagTipoIngresso.fxml"));
+        FXMLLoader loaderPagTipoIngresso = new FXMLLoader(getClass().getResource("PagTipoIngresso.fxml"));
+        Parent fxmlPagTipoIngresso = loaderPagTipoIngresso.load();
+        tipoIngressoController = loaderPagTipoIngresso.getController();
+        filmeComprarController.setPagTipoIngressoController(tipoIngressoController);
         pagTipoIngresso = new Scene(fxmlPagTipoIngresso, 1400, 800);
-
 
         FXMLLoader loaderPagCadastro = new FXMLLoader(getClass().getResource("PagCadastro.fxml"));
         Parent fxmlPagCadastro = loaderPagCadastro.load();

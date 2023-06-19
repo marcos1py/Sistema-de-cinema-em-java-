@@ -10,8 +10,11 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class PagTipoIngressoController  {
-    boolean vef = false;
+
+public class PagTipoIngressoController {
+
+
+
     @FXML
     private Label avisotipoingressolabel;
 
@@ -31,11 +34,21 @@ public class PagTipoIngressoController  {
     private Label salaingresso;
 
     @FXML
-    private Label valoringresso;
+    private Label valor_total_pago;
 
     @FXML
-    private Label meiainteiralabel;
+    private Label valoringresso;
 
+    public void valor_que_foi_comprado(String valor){
+        valor_total_pago.setText(valor);
+    }
+
+    public void imprimir_ingresso( String poltrona_compradas,String nome_do_filme_comprado, String data_do_filme_comprado,String horas_do_filme_comprado){
+        nomeingresso.setText(nome_do_filme_comprado);
+        dataingresso.setText(data_do_filme_comprado);
+        cadeirasingresso.setText(poltrona_compradas);
+
+    }
 
 
 

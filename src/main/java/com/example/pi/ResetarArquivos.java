@@ -5,8 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class ResetarArquivos {
-
-    public static void main(String[] args) {
+    public static void resetar_tudo() {
         for (int i = 0; i <= 14; i++) {
             String nomeArquivo = "poltoronas_" + i + ".txt";
             resetarArquivo(nomeArquivo);

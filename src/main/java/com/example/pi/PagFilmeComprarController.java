@@ -26,9 +26,13 @@ import javafx.util.converter.IntegerStringConverter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+import com.example.pi.PagTipoIngressoController;
 
 public class PagFilmeComprarController {
+    private PagTipoIngressoController pagTipoIngressoController;
+    public void setPagTipoIngressoController(PagTipoIngressoController controller) {
+        this.pagTipoIngressoController = controller;
+    }
     private void adicionarHorarioNoArquivo(String horario) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("horarios.txt", true))) {
             writer.write(horario);
@@ -653,20 +657,21 @@ public class PagFilmeComprarController {
                 msg_de_erro.setOpacity(0);
 
                 msg_erro2.setOpacity(0);
-                System.out.println("------------");
+
                 String idText = id_filme.getText();
-                System.out.println(idText);
                 int id_do_arquivo = Integer.parseInt(idText);
-                System.out.println("---------------");
+
                 Repositorio.lerValores(id_do_arquivo); // salvar no arquivo poltronas
-                System.out.println("1");
                 marcarCadeirasVermelhas();
-                System.out.println("1");
-                for (int i = 0; i < contadorPoltronas; i++){
-                    System.out.println("1");
+
+                //vai salvar no arquivo o horario tanto de poutrona comprados
+                for (int adicionar_tantos_que_comprou = 0; adicionar_tantos_que_comprou < contadorPoltronas; adicionar_tantos_que_comprou++){
                     adicionarHorarioNoArquivo(horario_filme_comprar.getText());
                 }
-                System.out.println("1");
+
+                String valor_total_pago = "0000";
+                pagTipoIngressoController.valor_que_foi_comprado(valor_total_pago);
+
                 Main.mudarTela("tipoingresso");
             }
         } catch (NumberFormatException e) {
@@ -687,11 +692,25 @@ public class PagFilmeComprarController {
         try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
             String linha = reader.readLine();
             String[] poltronas = linha.substring(1, linha.length() - 1).split(",");
+            String poltrona_compradas = ""; // Variável para armazenar o conteúdo do arquivo
+
 
             for (String poltrona : poltronas) {
                 Button botao = new Button("");; // Obtém o botão correspondente do mapa
 
                 botao.setId(poltrona);
+
+
+                if (botao != null){
+
+                    poltrona_compradas += poltrona + " "; // Adiciona a poltrona à variável str
+                    String nome_do_filme_comprado = nomeFilmeComprar.getText();
+                    String data_do_filme_comprado = data_do_filme.getText();
+                    String horas_do_filme_comprado = horario_filme_comprar.getText();
+
+                    pagTipoIngressoController.imprimir_ingresso(poltrona_compradas,nome_do_filme_comprado,data_do_filme_comprado,horas_do_filme_comprado);
+
+                }
 
                 if (botao.getId().equals("A1a"))  {
                     A1a.setStyle("-fx-background-color: red;");
@@ -923,6 +942,7 @@ public class PagFilmeComprarController {
             System.out.println("Erro ao ler as poltronas: " + e.getMessage());
         }
     }
+
 
     @FXML
     void btvoltarcompra(ActionEvent event) {
