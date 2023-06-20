@@ -33,12 +33,12 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="data_do_filme" layoutX="387.0" layoutY="218.0" text="00/00" textFill="#d9d9d9">
+        <Label fx:id="data_do_filme" layoutX="387.0" layoutY="225.0" text="00/00" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="274.0" layoutY="331.0" text="Descrição:" textFill="#d9d9d9">
+        <Label layoutX="283.0" layoutY="324.0" text="Descrição:" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
@@ -219,7 +219,7 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="283.0" layoutY="217.0" text="Data" textFill="#d9d9d9">
+        <Label layoutX="283.0" layoutY="225.0" text="Data" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
@@ -301,25 +301,51 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="valorDaInteiraLabel" layoutX="244.0" layoutY="525.0" text="00" textFill="WHITE">
+      <Label fx:id="valorDaInteiraLabel" layoutX="1212.0" layoutY="154.0" text="00" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="valorDaMeiaLabel" layoutX="244.0" layoutY="565.0" text="00" textFill="WHITE">
+      <Label fx:id="valorDaMeiaLabel" layoutX="1204.0" layoutY="194.0" text="00" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Text fill="WHITE" layoutX="110.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da inteira R$:">
+      <Text fill="WHITE" layoutX="1137.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inteira R$:">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="109.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da meia R$:">
+      <Text fill="WHITE" layoutX="1136.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meia R$:">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
+      <Label fx:id="duracao_label" layoutX="167.0" layoutY="412.0" text="000" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="duracao_label1" layoutX="100.0" layoutY="412.0" text="Duração:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="455.0" text="Gênero:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="genero_label" layoutX="160.0" layoutY="455.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="sinopse_label" layoutX="177.0" layoutY="498.0" prefHeight="110.0" prefWidth="187.0" textFill="WHITE" />
+      <Label fx:id="precototal_label" layoutX="1287.0" layoutY="352.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
     </children>
 </Pane>

@@ -129,5 +129,33 @@ public class FilmeRepository {
         }
         return null;
     }
+    public static String pegarDuracao (int index){
+        if (index >= 0 && index < filmes.length){
+            Filme filme = filmes[index];
+            if(filme != null){
+                return (filme.getDuracao());
+            }
+        }
+        return null;
+    }
+    public static String pegarGenero(int index){
+        if(index >= 0 && index < filmes.length){
+            Filme filme = filmes[index];
+            if(filme != null){
+                return (filme.getCategoria());
+            }
+        }
+        return null;
+    }
+    public static String pegarSinopse(int index){
+        if (index >= 0 && index < filmes.length){
+            Filme filme = filmes[index];
+            if (filme != null) {
+                return (filme.getSinopse());
+            }
+        }
+        return null;
+    }
+
 
 }

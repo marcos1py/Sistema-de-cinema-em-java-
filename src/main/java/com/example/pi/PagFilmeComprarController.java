@@ -8,25 +8,19 @@ import java.io.FileReader;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.IOException;
 
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.control.TextFormatter;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.paint.Color;
-import javafx.util.converter.IntegerStringConverter;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.example.pi.PagTipoIngressoController;
 
 public class PagFilmeComprarController {
     private PagTipoIngressoController pagTipoIngressoController;
@@ -43,6 +37,8 @@ public class PagFilmeComprarController {
         }
     }
 
+@FXML
+private Label duracao_label;
 
     private Scene scene;
 
@@ -56,10 +52,13 @@ public class PagFilmeComprarController {
         this.main = main;
     }
     @FXML
+    private Label genero_label;
+    @FXML
     Label nomeFilmeComprarLabel;
     @FXML
     private Label nomeFilmeComprar;
-
+    @FXML
+    private Label sinopse_label;
     public void setAtualiza_dados(String text,int id) {
         id_filme.setText(String.valueOf(id));
         marcarCadeirasVermelhas();
@@ -85,7 +84,7 @@ public class PagFilmeComprarController {
         if(numSala != null) {
             sala_do_filme.setText(numSala);
         }else {
-            sala_do_filme.setText("ASBC");
+            sala_do_filme.setText("sala");
         }
     }
 
@@ -111,7 +110,27 @@ public class PagFilmeComprarController {
             valorDaMeiaLabel.setText("Valor errado");
         }
     }
-
+    public void setAtualizar_Duracao(String duracao){
+        if (duracao != null){
+            duracao_label.setText(duracao);
+        }else{
+            duracao_label.setText("Duracao invalida");
+        }
+    }
+    public void setAtualizar_Genero(String genero){
+        if(genero != null){
+            genero_label.setText(genero);
+        }else{
+            genero_label.setText("genero errado");
+        }
+    }
+    public void setAtualizar_Sinopse(String sinopse){
+        if (sinopse != null){
+            sinopse_label.setText(sinopse);
+        }else{
+            sinopse_label.setText("sinopse");
+        }
+    }
     @FXML
     private Label horario_filme_comprar;
 
@@ -333,6 +352,8 @@ public class PagFilmeComprarController {
     private Label totalSelecionado;
 
 
+
+
     private int contadorPoltronas = 0; // Variável para contar as poltronas selecionadas
 
     private List<String> cadeirasVerdes = new ArrayList<>(); // Lista para armazenar os IDs das cadeiras verdes
@@ -344,27 +365,49 @@ public class PagFilmeComprarController {
         Color currentColor = (Color) button.getBackground().getFills().get(0).getFill();
         String cadeiraID = button.getId();
 
+
         if (currentColor.equals(Color.GREEN)) {
             button.setStyle("-fx-background-color: white;");
             contadorPoltronas--;
             totalSelecionado.setText(Integer.toString(contadorPoltronas));
             cadeirasVerdes.remove(cadeiraID);
+            calculo(contadorPoltronas);
+
+
         } else {
             button.setStyle("-fx-background-color: green;");
             contadorPoltronas++;
             totalSelecionado.setText(Integer.toString(contadorPoltronas));
             cadeirasVerdes.add(cadeiraID);
+            calculo(contadorPoltronas);
+
         }
 
         Repositorio.salvarValores(contadorPoltronas, cadeirasVerdes);
 
         System.out.println("Contagem de poltronas: " + contadorPoltronas);
         System.out.println("Cadeiras verdes: " + cadeirasVerdes);
-    }
 
+    }
+    //contadorPoltronas = contadorPoltronas * valor da inteira
+   // contadorPoltronas = contadorPoltronas - totaldemeias * valor da meia
+    @FXML
+    private Label precototal_label;
+    public void  calculo (int contadorPoltronas){
+        String total = totalSelecionado.getText();
+
+
+            double totalInt = Double.valueOf(totalSelecionado.getText());
+            double totalMeia = Double.valueOf(total_de_meias.getText());
+            double precoTotal = (totalInt - totalMeia) * Double.valueOf(valorDaInteiraLabel.getText()) + (totalMeia * Double.valueOf(valorDaMeiaLabel.getText()));
+            precototal_label.setText(String.valueOf(precoTotal));
+
+
+    }
     @FXML
     void A1(ActionEvent event) {
         handleButtonClick(A1a);
+
     }
 
     // Evento de clique para o botão A2
@@ -676,6 +719,7 @@ public class PagFilmeComprarController {
 
             if (totalMeias > contadorPoltronas) {
                 System.out.println("Tem mais meia do que ingressos.");
+
                 msg_erro2.setOpacity(1);
             } else {
 
