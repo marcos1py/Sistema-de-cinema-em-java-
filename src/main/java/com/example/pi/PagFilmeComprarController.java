@@ -35,10 +35,10 @@ public class PagFilmeComprarController {
     public void setPagTipoIngressoController(PagTipoIngressoController controller) {
         this.pagTipoIngressoController = controller;
     }
-    private void adicionarHorarioNoArquivo(String horario) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("horarios.txt", true))) {
-            writer.write(horario);
+    private void adicionarNoArquivo(String valor,String nome_do_arquivo) {
 
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(nome_do_arquivo, true))) {
+            writer.write(valor);
             writer.newLine();
         } catch (IOException e) {
             e.printStackTrace();
@@ -693,16 +693,24 @@ public class PagFilmeComprarController {
 
                 //vai salvar no arquivo o horario tanto de poutrona comprados
                 for (int adicionar_tantos_que_comprou = 0; adicionar_tantos_que_comprou < contadorPoltronas; adicionar_tantos_que_comprou++){
-                    adicionarHorarioNoArquivo(horario_filme_comprar.getText());
+                    adicionarNoArquivo(horario_filme_comprar.getText(), "horarios.txt");
+                    adicionarNoArquivo(nomeFilmeComprar.getText(), "filmes_mais_comprados.txt");
                 }
 
                 String valor_total_pago = "0000";
                 pagTipoIngressoController.valor_que_foi_comprado(valor_total_pago);
 
-                Map<String, Integer> contagemHorarios = AnalisadorHorarios.lerArquivoHorarios();
-                String horarioMaisComprado = AnalisadorHorarios.obterHorarioMaisComprado(contagemHorarios);
-                String horarioMenosComprido = AnalisadorHorarios.obterHorarioMenosComprado(contagemHorarios);
-                pagEstatisticasController.muda_as_sessoes(horarioMaisComprado,horarioMenosComprido);
+                Map<String, Integer> contagemHorarios = Analisador.lerArquivo("horarios.txt");
+                String horarioMaisComprado = Analisador.obterMaisComprado(contagemHorarios);
+                String horarioMenosComprido = Analisador.obterMenosComprado(contagemHorarios);
+
+                Map<String, Integer> contagemfilmes = Analisador.lerArquivo("filmes_mais_comprados.txt");
+                String filmeMaisComprado = Analisador.obterMaisComprado(contagemfilmes);
+                String filmeMenosComprido = Analisador.obterMenosComprado(contagemfilmes);
+                System.out.println(filmeMaisComprado+"  "+filmeMenosComprido);
+                pagEstatisticasController.muda_as_sessoes(horarioMaisComprado,horarioMenosComprido,filmeMaisComprado,filmeMenosComprido);
+
+
                 Main.mudarTela("tipoingresso");
             }
         } catch (NumberFormatException e) {

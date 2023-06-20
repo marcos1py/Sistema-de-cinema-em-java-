@@ -6,18 +6,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AnalisadorHorarios {
-    public static void main(String[] args) {
-        Map<String, Integer> contagemHorarios = lerArquivoHorarios();
-        String horarioMaisComprado = obterHorarioMaisComprado(contagemHorarios);
-        String horarioMenosComprido = obterHorarioMenosComprado(contagemHorarios);
+public class Analisador {
 
-        System.out.println("O horário mais comprado foi: " + horarioMaisComprado);
-        System.out.println("O horário menos vendido foi: " + horarioMenosComprido);
-    }
 
-    public static Map<String, Integer> lerArquivoHorarios() {
-        String nomeArquivo = "horarios.txt";
+    public static Map<String, Integer> lerArquivo(String nomeArquivo) {
+
         Map<String, Integer> contagemHorarios = new HashMap<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
@@ -33,7 +26,7 @@ public class AnalisadorHorarios {
         return contagemHorarios;
     }
 
-    public static String obterHorarioMaisComprado(Map<String, Integer> contagemHorarios) {
+    public static String obterMaisComprado(Map<String, Integer> contagemHorarios) {
         String horarioMaisComprado = null;
         int maiorContagem = 0;
 
@@ -49,7 +42,7 @@ public class AnalisadorHorarios {
         return horarioMaisComprado;
     }
 
-    public static String obterHorarioMenosComprado(Map<String, Integer> contagemHorarios) {
+    public static String obterMenosComprado(Map<String, Integer> contagemHorarios) {
         String horarioMenosComprido = null;
         int menorContagem = Integer.MAX_VALUE;
 
