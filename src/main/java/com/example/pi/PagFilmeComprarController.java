@@ -8,29 +8,31 @@ import java.io.FileReader;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class PagFilmeComprarController {
+    private PagEstatisticasController pagEstatisticasController;
+
+    public void setPagEstatisticasController(PagEstatisticasController controller) {
+        this.pagEstatisticasController = controller;
+    }
     private PagTipoIngressoController pagTipoIngressoController;
     public void setPagTipoIngressoController(PagTipoIngressoController controller) {
         this.pagTipoIngressoController = controller;
     }
-    private void adicionarHorarioNoArquivo(String horario) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("horarios.txt", true))) {
-            writer.write(horario);
+    private void adicionarNoArquivo(String valor,String nome_do_arquivo) {
 
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(nome_do_arquivo, true))) {
+            writer.write(valor);
             writer.newLine();
         } catch (IOException e) {
             e.printStackTrace();
@@ -61,6 +63,7 @@ private Label duracao_label;
     private Label sinopse_label;
     public void setAtualiza_dados(String text,int id) {
         id_filme.setText(String.valueOf(id));
+        resetar_tudo_para_branco();
         marcarCadeirasVermelhas();
         nomeFilmeComprar.setText(text);
     }
@@ -731,15 +734,27 @@ private Label duracao_label;
                 int id_do_arquivo = Integer.parseInt(idText);
 
                 Repositorio.lerValores(id_do_arquivo); // salvar no arquivo poltronas
-                marcarCadeirasVermelhas();
 
                 //vai salvar no arquivo o horario tanto de poutrona comprados
                 for (int adicionar_tantos_que_comprou = 0; adicionar_tantos_que_comprou < contadorPoltronas; adicionar_tantos_que_comprou++){
-                    adicionarHorarioNoArquivo(horario_filme_comprar.getText());
+                    adicionarNoArquivo(horario_filme_comprar.getText(), "horarios.txt");
+                    adicionarNoArquivo(nomeFilmeComprar.getText(), "filmes_mais_comprados.txt");
                 }
 
-                String valor_total_pago = "0000";
+                String valor_total_pago = precototal_label.getText();
                 pagTipoIngressoController.valor_que_foi_comprado(valor_total_pago);
+
+                Map<String, Integer> contagemHorarios = Analisador.lerArquivo("horarios.txt");
+                String horarioMaisComprado = Analisador.obterMaisComprado(contagemHorarios);
+                String horarioMenosComprido = Analisador.obterMenosComprado(contagemHorarios);
+
+                Map<String, Integer> contagemfilmes = Analisador.lerArquivo("filmes_mais_comprados.txt");
+                String filmeMaisComprado = Analisador.obterMaisComprado(contagemfilmes);
+                String filmeMenosComprido = Analisador.obterMenosComprado(contagemfilmes);
+                System.out.println(filmeMaisComprado+"  "+filmeMenosComprido);
+                pagEstatisticasController.muda_as_sessoes(horarioMaisComprado,horarioMenosComprido,filmeMaisComprado,filmeMenosComprido);
+                marcarCadeirasVermelhas();
+
 
                 Main.mudarTela("tipoingresso");
             }
@@ -757,11 +772,13 @@ private Label duracao_label;
         Map<String, Button> mapaPoltronas = new HashMap<>();
         String idText = id_filme.getText();
         int id = Integer.parseInt(idText);
+
         String nomeArquivo = "poltoronas_" + id + ".txt";
+
         try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
             String linha = reader.readLine();
             String[] poltronas = linha.substring(1, linha.length() - 1).split(",");
-            String poltrona_compradas = ""; // Variável para armazenar o conteúdo do arquivo
+            String poltrona_compradas = "";
 
 
             for (String poltrona : poltronas) {
@@ -769,15 +786,14 @@ private Label duracao_label;
 
                 botao.setId(poltrona);
 
-
                 if (botao != null){
 
                     poltrona_compradas += poltrona + " "; // Adiciona a poltrona à variável str
                     String nome_do_filme_comprado = nomeFilmeComprar.getText();
                     String data_do_filme_comprado = data_do_filme.getText();
                     String horas_do_filme_comprado = horario_filme_comprar.getText();
-
-                    pagTipoIngressoController.imprimir_ingresso(poltrona_compradas,nome_do_filme_comprado,data_do_filme_comprado,horas_do_filme_comprado);
+                    String numero_sala = sala_do_filme.getText();
+                    pagTipoIngressoController.imprimir_ingresso(poltrona_compradas,nome_do_filme_comprado,data_do_filme_comprado,horas_do_filme_comprado,numero_sala);
 
                 }
 
@@ -1015,6 +1031,15 @@ private Label duracao_label;
 
     @FXML
     void btvoltarcompra(ActionEvent event) {
+        // Defina a cor branca para todas as poltronas e resetar os valores
+        resetar_tudo_para_branco();
+        Main.mudarTela("usuariofilme");
+    }
+    @FXML
+    private TextField total_de_meias;
+
+    public void  resetar_tudo_para_branco(){
+        total_de_meias.setText(null);
         Repositorio.resetarValores();
         cadeirasVerdes = new ArrayList<>();
         contadorPoltronas = 0;
@@ -1136,7 +1161,6 @@ private Label duracao_label;
 
         Main.mudarTela("usuariofilme");
     }
-    @FXML
-    private TextField total_de_meias;
+
 }
 

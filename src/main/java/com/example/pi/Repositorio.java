@@ -46,7 +46,7 @@ public class Repositorio {
                     poltronas.add(valor.trim());
                 }
             }
-
+            System.out.println("----------"+poltronas);
             salvarPoltronas(id, poltronas);
             System.out.println("Valores lidos com sucesso e salvos no arquivo 'poltronas_" + id + ".txt'.");
         } catch (IOException e) {
