@@ -62,6 +62,7 @@ public class Filme {
     }
 
     public String getSala() {
+
         return sala;
     }
 

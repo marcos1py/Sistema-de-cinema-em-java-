@@ -81,7 +81,13 @@ public class PagFilmeComprarController {
             data_do_filme.setText("A data do filme não está disponível.");
         }
     }
-
+    public void setAtualizar_Sala(String numSala){
+        if(numSala != null) {
+            sala_do_filme.setText(numSala);
+        }else {
+            sala_do_filme.setText("ASBC");
+        }
+    }
 
 
     public void setAtualizar_Horas(String horario){
@@ -113,6 +119,8 @@ public class PagFilmeComprarController {
     private ImageView imgqrcode;
     @FXML
     private Label data_do_filme;
+    @FXML
+    private Label sala_do_filme;
 
     @FXML
     private Button img_ta_select_cadeira;

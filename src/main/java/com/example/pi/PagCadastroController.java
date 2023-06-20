@@ -191,9 +191,9 @@ public class PagCadastroController {
         valorDaInteiraCadastro.setText("");
         valorDaMeiaCadastro.setText("");
         choiceboxhorario.setValue("");
-        choiceboxsala.setValue("");
+        //choiceboxsala.setValue("");
         SinopseCadastro.setText("");
-        datepicker.setValue(null);
+        //datepicker.setValue(null);
 
     }
 

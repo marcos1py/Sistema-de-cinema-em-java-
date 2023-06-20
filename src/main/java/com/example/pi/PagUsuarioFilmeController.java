@@ -88,6 +88,8 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sala = FilmeRepository.pegarSala(id);
+        filmeComprarController.setAtualizar_Sala(sala);
 
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
@@ -117,6 +119,8 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sala = FilmeRepository.pegarSala(id);
+        filmeComprarController.setAtualizar_Sala(sala);
 
         String atualiza_Nome = FilmeRepository.nome_do_filme(id);
         filmeComprarController.setAtualiza_dados(atualiza_Nome,id);
