@@ -99,6 +99,12 @@ public class PagUsuarioFilmeController {
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -121,6 +127,12 @@ public class PagUsuarioFilmeController {
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -142,6 +154,12 @@ public class PagUsuarioFilmeController {
 
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
 
         Main.mudarTela("filmecomprar");
     }
@@ -166,6 +184,14 @@ public class PagUsuarioFilmeController {
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
+
+
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -186,6 +212,12 @@ public class PagUsuarioFilmeController {
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -204,6 +236,12 @@ public class PagUsuarioFilmeController {
 
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
 
         Main.mudarTela("filmecomprar");
     }
@@ -227,6 +265,12 @@ public class PagUsuarioFilmeController {
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -246,6 +290,12 @@ public class PagUsuarioFilmeController {
 
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
 
         Main.mudarTela("filmecomprar");
     }
@@ -267,6 +317,12 @@ public class PagUsuarioFilmeController {
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -286,6 +342,12 @@ public class PagUsuarioFilmeController {
 
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
 
         Main.mudarTela("filmecomprar");
     }
@@ -307,6 +369,12 @@ public class PagUsuarioFilmeController {
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -326,6 +394,12 @@ public class PagUsuarioFilmeController {
 
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
 
         Main.mudarTela("filmecomprar");
     }
@@ -347,6 +421,12 @@ public class PagUsuarioFilmeController {
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
 
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
+
         Main.mudarTela("filmecomprar");
     }
 
@@ -366,6 +446,12 @@ public class PagUsuarioFilmeController {
 
         String horas_do_filme = FilmeRepository.getHorarioDoFilme(id);
         filmeComprarController.setAtualizar_Horas(horas_do_filme);
+
+        String valorInteira = FilmeRepository.pegarValorInteira(id);
+        filmeComprarController.setAtualizar_Inteira(valorInteira);
+
+        String valorMeia = FilmeRepository.pegarValorMeia(id);
+        filmeComprarController.setAtualizar_Meia(valorMeia);
 
         Main.mudarTela("filmecomprar");
     }

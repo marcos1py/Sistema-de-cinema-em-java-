@@ -91,6 +91,20 @@ public class PagFilmeComprarController {
             horario_filme_comprar.setText("Filme não encontrado");
         }
     }
+    public void setAtualizar_Inteira(String inteira){
+        if (inteira != null){
+            valorDaInteiraLabel.setText(inteira);
+        }else{
+            valorDaInteiraLabel.setText("Valor errado");
+        }
+    }
+    public void setAtualizar_Meia(String meia){
+        if (meia != null){
+            valorDaMeiaLabel.setText(meia);
+        }else{
+            valorDaMeiaLabel.setText("Valor errado");
+        }
+    }
 
     @FXML
     private Label horario_filme_comprar;
@@ -635,7 +649,10 @@ public class PagFilmeComprarController {
 
     @FXML
     private Label msg_de_erro;
-
+    @FXML
+    private Label valorDaInteiraLabel;
+    @FXML
+    private Label valorDaMeiaLabel;
     @FXML
     private Label msg_erro2;
     @FXML
@@ -650,7 +667,7 @@ public class PagFilmeComprarController {
             int totalMeias = Integer.parseInt(total_de_meias.getText());
 
             if (totalMeias > contadorPoltronas) {
-                System.out.println("Tem mais meias do que ingressos.");
+                System.out.println("Tem mais meia do que ingressos.");
                 msg_erro2.setOpacity(1);
             } else {
 

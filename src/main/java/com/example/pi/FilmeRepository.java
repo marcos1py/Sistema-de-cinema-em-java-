@@ -70,7 +70,7 @@ public class FilmeRepository {
                 return nomeFilme;
             }
         }
-        return null; // Se nenhum filme for encontrado, retorne null ou uma mensagem de erro adequada.
+        return null; // Se nenhum filme for achado retorna null ou uma mensagem de erro adequada.
     }
     public static String getCaminhoDaImagem(int index) {
         if (index >= 0 && index < filmes.length) {
@@ -79,7 +79,7 @@ public class FilmeRepository {
                 return filme.getCaminho_da_img();
             }
         }
-        return null; // Retorne null se o índice estiver fora dos limites ou se o filme não existir.
+        return null; // Retorna null se o índice estiver fora dos limites ou se o filme não existir.
     }
     public static LocalDate getDataDoFilme(int index) {
         if (index >= 0 && index < filmes.length) {
@@ -88,7 +88,7 @@ public class FilmeRepository {
                 return filme.getData();
             }
         }
-        return null; // Retorne null se o índice estiver fora dos limites ou se o filme não existir.
+        return null; // Retorna null se o índice estiver fora dos limites ou se o filme não existir.
     }
     public static String getHorarioDoFilme(int index) {
         if (index >= 0 && index < filmes.length) {
@@ -97,7 +97,25 @@ public class FilmeRepository {
                 return filme.getHorario();
             }
         }
-        return null; // Retorne null se o índice estiver fora dos limites ou se o filme não existir.
+        return null; // Retorna null se o índice estiver fora dos limites ou se o filme não existir.
+    }
+    public static String pegarValorInteira(int index){
+        if (index >= 0 && index < filmes.length){
+            Filme filme = filmes[index];
+            if (filme != null){
+                return (filme.getValorInteira());
+            }
+        }
+        return null;
+    }
+    public static String pegarValorMeia(int index){
+        if (index >= 0 && index < filmes.length){
+            Filme filme = filmes[index];
+            if (filme != null){
+                return (filme.getValorMeia());
+            }
+        }
+        return null;
     }
 
 }

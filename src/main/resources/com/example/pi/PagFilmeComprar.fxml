@@ -9,6 +9,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <Pane fx:id="hora" style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pi.PagFilmeComprarController">
     <children>
@@ -223,7 +224,7 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="1135.0" layoutY="231.0" text="Quantos ingressos desses sao meia?" textFill="WHITE">
+        <Label layoutX="1135.0" layoutY="231.0" text="Quantos ingressos desses são meia?" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
@@ -239,7 +240,7 @@
             </font>
         </Label>
         <TextField fx:id="total_de_meias" layoutX="1314.0" layoutY="305.0" prefHeight="25.0" prefWidth="75.0" />
-        <Label layoutX="1137.0" layoutY="307.0" text="Digite quantas meias sao:" textFill="WHITE">
+        <Label layoutX="1137.0" layoutY="307.0" text="Digite quantos são meia:" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
@@ -249,7 +250,7 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="msg_erro2" layoutX="1293.0" layoutY="559.0" opacity="0.0" text="tem mais meias doq ingresso" textFill="RED">
+        <Label fx:id="msg_erro2" layoutX="1208.0" layoutY="554.0" opacity="0.0" prefHeight="21.0" prefWidth="333.0" text="Tem mais meia do que o total de ingressos" textFill="RED">
             <font>
                 <Font size="15.0" />
             </font>
@@ -300,5 +301,25 @@
             <Font size="15.0" />
          </font>
       </Label>
+      <Label fx:id="valorDaInteiraLabel" layoutX="244.0" layoutY="525.0" text="00" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="valorDaMeiaLabel" layoutX="244.0" layoutY="565.0" text="00" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="110.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da inteira R$:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="109.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da meia R$:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
     </children>
 </Pane>
