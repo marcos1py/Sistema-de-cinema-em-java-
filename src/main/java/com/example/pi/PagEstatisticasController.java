@@ -6,6 +6,11 @@ import javafx.scene.control.Label;
 
 public class PagEstatisticasController {
 
+    @FXML
+    private Label horario_Mais_Comprado;
+
+    @FXML
+    private Label horario_Menos_Comprado;
 
     @FXML
     private Label sessao_mais_ocupada;
@@ -13,13 +18,13 @@ public class PagEstatisticasController {
     @FXML
     private Label sessao_menos_ocupada;
 
+
     public void muda_as_sessoes(String sessao_mais, String sessao_menos){
-        sessao_mais_ocupada.setText(sessao_mais);
-        sessao_menos_ocupada.setText(sessao_menos);
+        horario_Mais_Comprado.setText(sessao_mais);
+        horario_Menos_Comprado.setText(sessao_menos);
     }
     @FXML
     void btcadastroestatistica(ActionEvent event) {
-
         Main.mudarTela("cadastro");
     }
     @FXML

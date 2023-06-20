@@ -24,6 +24,7 @@ public class Main extends Application {
     private PagUsuarioFilmeController usuarioFilmeController;
     private PagFilmeComprarController filmeComprarController;
     private PagTipoIngressoController tipoIngressoController;
+    private PagEstatisticasController estatisticasController;
 
 
     @Override
@@ -58,10 +59,13 @@ public class Main extends Application {
         cadastroController.setUsuarioFilmeController(usuarioFilmeController);
         pagCadastro = new Scene(fxmlPagCadastro, 1400, 800);
 
-        Parent fxmlPagEstatisticas = FXMLLoader.load(getClass().getResource("PagEstatisticas.fxml"));
+        FXMLLoader loaderPagEstatisticas = new FXMLLoader(getClass().getResource("PagEstatisticas.fxml"));
+        Parent fxmlPagEstatisticas = loaderPagEstatisticas.load();
+        estatisticasController = loaderPagEstatisticas.getController();
 
         pagEstatisticas = new Scene(fxmlPagEstatisticas, 1400, 800);
 
+        filmeComprarController.setPagEstatisticasController(estatisticasController);
 
         ResetarArquivos.resetar_tudo();
         primaryStage.setScene(pagCadastro);
@@ -93,5 +97,9 @@ public class Main extends Application {
                 stage.setScene(pagEstatisticas);
                 break;
         }
+    }
+
+    public void setPagEstatisticasController(PagEstatisticasController controller) {
+        this.estatisticasController = controller;
     }
 }

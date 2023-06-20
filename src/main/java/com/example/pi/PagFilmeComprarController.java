@@ -8,27 +8,29 @@ import java.io.FileReader;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.IOException;
-
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.control.TextFormatter;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.paint.Color;
-import javafx.util.converter.IntegerStringConverter;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.example.pi.PagTipoIngressoController;
+
 
 public class PagFilmeComprarController {
+
+    private PagEstatisticasController pagEstatisticasController;
+
+    public void setPagEstatisticasController(PagEstatisticasController controller) {
+        this.pagEstatisticasController = controller;
+    }
+
+
+
     private PagTipoIngressoController pagTipoIngressoController;
     public void setPagTipoIngressoController(PagTipoIngressoController controller) {
         this.pagTipoIngressoController = controller;
@@ -85,7 +87,7 @@ public class PagFilmeComprarController {
         if(numSala != null) {
             sala_do_filme.setText(numSala);
         }else {
-            sala_do_filme.setText("ASBC");
+            sala_do_filme.setText("Nao mostrada");
         }
     }
 
@@ -697,6 +699,10 @@ public class PagFilmeComprarController {
                 String valor_total_pago = "0000";
                 pagTipoIngressoController.valor_que_foi_comprado(valor_total_pago);
 
+                Map<String, Integer> contagemHorarios = AnalisadorHorarios.lerArquivoHorarios();
+                String horarioMaisComprado = AnalisadorHorarios.obterHorarioMaisComprado(contagemHorarios);
+                String horarioMenosComprido = AnalisadorHorarios.obterHorarioMenosComprado(contagemHorarios);
+                pagEstatisticasController.muda_as_sessoes(horarioMaisComprado,horarioMenosComprido);
                 Main.mudarTela("tipoingresso");
             }
         } catch (NumberFormatException e) {
@@ -732,8 +738,8 @@ public class PagFilmeComprarController {
                     String nome_do_filme_comprado = nomeFilmeComprar.getText();
                     String data_do_filme_comprado = data_do_filme.getText();
                     String horas_do_filme_comprado = horario_filme_comprar.getText();
-
-                    pagTipoIngressoController.imprimir_ingresso(poltrona_compradas,nome_do_filme_comprado,data_do_filme_comprado,horas_do_filme_comprado);
+                    String numero_sala = sala_do_filme.getText();
+                    pagTipoIngressoController.imprimir_ingresso(poltrona_compradas,nome_do_filme_comprado,data_do_filme_comprado,horas_do_filme_comprado,numero_sala);
 
                 }
 
