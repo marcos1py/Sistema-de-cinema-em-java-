@@ -43,30 +43,16 @@ public class PagTipoIngressoController {
         valor_total_pago.setText(valor);
     }
 
-    public void imprimir_ingresso( String poltrona_compradas,String nome_do_filme_comprado, String data_do_filme_comprado,String horas_do_filme_comprado){
+    public void imprimir_ingresso( String poltrona_compradas,String nome_do_filme_comprado, String data_do_filme_comprado,String horas_do_filme_comprado, String numero_da_sala){
         nomeingresso.setText(nome_do_filme_comprado);
         dataingresso.setText(data_do_filme_comprado);
         cadeirasingresso.setText(poltrona_compradas);
-
+        horarioingresso.setText(horas_do_filme_comprado);
+        salaingresso.setText(numero_da_sala);
     }
-
-
-
-
-    @FXML
-    void btvoltartipoingresso(ActionEvent event) {
-        Main.mudarTela("filmecomprar");
-    }
-
-
-
-
-
     @FXML
     void btprosseguirtipoingresso(ActionEvent event) {
 
             Main.mudarTela("usuariofilme");
-
-
     }}
 

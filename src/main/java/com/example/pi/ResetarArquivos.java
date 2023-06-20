@@ -11,6 +11,7 @@ public class ResetarArquivos {
             resetarArquivo(nomeArquivo);
         }
         resetarArquivo1("horarios.txt");
+        resetarArquivo1("filmes_mais_comprados.txt");
     }
 
     private static void resetarArquivo(String nomeArquivo) {

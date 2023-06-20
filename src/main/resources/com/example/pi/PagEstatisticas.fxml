@@ -33,7 +33,7 @@
         </Pane>
       <Pane layoutX="378.0" layoutY="257.0" prefHeight="116.0" prefWidth="250.0" style="-fx-background-color: #B2FAA6; -fx-border-color: #24FF00;">
          <children>
-            <Label layoutX="10.0" layoutY="31.0" prefHeight="65.0" prefWidth="250.0" text="Sessão 0">
+            <Label fx:id="horario_Mais_Comprado" layoutX="26.0" layoutY="26.0" prefHeight="65.0" prefWidth="250.0" text="Sessão 0">
                <font>
                   <Font size="20.0" />
                </font>
@@ -67,7 +67,7 @@
       </Label>
       <Pane layoutX="906.0" layoutY="257.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #FF7979; -fx-border-color: red;">
          <children>
-            <Label layoutX="8.0" layoutY="26.0" prefHeight="65.0" prefWidth="250.0" text="Sessão 1">
+            <Label fx:id="horario_Menos_Comprado" layoutX="8.0" layoutY="26.0" prefHeight="65.0" prefWidth="250.0" text="Sessão 1">
                <font>
                   <Font size="20.0" />
                </font>
@@ -76,7 +76,7 @@
       </Pane>
       <Pane layoutX="906.0" layoutY="487.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #FF7979; -fx-border-color: red;">
          <children>
-            <Label layoutX="8.0" layoutY="25.0" prefHeight="65.0" prefWidth="250.0" text="AAAAA">
+            <Label fx:id="filme_menos_vendido" layoutX="8.0" layoutY="25.0" prefHeight="65.0" prefWidth="250.0" text="AAAAA">
                <font>
                   <Font size="20.0" />
                </font>
@@ -85,7 +85,7 @@
       </Pane>
       <Pane layoutX="378.0" layoutY="487.0" prefHeight="116.0" prefWidth="250.0" style="-fx-background-color: #B2FAA6; -fx-border-color: #24FF00;">
          <children>
-            <Label layoutX="8.0" layoutY="13.0" prefHeight="90.0" prefWidth="250.0" text="Homem-Aranha aaaaaaaaaaaaaaaaaaaaaaaaaaa">
+            <Label fx:id="filme_mais_vendido" layoutX="8.0" layoutY="13.0" prefHeight="90.0" prefWidth="250.0" text="Homem-Aranha aaaaaaaaaaaaaaaaaaaaaaaaaaa">
                <font>
                   <Font size="20.0" />
                </font>
