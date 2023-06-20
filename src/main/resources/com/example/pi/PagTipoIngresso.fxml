@@ -2,8 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -23,14 +21,6 @@
             <font>
                 <Font size="20.0" />
             </font></Button>
-        <Button layoutX="100.0" layoutY="604.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltartipoingresso" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
-            <graphic>
-                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@img/volta.png" />
-                    </image>
-                </ImageView>
-            </graphic></Button>
         <Pane layoutX="100.0" layoutY="145.0" prefHeight="278.0" prefWidth="305.0" style="-fx-background-color: #d9d9d9;">
             <children>
                 <Label fx:id="nomeingresso" layoutX="14.0" layoutY="14.0" text="Nome" textFill="#1a2232">

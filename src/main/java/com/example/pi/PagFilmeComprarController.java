@@ -690,6 +690,8 @@ public class PagFilmeComprarController {
 
                 Repositorio.lerValores(id_do_arquivo); // salvar no arquivo poltronas
                 marcarCadeirasVermelhas();
+                resetar_tudo_para_branco();
+
 
                 //vai salvar no arquivo o horario tanto de poutrona comprados
                 for (int adicionar_tantos_que_comprou = 0; adicionar_tantos_que_comprou < contadorPoltronas; adicionar_tantos_que_comprou++){
@@ -985,12 +987,20 @@ public class PagFilmeComprarController {
 
     @FXML
     void btvoltarcompra(ActionEvent event) {
+        // Defina a cor branca para todas as poltronas e resetar os valores
+        resetar_tudo_para_branco();
+        Main.mudarTela("usuariofilme");
+    }
+    @FXML
+    private TextField total_de_meias;
+
+    public void  resetar_tudo_para_branco(){
+        total_de_meias.setText(null);
         Repositorio.resetarValores();
         cadeirasVerdes = new ArrayList<>();
         contadorPoltronas = 0;
 
         totalSelecionado.setText(Integer.toString(contadorPoltronas));
-        // Defina a cor branca para todas as poltronas
         A1a.setDisable(false);
         A2.setDisable(false);
         A3.setDisable(false);
@@ -1104,9 +1114,6 @@ public class PagFilmeComprarController {
         G7.setStyle("-fx-background-color: white;");
         G8.setStyle("-fx-background-color: white;");
 
-        Main.mudarTela("usuariofilme");
     }
-    @FXML
-    private TextField total_de_meias;
 }
 

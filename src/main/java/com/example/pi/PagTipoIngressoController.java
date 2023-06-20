@@ -50,24 +50,9 @@ public class PagTipoIngressoController {
         horarioingresso.setText(horas_do_filme_comprado);
         salaingresso.setText(numero_da_sala);
     }
-
-
-
-
-    @FXML
-    void btvoltartipoingresso(ActionEvent event) {
-        Main.mudarTela("filmecomprar");
-    }
-
-
-
-
-
     @FXML
     void btprosseguirtipoingresso(ActionEvent event) {
 
             Main.mudarTela("usuariofilme");
-
-
     }}
 
