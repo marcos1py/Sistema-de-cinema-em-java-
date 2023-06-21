@@ -162,7 +162,7 @@ public class PagCadastroController {
             Filme filme = new Filme(nomeFilme, genero, duracao, sinopse, valorInteira, valorMeia, data, sala, horario, idadeMinima, caminhoImagem);
 
             FilmeRepository.exibirFilmes();
-
+            //ssss
             Boolean verifica_se_da_para_colocar_filme = FilmeRepository.adicionarFilme(filme);
 
             if (verifica_se_da_para_colocar_filme) {
