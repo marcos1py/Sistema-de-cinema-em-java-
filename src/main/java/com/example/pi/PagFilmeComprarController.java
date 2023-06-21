@@ -376,7 +376,6 @@ private Label duracao_label;
             contadorPoltronas--;
             contador--;
 
-
             totalSelecionado.setText(Integer.toString(contadorPoltronas));
             cadeirasVerdes.remove(cadeiraID);
 
@@ -386,9 +385,6 @@ private Label duracao_label;
             button.setStyle("-fx-background-color: green;");
             contadorPoltronas++;
             contador++;
-
-
-
 
             totalSelecionado.setText(Integer.toString(contadorPoltronas));
             cadeirasVerdes.add(cadeiraID);
@@ -746,7 +742,9 @@ private Label duracao_label;
                 String idText = id_filme.getText();
                 int id_do_arquivo = Integer.parseInt(idText);
 
-                Repositorio.lerValores(id_do_arquivo); // salvar no arquivo poltronas
+                Repositorio.lerValores(id_do_arquivo);
+                System.out.println("===========================================");
+                Repositorio.exemplo(id_do_arquivo);
 
                 //vai salvar no arquivo o horario tanto de poutrona comprados
                 for (int adicionar_tantos_que_comprou = 0; adicionar_tantos_que_comprou < contadorPoltronas; adicionar_tantos_que_comprou++){
@@ -764,7 +762,7 @@ private Label duracao_label;
                 Map<String, Integer> contagemfilmes = Analisador.lerArquivo("filmes_mais_comprados.txt");
                 String filmeMaisComprado = Analisador.obterMaisComprado(contagemfilmes);
                 String filmeMenosComprido = Analisador.obterMenosComprado(contagemfilmes);
-                System.out.println(filmeMaisComprado+"  "+filmeMenosComprido);
+
                 pagEstatisticasController.muda_as_sessoes(horarioMaisComprado,horarioMenosComprido,filmeMaisComprado,filmeMenosComprido);
                 marcarCadeirasVermelhas();
 
@@ -791,7 +789,7 @@ private Label duracao_label;
         try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
             String linha = reader.readLine();
             String[] poltronas = linha.substring(1, linha.length() - 1).split(",");
-            String poltrona_compradas = "";
+            String poltrona_compradas = cadeirasVerdes + " ";
 
 
             for (String poltrona : poltronas) {
@@ -801,7 +799,7 @@ private Label duracao_label;
 
                 if (botao != null){
 
-                    poltrona_compradas += poltrona + " "; // Adiciona a poltrona à variável str
+                     // Adiciona a poltrona à variável str
                     String nome_do_filme_comprado = nomeFilmeComprar.getText();
                     String data_do_filme_comprado = data_do_filme.getText();
                     String horas_do_filme_comprado = horario_filme_comprar.getText();
@@ -1104,7 +1102,7 @@ private Label duracao_label;
         btpix.setOpacity(0);
         precototal_label.setText(null);
         total_de_meias.setText(null);
-        Repositorio.resetarValores();
+
         cadeirasVerdes = new ArrayList<>();
         contadorPoltronas = 0;
 

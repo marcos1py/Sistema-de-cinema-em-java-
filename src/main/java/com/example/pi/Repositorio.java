@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Scanner;
 
@@ -53,42 +54,46 @@ public class Repositorio {
             System.out.println("Erro ao ler os valores: " + e.getMessage());
         }
     }
-
     private static void salvarPoltronas(int id, List<String> poltronas) {
         String nomeArquivo = "poltoronas_" + id + ".txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo, true))) {
-            StringBuilder linha = new StringBuilder();
+            List<String> poltronasExistentes = new ArrayList<>();
 
-            // Lê o conteúdo existente do arquivo
-            List<String> conteudoExistente = new ArrayList<>();
+            // Lê as poltronas existentes no arquivo
             try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
-                String conteudo;
-                while ((conteudo = reader.readLine()) != null) {
-                    conteudoExistente.add(conteudo);
+                String linha;
+                while ((linha = reader.readLine()) != null) {
+                    linha = linha.replace("[", "").replace("]", ""); // Remove os colchetes
+                    String[] poltronasArray = linha.split(",");
+                    for (String poltrona : poltronasArray) {
+                        poltronasExistentes.add(poltrona.trim());
+                    }
                 }
             }
 
-            // Adiciona as novas poltronas ao conteúdo existente
-            conteudoExistente.addAll(poltronas);
+            // Adiciona as novas poltronas à lista existente
+            poltronasExistentes.addAll(poltronas);
 
-            linha.append("[");
-            for (int i = 0; i < conteudoExistente.size(); i++) {
-                linha.append(conteudoExistente.get(i));
+            // Remove as duplicatas
+            List<String> poltronasUnicas = new ArrayList<>(new LinkedHashSet<>(poltronasExistentes));
 
-                if (i < conteudoExistente.size() - 1) {
-                    linha.append(",");
+            // Escreve as poltronas no arquivo
+            try (BufferedWriter writer2 = new BufferedWriter(new FileWriter(nomeArquivo))) {
+                writer2.write("[");
+                for (int i = 0; i < poltronasUnicas.size(); i++) {
+                    writer2.write(poltronasUnicas.get(i));
+                    if (i < poltronasUnicas.size() - 1) {
+                        writer2.write(",");
+                    }
                 }
+                writer2.write("]");
             }
-            linha.append("]");
-
-            writer.write(linha.toString());
 
             System.out.println("Poltronas adicionadas com sucesso no arquivo 'poltronas_" + id + ".txt'.");
         } catch (IOException e) {
             System.out.println("Erro ao adicionar as poltronas: " + e.getMessage());
         }
     }
-
 
     public static void resetarValores() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(NOME_ARQUIVO))) {
