@@ -12,15 +12,19 @@ public class TelaLoginController {
     @FXML
     private Label senhaincorretalabel;
 
-
     @FXML
     private ImageView voltarlogin;
 
     @FXML
     private PasswordField txtsenha;
+
+    public void resetarlogin(){
+        senhaincorretalabel.setText("");
+    }
     @FXML
     void btvoltarlogin(ActionEvent event) {
         Main.mudarTela("usuariofilme");
+        resetarlogin();
     }
 
     @FXML
@@ -28,6 +32,7 @@ public class TelaLoginController {
         if(txtsenha.getText().equals("1234")){
             Main.mudarTela("estatisticas");
             txtsenha.setText(null);
+            resetarlogin();
         }
         else{
 

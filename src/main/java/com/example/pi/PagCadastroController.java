@@ -142,7 +142,7 @@ public class PagCadastroController {
         String idadeMinima = "10";
         System.out.println("-------------------------------------------------------");
 
-        if (sinopse == (null) || data == null || duracao == null || nomeFilme == null || sala == null || horario == null || valorInteira == null || valorMeia == null || genero == null) {
+        if (sinopse.equals("") || data == null || duracao.equals("") || nomeFilme.equals("") || sala == null || horario == null || valorInteira.equals("") || valorMeia.equals("") || genero.equals("") || caminhoImagem.equals(null)) {
             avisolabel.setText("Por favor, preencha todos os campos corretamente");
         }else {
             avisolabel.setText("Salvo!");
