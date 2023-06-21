@@ -1047,10 +1047,13 @@ private Label duracao_label;
             int totalMeias = Integer.parseInt(total_de_meias.getText());
 
 
-            if (totalMeias == 0 ){
+            if (contadorPoltronas == 0 ){
                 aviso_de_selecionar.setOpacity(1);
             }
             else if (totalMeias > contadorPoltronas && contadorPoltronas == 0) {
+                System.out.println("saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+                System.out.println(totalMeias);
+                System.out.println(contadorPoltronas);
                 aviso_de_selecionar.setOpacity(1);
             }
             else if (totalMeias > contadorPoltronas) {
