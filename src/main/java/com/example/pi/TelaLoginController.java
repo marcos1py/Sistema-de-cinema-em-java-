@@ -20,6 +20,7 @@ public class TelaLoginController {
 
     public void resetarlogin(){
         senhaincorretalabel.setText("");
+        txtsenha.setText("");
     }
     @FXML
     void btvoltarlogin(ActionEvent event) {
