@@ -5,87 +5,87 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="674.0" prefWidth="1440.0" style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pi.PagEstatisticasController">
+<Pane prefHeight="674.0" prefWidth="1360.0" style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pi.PagEstatisticasController">
     <children>
-        <Pane prefHeight="90.0" prefWidth="1920.0" style="-fx-background-color: #1A2232;">
+        <Pane prefHeight="90.0" prefWidth="1400.0" style="-fx-background-color: #1A2232;">
             <children>
                 <Label layoutX="100.0" layoutY="30.0" text="CINE ABC" textFill="#d9d9d9">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Label>
-            <Button layoutX="1065.0" layoutY="30.0" mnemonicParsing="false" onAction="#btcadastroestatistica" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: #00FFFF;" text="Cadastrar Filme" textFill="#1a2232">
+            <Button layoutX="1017.0" layoutY="30.0" mnemonicParsing="false" onAction="#btcadastroestatistica" prefHeight="44.0" prefWidth="163.0" style="-fx-background-color: #00FFFF;" text="Cadastrar Filme" textFill="#1a2232">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button layoutX="873.0" layoutY="30.0" mnemonicParsing="false" onAction="#btdeletar" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: #00FFFF;" text="Deletar Filme" textFill="#1a2232">
+            <Button layoutX="852.0" layoutY="30.0" mnemonicParsing="false" onAction="#btdeletar" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: #00FFFF;" text="Deletar Filme" textFill="#1a2232">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button layoutX="1252.0" layoutY="30.0" mnemonicParsing="false" onAction="#btsair" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: #00FFFF;" text="Sair" textFill="#1a2232">
+            <Button layoutX="1197.0" layoutY="30.0" mnemonicParsing="false" onAction="#btsair" prefHeight="44.0" prefWidth="63.0" style="-fx-background-color: #00FFFF;" text="Sair" textFill="#1a2232">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
             </children>
         </Pane>
-      <Pane layoutX="378.0" layoutY="257.0" prefHeight="116.0" prefWidth="250.0" style="-fx-background-color: #B2FAA6; -fx-border-color: #24FF00;">
+      <Pane layoutX="283.0" layoutY="284.0" prefHeight="116.0" prefWidth="250.0" style="-fx-background-color: #B2FAA6; -fx-border-color: #24FF00;">
          <children>
-            <Label fx:id="horario_Mais_Comprado" layoutX="26.0" layoutY="26.0" prefHeight="65.0" prefWidth="250.0" text="Sessão 0">
+            <Label fx:id="horario_Mais_Comprado" layoutX="5.0" layoutY="26.0" prefHeight="65.0" prefWidth="243.0">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
          </children>
       </Pane>
-      <Label fx:id="sessao_mais_ocupada" layoutX="393.0" layoutY="214.0" text="Sessão mais ocupada" textFill="WHITE">
+      <Label fx:id="sessao_mais_ocupada" layoutX="298.0" layoutY="241.0" text="Sessão mais ocupada" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="sessao_menos_ocupada" layoutX="910.0" layoutY="214.0" text="Sessão menos ocupada" textFill="WHITE">
+      <Label fx:id="sessao_menos_ocupada" layoutX="815.0" layoutY="241.0" text="Sessão menos ocupada" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="405.0" layoutY="438.0" text="Filme mais vendido" textFill="WHITE">
+      <Label layoutX="310.0" layoutY="465.0" text="Filme mais vendido" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="921.0" layoutY="438.0" text="Filme menos vendido" textFill="WHITE">
+      <Label layoutX="826.0" layoutY="465.0" text="Filme menos vendido" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="473.0" layoutY="130.0" text="Dashboard Financeiro do Cinema" textFill="WHITE">
+      <Label layoutX="378.0" layoutY="157.0" text="Dashboard Financeiro do Cinema" textFill="WHITE">
          <font>
             <Font name="System Bold" size="38.0" />
          </font>
       </Label>
-      <Pane layoutX="906.0" layoutY="257.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #FF7979; -fx-border-color: red;">
+      <Pane layoutX="811.0" layoutY="284.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #FF7979; -fx-border-color: red;">
          <children>
-            <Label fx:id="horario_Menos_Comprado" layoutX="8.0" layoutY="26.0" prefHeight="65.0" prefWidth="250.0" text="Sessão 1">
+            <Label fx:id="horario_Menos_Comprado" layoutX="8.0" layoutY="26.0" prefHeight="65.0" prefWidth="250.0">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
          </children>
       </Pane>
-      <Pane layoutX="906.0" layoutY="487.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #FF7979; -fx-border-color: red;">
+      <Pane layoutX="811.0" layoutY="514.0" prefHeight="116.0" prefWidth="266.0" style="-fx-background-color: #FF7979; -fx-border-color: red;">
          <children>
-            <Label fx:id="filme_menos_vendido" layoutX="8.0" layoutY="25.0" prefHeight="65.0" prefWidth="250.0" text="AAAAA">
+            <Label fx:id="filme_menos_vendido" layoutX="8.0" layoutY="25.0" prefHeight="65.0" prefWidth="250.0">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
          </children>
       </Pane>
-      <Pane layoutX="378.0" layoutY="487.0" prefHeight="116.0" prefWidth="250.0" style="-fx-background-color: #B2FAA6; -fx-border-color: #24FF00;">
+      <Pane layoutX="283.0" layoutY="514.0" prefHeight="116.0" prefWidth="250.0" style="-fx-background-color: #B2FAA6; -fx-border-color: #24FF00;">
          <children>
-            <Label fx:id="filme_mais_vendido" layoutX="8.0" layoutY="13.0" prefHeight="90.0" prefWidth="250.0" text="Homem-Aranha aaaaaaaaaaaaaaaaaaaaaaaaaaa">
+            <Label fx:id="filme_mais_vendido" layoutX="8.0" layoutY="13.0" prefHeight="90.0" prefWidth="250.0">
                <font>
                   <Font size="20.0" />
                </font>
