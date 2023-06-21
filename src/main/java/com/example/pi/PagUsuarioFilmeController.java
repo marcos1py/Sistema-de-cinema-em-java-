@@ -90,6 +90,7 @@ public class PagUsuarioFilmeController {
         }
         String sinopse = FilmeRepository.pegarSinopse(id);
         filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -127,6 +128,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -163,6 +167,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -200,6 +207,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -236,6 +246,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -270,6 +283,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -306,6 +322,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -340,6 +359,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -374,6 +396,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -408,6 +433,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -442,6 +470,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -476,6 +507,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -510,6 +544,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 
@@ -544,6 +581,9 @@ public class PagUsuarioFilmeController {
         if (caminhoImagem != null){
             filmeComprarController.setAtualizar_Img(caminhoImagem);
         }
+        String sinopse = FilmeRepository.pegarSinopse(id);
+        filmeComprarController.setAtualizar_Sinopse(sinopse);
+
         String genero = FilmeRepository.pegarGenero(id);
         filmeComprarController.setAtualizar_Genero(genero);
 

@@ -68,7 +68,7 @@ public class Main extends Application {
         filmeComprarController.setPagEstatisticasController(estatisticasController);
 
         ResetarArquivos.resetar_tudo();
-        primaryStage.setScene(pagCadastro);
+        primaryStage.setScene(pagUsuarioFilme);
         primaryStage.show();
     }
 

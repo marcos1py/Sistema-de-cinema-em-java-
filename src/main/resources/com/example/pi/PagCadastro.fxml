@@ -68,7 +68,7 @@
         <DatePicker fx:id="datepicker" layoutX="158.0" layoutY="295.25" onAction="#pegarData" promptText="Escolha uma data" />
         <TextField fx:id="textGenero" layoutX="171.0" layoutY="175.25" promptText="Ex: Ação, Drama, Comédia,Etc" />
         <TextField fx:id="nomeFilmeCadastro" layoutX="232.0" layoutY="355.25" prefHeight="25.0" prefWidth="237.0" promptText="Nome do Filme" />
-        <Label fx:id="datacadastrolabel" layoutX="350.0" layoutY="299.75" textFill="WHITE" />
+        <Label fx:id="datacadastrolabel" layoutX="350.0" layoutY="299.75" textFill="#1f293d" />
       <Text fill="#d9d9d9" layoutX="567.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sinopse">
          <font>
             <Font size="15.0" />

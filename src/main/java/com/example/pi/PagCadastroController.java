@@ -145,7 +145,7 @@ public class PagCadastroController {
         if (sinopse == (null) || data == null || duracao == null || nomeFilme == null || sala == null || horario == null || valorInteira == null || valorMeia == null || genero == null) {
             avisolabel.setText("Por favor, preencha todos os campos corretamente");
         }else {
-            avisolabel.setText(null);
+            avisolabel.setText("Salvo!");
 
             // add a img
             System.out.println("Caminho da imagem: " + caminhoImagem);
@@ -180,7 +180,8 @@ public class PagCadastroController {
     }
     @FXML
     void btvoltarcadastro(ActionEvent event) {
-        Main.mudarTela("usuariofilme");
+        Main.mudarTela("estatisticas");
+        avisolabel.setText("");
         resetarinput();
 
     }
@@ -191,9 +192,9 @@ public class PagCadastroController {
         valorDaInteiraCadastro.setText("");
         valorDaMeiaCadastro.setText("");
         choiceboxhorario.setValue("");
-        //choiceboxsala.setValue("");
+        choiceboxsala.setValue("");
         SinopseCadastro.setText("");
-        //datepicker.setValue(null);
+        datepicker.setValue(null);
 
     }
 
