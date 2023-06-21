@@ -25,6 +25,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class PagCadastroController {
     private Map<Integer, String> caminhosImagens = new HashMap<>();
@@ -142,7 +143,8 @@ public class PagCadastroController {
         String idadeMinima = "10";
         System.out.println("-------------------------------------------------------");
 
-        if (sinopse.equals("") || data == null || duracao.equals("") || nomeFilme.equals("") || sala == null || horario == null || valorInteira.equals("") || valorMeia.equals("") || genero.equals("") || caminhoImagem.equals(null)) {
+        if ( Objects.equals(sinopse, "") || datacadastrolabel.getText().equals(null)  || duracao == null || Objects.equals(nomeFilme, "") || sala == null || horario == null ||  Objects.equals(valorInteira,"") ||  Objects.equals(valorMeia, "")|| Objects.equals(genero, "")) {
+
             avisolabel.setText("Por favor, preencha todos os campos corretamente");
         }else {
             avisolabel.setText("Salvo!");
