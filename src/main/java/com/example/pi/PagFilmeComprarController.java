@@ -157,14 +157,14 @@ private Label duracao_label;
         imgqrcode.setVisible(true);
         btprosseguircompra.setOpacity(1);
     }
-    @FXML
-    public void btdebito(ActionEvent event){
-        labelcomprar.setText("Por favor, insira ou aproxime o cartão de débito:");
-        imgqrcode.setVisible(false);
-    }
+//    @FXML
+//    public void btdebito(ActionEvent event){
+//        labelcomprar.setText("Por favor, insira ou aproxime o cartão de débito:");
+//        imgqrcode.setVisible(false);
+//    }
     @FXML
     public void btcredito(ActionEvent event){
-        labelcomprar.setText("Por favor, insira ou aproxime o cartão de crédito:");
+        labelcomprar.setText("Por favor, insira ou aproxime o cartão:");
         imgqrcode.setVisible(false);
         btprosseguircompra.setOpacity(1);
     }
@@ -394,9 +394,6 @@ private Label duracao_label;
 
         Repositorio.salvarValores(contadorPoltronas, cadeirasVerdes);
 
-        System.out.println("Contagem de poltronas: " + contadorPoltronas);
-        System.out.println("Cadeiras verdes: " + cadeirasVerdes);
-
     }
     //contadorPoltronas = contadorPoltronas * valor da inteira
    // contadorPoltronas = contadorPoltronas - totaldemeias * valor da meia
@@ -418,7 +415,7 @@ private Label duracao_label;
 
     @FXML
     void A1(ActionEvent event) {
-        handleButtonClick(A1a);
+        handleButtonClick(A1);
 
     }
 
@@ -743,8 +740,6 @@ private Label duracao_label;
                 int id_do_arquivo = Integer.parseInt(idText);
 
                 Repositorio.lerValores(id_do_arquivo);
-                System.out.println("===========================================");
-                Repositorio.exemplo(id_do_arquivo);
 
                 //vai salvar no arquivo o horario tanto de poutrona comprados
                 for (int adicionar_tantos_que_comprou = 0; adicionar_tantos_que_comprou < contadorPoltronas; adicionar_tantos_que_comprou++){
@@ -777,7 +772,7 @@ private Label duracao_label;
 
 
     @FXML
-    private Button A1a;
+    private Button A1;
 
     public void marcarCadeirasVermelhas() {
         Map<String, Button> mapaPoltronas = new HashMap<>();
@@ -808,9 +803,9 @@ private Label duracao_label;
 
                 }
 
-                if (botao.getId().equals("A1a"))  {
-                    A1a.setStyle("-fx-background-color: red;");
-                    A1a.setDisable(true);
+                if (botao.getId().equals("A1"))  {
+                    A1.setStyle("-fx-background-color: red;");
+                    A1.setDisable(true);
                 }
                 if (botao.getId().equals("A2")) {
                     A2.setStyle("-fx-background-color: red;");
@@ -1108,7 +1103,7 @@ private Label duracao_label;
 
         totalSelecionado.setText(Integer.toString(contadorPoltronas));
         // Defina a cor branca para todas as poltronas
-        A1a.setDisable(false);
+        A1.setDisable(false);
         A2.setDisable(false);
         A3.setDisable(false);
         A4.setDisable(false);
@@ -1164,7 +1159,7 @@ private Label duracao_label;
         G6.setDisable(false);
         G7.setDisable(false);
         G8.setDisable(false);
-        A1a.setStyle("-fx-background-color: white;");
+        A1.setStyle("-fx-background-color: white;");
         A2.setStyle("-fx-background-color: white;");
         A3.setStyle("-fx-background-color: white;");
         A4.setStyle("-fx-background-color: white;");

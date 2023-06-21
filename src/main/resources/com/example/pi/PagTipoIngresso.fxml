@@ -43,7 +43,7 @@
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <Label fx:id="cadeirasingresso" layoutX="83.0" layoutY="106.0" text="1A" textFill="#1a2232">
+                <Label fx:id="cadeirasingresso" layoutX="83.0" layoutY="106.0" text="1A" textFill="#1a2232" wrapText="true">
                     <font>
                         <Font size="15.0" />
                     </font>
