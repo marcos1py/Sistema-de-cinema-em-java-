@@ -45,17 +45,17 @@
                 <Font size="15.0" />
             </font>
         </Text>
-        <Text fill="#d9d9d9" layoutX="614.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero">
+        <Text fill="#d9d9d9" layoutX="609.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero">
             <font>
                 <Font size="15.0" />
             </font>
         </Text>
-        <Text fill="#d9d9d9" layoutX="158.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário">
+        <Text fill="#d9d9d9" layoutX="154.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário">
             <font>
                 <Font size="15.0" />
             </font>
         </Text>
-        <Text fill="#d9d9d9" layoutX="158.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data">
+        <Text fill="#d9d9d9" layoutX="154.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data">
             <font>
                 <Font size="15.0" />
             </font>
@@ -65,40 +65,40 @@
                 <Font size="15.0" />
             </font>
         </Text>
-        <DatePicker fx:id="datepicker" layoutX="158.0" layoutY="381.0" onAction="#pegarData" prefHeight="25.0" prefWidth="237.0" promptText="Escolha uma data" />
-        <TextField fx:id="textGenero" layoutX="614.0" layoutY="425.0" prefHeight="25.0" prefWidth="237.0" promptText="Ex: Ação, Drama, Comédia,Etc" />
+        <DatePicker fx:id="datepicker" layoutX="154.0" layoutY="381.0" onAction="#pegarData" prefHeight="25.0" prefWidth="237.0" promptText="Escolha uma data" />
+        <TextField fx:id="textGenero" layoutX="609.0" layoutY="425.0" prefHeight="25.0" prefWidth="290.0" promptText="Ex: Ação, Drama, Comédia,Etc" />
         <TextField fx:id="nomeFilmeCadastro" layoutX="154.0" layoutY="202.0" prefHeight="25.0" prefWidth="237.0" promptText="Nome do Filme" />
         <Label fx:id="datacadastrolabel" layoutX="350.0" layoutY="299.75" textFill="#1f293d" />
-        <Text fill="#d9d9d9" layoutX="614.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sinopse">
+        <Text fill="#d9d9d9" layoutX="609.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sinopse">
             <font>
                 <Font size="15.0" />
             </font>
         </Text>
-        <TextArea fx:id="SinopseCadastro" layoutX="614.0" layoutY="261.0" prefHeight="115.0" prefWidth="290.0" wrapText="true" />
-        <TextField fx:id="duraçaoDoFilmeCadastro" layoutX="614.0" layoutY="498.0" prefHeight="25.0" prefWidth="237.0" promptText="Em minutos" />
-        <Text fill="#d9d9d9" layoutX="614.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duração">
+        <TextArea fx:id="SinopseCadastro" layoutX="609.0" layoutY="261.0" prefHeight="115.0" prefWidth="290.0" wrapText="true" />
+        <TextField fx:id="duraçaoDoFilmeCadastro" layoutX="609.0" layoutY="498.0" prefHeight="25.0" prefWidth="290.0" promptText="Em minutos" />
+        <Text fill="#d9d9d9" layoutX="609.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duração">
             <font>
                 <Font size="17.0" />
             </font>
         </Text>
         <ChoiceBox fx:id="choiceboxsala" layoutX="154.0" layoutY="266.0" prefHeight="25.0" prefWidth="237.0" />
-        <ChoiceBox fx:id="choiceboxhorario" layoutX="158.0" layoutY="323.0" prefHeight="25.0" prefWidth="237.0" />
-        <Text fill="#d9d9d9" layoutX="158.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da inteira">
+        <ChoiceBox fx:id="choiceboxhorario" layoutX="154.0" layoutY="319.0" prefHeight="25.0" prefWidth="237.0" />
+        <Text fill="#d9d9d9" layoutX="154.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da inteira">
             <font>
                 <Font size="17.0" />
             </font>
         </Text>
-        <Text fill="#d9d9d9" layoutX="158.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da meia">
+        <Text fill="#d9d9d9" layoutX="154.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da meia">
             <font>
                 <Font size="17.0" />
             </font>
         </Text>
-        <TextField fx:id="valorDaInteiraCadastro" layoutX="158.0" layoutY="453.0" prefHeight="25.0" prefWidth="237.0" />
-        <TextField fx:id="valorDaMeiaCadastro" layoutX="158.0" layoutY="513.0" prefHeight="25.0" prefWidth="237.0" />
-        <Button fx:id="btnOpenFile" layoutX="609.0" layoutY="203.0" mnemonicParsing="false" onAction="#img_do_filme" text="imagem" />
+        <TextField fx:id="valorDaInteiraCadastro" layoutX="154.0" layoutY="453.0" prefHeight="25.0" prefWidth="237.0" />
+        <TextField fx:id="valorDaMeiaCadastro" layoutX="154.0" layoutY="513.0" prefHeight="25.0" prefWidth="237.0" />
+        <Button fx:id="btnOpenFile" layoutX="609.0" layoutY="203.0" mnemonicParsing="false" onAction="#img_do_filme" text="Imagem" />
         <Button fx:id="img_do_filme_tela_de_cadastro" layoutX="1116.0" layoutY="220.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
         <Label layoutX="777.0" layoutY="372.0" opacity="0.0" text="VOCE ESCREVEL ALGO ERRADO!!!!" textAlignment="CENTER" textFill="RED" underline="true" />
-        <Label fx:id="avisolabel" layoutX="800.0" layoutY="415.0" textAlignment="CENTER" textFill="RED" underline="true">
+        <Label fx:id="avisolabel" layoutX="800.0" layoutY="600.0" textAlignment="CENTER" textFill="RED" underline="true">
             <font>
                 <Font size="20.0" />
             </font></Label>

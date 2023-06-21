@@ -1097,6 +1097,7 @@ private Label duracao_label;
 
     public void  resetar_tudo_para_branco(){
         labelcomprar.setText(null);
+
         btprosseguircompra.setOpacity(0);
         imgqrcode.setVisible(false);
         btcredito.setOpacity(0);
