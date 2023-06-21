@@ -65,6 +65,7 @@ private Label duracao_label;
     public void setAtualiza_dados(String text,int id) {
         id_filme.setText(String.valueOf(id));
         resetar_tudo_para_branco();
+        botao_destivado();
         marcarCadeirasVermelhas();
         nomeFilmeComprar.setText(text);
     }
@@ -155,6 +156,7 @@ private Label duracao_label;
     public void btpix(ActionEvent event){
         labelcomprar.setText("Por favor, escaneie o Qrcode a seguir:");
         imgqrcode.setVisible(true);
+        btprosseguircompra.setDisable(false);
         btprosseguircompra.setOpacity(1);
     }
 //    @FXML
@@ -166,12 +168,13 @@ private Label duracao_label;
     public void btcredito(ActionEvent event){
         labelcomprar.setText("Por favor, insira ou aproxime o cartão:");
         imgqrcode.setVisible(false);
+        btprosseguircompra.setDisable(false);
         btprosseguircompra.setOpacity(1);
     }
     @FXML
     public void btdinheiro(ActionEvent event){
         btprosseguircompra.setOpacity(1);
-
+        btprosseguircompra.setDisable(false);
         labelcomprar.setText("Por favor, entregue o dinheiro ao caixa:");
         imgqrcode.setVisible(false);
     }
@@ -1042,10 +1045,14 @@ private Label duracao_label;
         aviso_de_selecionar.setOpacity(0);
         try {
             int totalMeias = Integer.parseInt(total_de_meias.getText());
+
+
             if (totalMeias == 0 ){
                 aviso_de_selecionar.setOpacity(1);
             }
-
+            else if (totalMeias > contadorPoltronas && contadorPoltronas == 0) {
+                aviso_de_selecionar.setOpacity(1);
+            }
             else if (totalMeias > contadorPoltronas) {
                 System.out.println("Tem mais meia do que ingressos.");
                 aviso_de_selecionar.setOpacity(0);
@@ -1053,10 +1060,10 @@ private Label duracao_label;
 
             }
             else {
+                botao_ativado();
                 aviso_de_selecionar.setOpacity(0);
                 msg_de_erro.setOpacity(0);
                 msg_erro2.setOpacity(0);
-
                 btcredito.setOpacity(1);
                 valor_a_ser_pago.setOpacity(1);
                 precototal_label.setOpacity(1);
@@ -1082,7 +1089,7 @@ private Label duracao_label;
     private Label valor_a_ser_pago;
     @FXML
     void btvoltarcompra(ActionEvent event) {
-        // Defina a cor branca para todas as poltronas e resetar os valores
+        botao_destivado();
         resetar_tudo_para_branco();
         Main.mudarTela("usuariofilme");
     }
@@ -1095,9 +1102,23 @@ private Label duracao_label;
     private Button btdinheiro;
 
 
+    public void botao_ativado(){
+        btcredito.setDisable(false);
+        btdinheiro.setDisable(false);
+        btpix.setDisable(false);
+    }
+
+
+    public void botao_destivado(){
+        btcredito.setDisable(true);
+        btdinheiro.setDisable(true);
+        btpix.setDisable(true);
+        btprosseguircompra.setDisable(true);
+    }
+
     public void  resetar_tudo_para_branco(){
         labelcomprar.setText(null);
-
+        botao_destivado();
         btprosseguircompra.setOpacity(0);
         imgqrcode.setVisible(false);
         btcredito.setOpacity(0);

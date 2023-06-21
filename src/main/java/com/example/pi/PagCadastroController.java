@@ -113,6 +113,18 @@ public class PagCadastroController {
             imageView.setFitHeight(216);
             img_do_filme_tela_de_cadastro.setGraphic(imageView);
         }
+        else {
+            caminhoImagem = "C:\\Users\\marco\\OneDrive\\Área de Trabalho\\download (1).png";
+            System.out.println("Caminho da imagem: " + caminhoImagem);
+
+            // Criar uma nova imagem com base no caminho do arquivo selecionado
+            Image novaImagem = new Image("file:" + caminhoImagem);
+
+            ImageView imageView = new ImageView(novaImagem);
+            imageView.setFitWidth(144);
+            imageView.setFitHeight(216);
+            img_do_filme_tela_de_cadastro.setGraphic(imageView);
+        }
     }
     @FXML
     private Label avisolabel;
