@@ -17,7 +17,7 @@
                 </Label>
             </children>
         </Pane>
-        <Button layoutX="1316.0" layoutY="596.0" mnemonicParsing="false" onAction="#btprosseguirtipoingresso" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
+        <Button layoutX="1163.0" layoutY="596.0" mnemonicParsing="false" onAction="#btprosseguirtipoingresso" style="-fx-background-color: #00FFFF;" text="Finalizar" textFill="#1a2232">
             <font>
                 <Font size="20.0" />
             </font></Button>
@@ -28,27 +28,27 @@
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <Label fx:id="dataingresso" layoutX="15.0" layoutY="35.0" text="00/00" textFill="#1a2232">
+                <Label fx:id="dataingresso" layoutX="14.0" layoutY="37.0" text="00/00" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <Label fx:id="horarioingresso" layoutX="15.0" layoutY="60.0" text="00:00" textFill="#1a2232">
+                <Label fx:id="horarioingresso" layoutX="14.0" layoutY="60.0" text="00:00" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <Label fx:id="salaingresso" layoutX="13.0" layoutY="81.0" text="Sala 0" textFill="#1a2232">
+                <Label fx:id="salaingresso" layoutX="14.0" layoutY="83.0" text="Sala 0" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <Label fx:id="cadeirasingresso" layoutX="82.0" layoutY="107.0" text="1A" textFill="#1a2232">
+                <Label fx:id="cadeirasingresso" layoutX="83.0" layoutY="106.0" text="1A" textFill="#1a2232">
                     <font>
                         <Font size="15.0" />
                     </font>
                 </Label>
-            <Text fontSmoothingType="LCD" layoutX="15.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor pago:">
+            <Text fontSmoothingType="LCD" layoutX="14.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor pago:">
                <font>
                   <Font size="15.0" />
                </font></Text>
@@ -57,22 +57,22 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="valor_total_pago" layoutX="71.0" layoutY="212.0" text="VALOR">
+            <Label fx:id="valor_total_pago" layoutX="71.0" layoutY="213.0" text="VALOR">
                <font>
-                  <Font size="13.0" />
+                  <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="salaingresso1" layoutX="14.0" layoutY="107.0" text="Poltronas:" textFill="#1a2232">
+            <Label fx:id="salaingresso1" layoutX="14.0" layoutY="106.0" text="Poltronas:" textFill="#1a2232">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="avisotipoingressolabel" layoutX="7.0" layoutY="183.0" prefHeight="21.0" prefWidth="288.0" textFill="#d92727">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
             </children>
         </Pane>
-      <Label fx:id="avisotipoingressolabel" layoutX="100.0" layoutY="335.0" prefHeight="21.0" prefWidth="288.0" textFill="#d92727">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
     </children>
 </Pane>

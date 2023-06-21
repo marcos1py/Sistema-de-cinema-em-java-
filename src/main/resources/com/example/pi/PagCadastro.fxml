@@ -25,12 +25,12 @@
                 </Label>
             </children>
         </Pane>
-        <Button fx:id="btnSalvar" layoutX="679.0" layoutY="356.0" mnemonicParsing="false" onAction="#btsalvar" style="-fx-background-color: #00FFFF;" text="Salvar" textFill="#1a2232">
+        <Button fx:id="btnSalvar" layoutX="1182.0" layoutY="596.0" mnemonicParsing="false" onAction="#btsalvar" style="-fx-background-color: #00FFFF;" text="Salvar" textFill="#1a2232">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button layoutX="35.0" layoutY="325.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltarcadastro" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
+        <Button layoutX="100.0" layoutY="620.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltarcadastro" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -68,13 +68,13 @@
         <DatePicker fx:id="datepicker" layoutX="158.0" layoutY="295.25" onAction="#pegarData" promptText="Escolha uma data" />
         <TextField fx:id="textGenero" layoutX="171.0" layoutY="175.25" promptText="Ex: Ação, Drama, Comédia,Etc" />
         <TextField fx:id="nomeFilmeCadastro" layoutX="232.0" layoutY="355.25" prefHeight="25.0" prefWidth="237.0" promptText="Nome do Filme" />
-        <Label fx:id="datacadastrolabel" layoutX="350.0" layoutY="299.75" textFill="WHITE" />
+        <Label fx:id="datacadastrolabel" layoutX="350.0" layoutY="299.75" textFill="#1f293d" />
       <Text fill="#d9d9d9" layoutX="567.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sinopse">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextArea fx:id="SinopseCadastro" layoutX="567.0" layoutY="444.0" prefHeight="115.0" prefWidth="290.0" />
+      <TextArea fx:id="SinopseCadastro" layoutX="567.0" layoutY="444.0" prefHeight="115.0" prefWidth="290.0" wrapText="true" />
       <TextField fx:id="duraçaoDoFilmeCadastro" layoutX="192.0" layoutY="415.25" promptText="Em minutos" />
       <Text fill="#d9d9d9" layoutX="100.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duração">
          <font>

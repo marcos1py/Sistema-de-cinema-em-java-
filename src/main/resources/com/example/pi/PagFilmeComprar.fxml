@@ -22,13 +22,13 @@
                 </Label>
             </children>
         </Pane>
-        <ImageView fx:id="imgqrcode" fitHeight="136.0" fitWidth="179.0" layoutX="800.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true" visible="false">
+        <ImageView fx:id="imgqrcode" fitHeight="136.0" fitWidth="179.0" layoutX="693.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true" visible="false">
             <image>
                 <Image url="@img/qrcode.png" />
             </image>
         </ImageView>
         <Button fx:id="img_ta_select_cadeira" layoutX="100.0" layoutY="145.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
-        <Label fx:id="nomeFilmeComprar" layoutX="100.0" layoutY="367.0" text="Nome" textFill="#d9d9d9">
+        <Label fx:id="nomeFilmeComprar" layoutX="100.0" layoutY="375.0" text="Nome" textFill="#d9d9d9">
             <font>
                 <Font name="System Bold" size="15.0" />
             </font>
@@ -54,26 +54,26 @@
             </font>
         </Label>
         <Separator layoutX="643.0" layoutY="156.0" prefWidth="200.0" />
-        <Label layoutX="427.0" layoutY="399.0" text="Disponível" textFill="#d9d9d9">
+        <Label layoutX="428.0" layoutY="399.0" text="Disponível" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="427.0" layoutY="364.0" text="Escolhido" textFill="#d9d9d9">
+        <Label layoutX="428.0" layoutY="361.0" text="Escolhido" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="427.0" layoutY="329.0" text="Ocupado" textFill="#d9d9d9">
+        <Label layoutX="428.0" layoutY="326.0" text="Ocupado" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Button fx:id="btprosseguircompra" layoutX="1039.0" layoutY="629.0" mnemonicParsing="false" onAction="#btprosseguircompra" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
+        <Button fx:id="btprosseguircompra" layoutX="1030.0" layoutY="596.0" mnemonicParsing="false" onAction="#btprosseguircompra" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
             <font>
                 <Font size="20.0" />
             </font></Button>
-        <Button layoutX="100.0" layoutY="605.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltarcompra" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
+        <Button layoutX="100.0" layoutY="620.0" maxWidth="24.0" mnemonicParsing="false" onAction="#btvoltarcompra" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: 0; -fx-min-width: 24; -fx-min-height: 24;">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -137,13 +137,13 @@
         <Button fx:id="G6" layoutX="792.0" layoutY="404.0" mnemonicParsing="false" onAction="#G6" prefHeight="25.0" prefWidth="30.0" />
         <Button fx:id="G7" layoutX="834.0" layoutY="404.0" mnemonicParsing="false" onAction="#G7" prefHeight="25.0" prefWidth="30.0" />
         <Button fx:id="G8" layoutX="879.0" layoutY="404.0" mnemonicParsing="false" onAction="#G8" prefHeight="25.0" prefWidth="30.0" />
-        <Button layoutX="377.0" layoutY="327.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: red;" />
-        <Button layoutX="377.0" layoutY="362.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: #228B22;">
+        <Button disable="true" layoutX="377.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: red;" />
+        <Button layoutX="377.0" layoutY="359.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: #228B22;">
             <effect>
                 <Blend />
             </effect>
         </Button>
-        <Button layoutX="377.0" layoutY="397.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" />
+        <Button layoutX="377.0" layoutY="394.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" />
         <Label alignment="CENTER" layoutX="579.0" layoutY="437.0" prefHeight="24.0" prefWidth="24.0" text="1" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
@@ -229,64 +229,64 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="1004.0" layoutY="267.0" text="Quantos ingressos desses são meia?" textFill="WHITE">
+        <Label layoutX="997.0" layoutY="310.0" text="Quantos ingressos desses são meia?" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="1004.0" layoutY="301.0" text="Total selecionado:" textFill="WHITE">
+        <Label layoutX="997.0" layoutY="346.0" text="Total selecionado:" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="totalSelecionado" layoutX="1133.0" layoutY="301.0" text="0" textFill="#30ff29">
+        <Label fx:id="totalSelecionado" layoutX="1124.0" layoutY="346.0" text="0" textFill="#30ff29">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <TextField fx:id="total_de_meias" layoutX="1183.0" layoutY="341.0" prefHeight="25.0" prefWidth="75.0" />
-        <Label layoutX="1006.0" layoutY="343.0" text="Digite quantos são meia:" textFill="WHITE">
+        <TextField fx:id="total_de_meias" layoutX="1174.0" layoutY="388.0" prefHeight="25.0" prefWidth="75.0" />
+        <Label layoutX="997.0" layoutY="388.0" text="Digite quantos são meia:" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="msg_de_erro" layoutX="1144.0" layoutY="369.0" opacity="0.0" text="Digite um valor interiro" textFill="RED">
+        <Label fx:id="msg_de_erro" layoutX="1137.0" layoutY="364.0" opacity="0.0" text="Digite um valor inteiro" textFill="RED">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="msg_erro2" layoutX="932.0" layoutY="445.0" opacity="0.0" prefHeight="21.0" prefWidth="333.0" text="Tem mais meia do que o total de ingressos" textFill="RED">
+        <Label fx:id="msg_erro2" layoutX="960.0" layoutY="423.0" opacity="0.0" prefHeight="21.0" prefWidth="294.0" text="Tem mais meia do que o total de ingressos" textFill="RED">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Button fx:id="btpix" layoutX="1169.0" layoutY="533.0" mnemonicParsing="false" onAction="#btpix" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Pix" textFill="#1a2232">
+        <Button fx:id="btpix" layoutX="1222.0" layoutY="533.0" mnemonicParsing="false" onAction="#btpix" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Pix" textFill="#1a2232">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
-        <Button fx:id="btdinheiro" layoutX="1084.0" layoutY="533.0" mnemonicParsing="false" onAction="#btdinheiro" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Dinheiro" textFill="#1a2232">
+        <Button fx:id="btdinheiro" layoutX="1131.0" layoutY="533.0" mnemonicParsing="false" onAction="#btdinheiro" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Dinheiro" textFill="#1a2232">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
-        <Button fx:id="btcredito" layoutX="1004.0" layoutY="533.0" mnemonicParsing="false" onAction="#btcredito" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Crédito" textFill="#1a2232">
+        <Button fx:id="btcredito" layoutX="1053.0" layoutY="533.0" mnemonicParsing="false" onAction="#btcredito" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Cartão" textFill="#1a2232">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
-        <Label fx:id="valor_a_ser_pago" layoutX="1005.0" layoutY="494.0" opacity="0.0" text="Valor a ser pago R$:" textFill="WHITE">
+        <Label fx:id="valor_a_ser_pago" layoutX="1041.0" layoutY="494.0" opacity="0.0" text="Valor a ser pago R$:" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="labelcomprar" layoutX="646.0" layoutY="496.0" prefHeight="21.0" prefWidth="352.0" textFill="WHITE">
+        <Label fx:id="labelcomprar" alignment="CENTER" layoutX="586.0" layoutY="494.0" prefHeight="21.0" prefWidth="328.0" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="id_filme" layoutX="422.0" layoutY="125.0" text="1" textFill="WHITE" />
-        <Label fx:id="sala_do_filme" layoutX="387.0" layoutY="184.0" text="Sala" textFill="#d9d9d9">
+        <Label fx:id="id_filme" layoutX="422.0" layoutY="125.0" opacity="0.0" text="1" textFill="WHITE" />
+        <Label fx:id="sala_do_filme" layoutX="387.0" layoutY="183.0" text="Sala" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
@@ -296,22 +296,22 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="valorDaInteiraLabel" layoutX="1076.0" layoutY="190.0" text="00" textFill="WHITE">
+        <Label fx:id="valorDaInteiraLabel" layoutX="1069.0" layoutY="235.0" text="00" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="valorDaMeiaLabel" layoutX="1073.0" layoutY="230.0" text="00" textFill="WHITE">
+        <Label fx:id="valorDaMeiaLabel" layoutX="1060.0" layoutY="275.0" text="00" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Text fill="WHITE" layoutX="1006.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inteira R$:">
+        <Text fill="WHITE" layoutX="997.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inteira R$:">
             <font>
                 <Font size="15.0" />
             </font>
         </Text>
-        <Text fill="WHITE" layoutX="1005.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meia R$:">
+        <Text fill="WHITE" layoutX="997.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meia R$:">
             <font>
                 <Font size="15.0" />
             </font>
@@ -326,26 +326,34 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="100.0" layoutY="455.0" text="Gênero:" textFill="WHITE">
+        <Label layoutX="100.0" layoutY="449.0" text="Gênero:" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="genero_label" layoutX="160.0" layoutY="455.0" textFill="WHITE">
+        <Label fx:id="genero_label" layoutX="160.0" layoutY="449.0" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="sinopse_label" layoutX="177.0" layoutY="498.0" prefHeight="110.0" prefWidth="187.0" textFill="WHITE" />
-        <Label fx:id="precototal_label" layoutX="1155.0" layoutY="496.0" opacity="0.0" prefHeight="21.0" prefWidth="104.0" text="..." textFill="WHITE">
+        <Label fx:id="sinopse_label" alignment="TOP_LEFT" layoutX="172.0" layoutY="486.0" prefHeight="110.0" prefWidth="340.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+        <Label fx:id="precototal_label" layoutX="1188.0" layoutY="494.0" opacity="0.0" prefHeight="21.0" prefWidth="77.0" text="..." textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Button layoutX="1006.0" layoutY="379.0" mnemonicParsing="false" onAction="#btn_comprar" style="-fx-background-color: #00FFFF;" text="Comprar" textFill="#1a2232">
+        <Button layoutX="1157.0" layoutY="596.0" mnemonicParsing="false" onAction="#btn_comprar" prefHeight="44.0" style="-fx-background-color: #00FFFF;" text="Comprar" textFill="#1a2232">
             <font>
-                <Font size="15.0" />
+                <Font size="20.0" />
             </font>
         </Button>
+      <Label layoutX="100.0" layoutY="486.0" text="Sinopse:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
     </children>
 </Pane>
