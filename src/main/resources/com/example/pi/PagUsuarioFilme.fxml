@@ -15,6 +15,12 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Label>
+      
+              <Button layoutX="1072.0" layoutY="23.0" mnemonicParsing="false" onAction="#btadmin" style="-fx-background-color: #00FFFF;" text="Admin" textFill="#1a2232">
+                  <font>
+                      <Font size="20.0" />
+                  </font>
+            </Button>
             </children>
         </Pane>
         <Label layoutX="100.0" layoutY="107.0" text="Em cartaz" textFill="#d9d9d9">
@@ -75,10 +81,5 @@
          <graphic>
             <ImageView fitHeight="216.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" />
          </graphic></Button>
-
-        <Button layoutX="1350.0" layoutY="22.5" mnemonicParsing="false" onAction="#btadmin" style="-fx-background-color: #00FFFF;" text="Admin" textFill="#1a2232">
-            <font>
-                <Font size="20.0" />
-            </font></Button>
     </children>
 </Pane>

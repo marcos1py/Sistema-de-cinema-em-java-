@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 public class PagFilmeComprarController {
+
     private PagEstatisticasController pagEstatisticasController;
 
     public void setPagEstatisticasController(PagEstatisticasController controller) {
@@ -154,6 +155,7 @@ private Label duracao_label;
     public void btpix(ActionEvent event){
         labelcomprar.setText("Por favor, escaneie o Qrcode a seguir:");
         imgqrcode.setVisible(true);
+        btprosseguircompra.setOpacity(1);
     }
     @FXML
     public void btdebito(ActionEvent event){
@@ -164,10 +166,11 @@ private Label duracao_label;
     public void btcredito(ActionEvent event){
         labelcomprar.setText("Por favor, insira ou aproxime o cartão de crédito:");
         imgqrcode.setVisible(false);
+        btprosseguircompra.setOpacity(1);
     }
     @FXML
     public void btdinheiro(ActionEvent event){
-
+        btprosseguircompra.setOpacity(1);
 
         labelcomprar.setText("Por favor, entregue o dinheiro ao caixa:");
         imgqrcode.setVisible(false);
@@ -357,8 +360,8 @@ private Label duracao_label;
 
 
 
-    private int contadorPoltronas = 0; // Variável para contar as poltronas selecionadas
-
+    private int contadorPoltronas = 0;
+    private int contador = 0;
     private List<String> cadeirasVerdes = new ArrayList<>(); // Lista para armazenar os IDs das cadeiras verdes
 
 
@@ -368,21 +371,28 @@ private Label duracao_label;
         Color currentColor = (Color) button.getBackground().getFills().get(0).getFill();
         String cadeiraID = button.getId();
 
-
         if (currentColor.equals(Color.GREEN)) {
             button.setStyle("-fx-background-color: white;");
             contadorPoltronas--;
+            contador--;
+
+
             totalSelecionado.setText(Integer.toString(contadorPoltronas));
             cadeirasVerdes.remove(cadeiraID);
-            calculo(contadorPoltronas);
+
 
 
         } else {
             button.setStyle("-fx-background-color: green;");
             contadorPoltronas++;
+            contador++;
+
+
+
+
             totalSelecionado.setText(Integer.toString(contadorPoltronas));
             cadeirasVerdes.add(cadeiraID);
-            calculo(contadorPoltronas);
+
 
         }
 
@@ -396,17 +406,20 @@ private Label duracao_label;
    // contadorPoltronas = contadorPoltronas - totaldemeias * valor da meia
     @FXML
     private Label precototal_label;
-    public void  calculo (int contadorPoltronas){
-        String total = totalSelecionado.getText();
+    private void calculo() {
+        double totalInt = Double.parseDouble(totalSelecionado.getText());
+        String textoMeia = total_de_meias.getText();
+        double totalMeia = Double.parseDouble(textoMeia);
 
+        double precoInteira = Double.parseDouble(valorDaInteiraLabel.getText());
+        double precoMeia = Double.parseDouble(valorDaMeiaLabel.getText());
 
-            double totalInt = Double.valueOf(totalSelecionado.getText());
-            double totalMeia = Double.valueOf(total_de_meias.getText());
-            double precoTotal = (totalInt - totalMeia) * Double.valueOf(valorDaInteiraLabel.getText()) + (totalMeia * Double.valueOf(valorDaMeiaLabel.getText()));
-            precototal_label.setText(String.valueOf(precoTotal));
-
-
+        double precoTotal = (totalInt - totalMeia) * precoInteira + (totalMeia * precoMeia);
+        String restultado = String.valueOf(precoTotal);
+        precototal_label.setText(restultado);
     }
+
+
     @FXML
     void A1(ActionEvent event) {
         handleButtonClick(A1a);
@@ -1027,8 +1040,44 @@ private Label duracao_label;
             System.out.println("Erro ao ler as poltronas: " + e.getMessage());
         }
     }
+    @FXML
+    void btn_comprar(ActionEvent event) {
+        msg_de_erro.setOpacity(0);
+        msg_erro2.setOpacity(0);
+        try {
+            int totalMeias = Integer.parseInt(total_de_meias.getText());
+
+            if (totalMeias > contadorPoltronas) {
+                System.out.println("Tem mais meia do que ingressos.");
+                msg_erro2.setOpacity(1);
+            }
+            else {
+                msg_de_erro.setOpacity(0);
+                msg_erro2.setOpacity(0);
+
+                btcredito.setOpacity(1);
+                valor_a_ser_pago.setOpacity(1);
+                precototal_label.setOpacity(1);
+                btdinheiro.setOpacity(1);
+                btpix.setOpacity(1);
+                calculo();
+            }
+        } catch (NumberFormatException e) {
+            msg_de_erro.setOpacity(1);
+            System.out.println("Erro ao converter o valor das meias para um número inteiro.");
+        }
 
 
+    }
+
+    @FXML
+    private Button btcredito ;
+
+    @FXML
+    private Button btprosseguircompra;
+
+    @FXML
+    private Label valor_a_ser_pago;
     @FXML
     void btvoltarcompra(ActionEvent event) {
         // Defina a cor branca para todas as poltronas e resetar os valores
@@ -1038,7 +1087,22 @@ private Label duracao_label;
     @FXML
     private TextField total_de_meias;
 
+    @FXML
+    private Button btpix;
+    @FXML
+    private Button btdinheiro;
+
+
     public void  resetar_tudo_para_branco(){
+        labelcomprar.setText(null);
+        btprosseguircompra.setOpacity(0);
+        imgqrcode.setVisible(false);
+        btcredito.setOpacity(0);
+        valor_a_ser_pago.setOpacity(0);
+        precototal_label.setOpacity(0);
+        btdinheiro.setOpacity(0);
+        btpix.setOpacity(0);
+        precototal_label.setText(null);
         total_de_meias.setText(null);
         Repositorio.resetarValores();
         cadeirasVerdes = new ArrayList<>();

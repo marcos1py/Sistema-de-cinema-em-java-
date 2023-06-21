@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane fx:id="hora" style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pi.PagFilmeComprarController">
+<Pane fx:id="hora" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pi.PagFilmeComprarController">
     <children>
         <Pane prefHeight="90.0" prefWidth="1920.0" style="-fx-background-color: #1A2232;">
             <children>
@@ -22,6 +22,11 @@
                 </Label>
             </children>
         </Pane>
+        <ImageView fx:id="imgqrcode" fitHeight="136.0" fitWidth="179.0" layoutX="800.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@img/qrcode.png" />
+            </image>
+        </ImageView>
         <Button fx:id="img_ta_select_cadeira" layoutX="100.0" layoutY="145.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
         <Label fx:id="nomeFilmeComprar" layoutX="100.0" layoutY="367.0" text="Nome" textFill="#d9d9d9">
             <font>
@@ -43,12 +48,12 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="835.0" layoutY="133.0" text="Telão" textFill="#d9d9d9">
+        <Label layoutX="725.0" layoutY="134.0" text="Telão" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Separator layoutX="753.0" layoutY="155.0" prefWidth="200.0" />
+        <Separator layoutX="643.0" layoutY="156.0" prefWidth="200.0" />
         <Label layoutX="427.0" layoutY="399.0" text="Disponível" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
@@ -64,7 +69,7 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Button layoutX="1316.0" layoutY="596.0" mnemonicParsing="false" onAction="#btprosseguircompra" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
+        <Button fx:id="btprosseguircompra" layoutX="1039.0" layoutY="629.0" mnemonicParsing="false" onAction="#btprosseguircompra" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Prosseguir" textFill="#1a2232">
             <font>
                 <Font size="20.0" />
             </font></Button>
@@ -76,62 +81,62 @@
                     </image>
                 </ImageView>
             </graphic></Button>
-        <Button fx:id="A1a" layoutX="686.0" layoutY="192.0" mnemonicParsing="false" onAction="#A1" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="A2" layoutX="731.0" layoutY="192.0" mnemonicParsing="false" onAction="#A2" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="A3" layoutX="772.0" layoutY="192.0" mnemonicParsing="false" onAction="#A3" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="A4" layoutX="815.0" layoutY="192.0" mnemonicParsing="false" onAction="#A4" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="A5" layoutX="857.0" layoutY="192.0" mnemonicParsing="false" onAction="#A5" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="A6" layoutX="902.0" layoutY="193.0" mnemonicParsing="false" onAction="#A6" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="A7" layoutX="944.0" layoutY="193.0" mnemonicParsing="false" onAction="#A7" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="A8" layoutX="989.0" layoutY="193.0" mnemonicParsing="false" onAction="#A8" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="B1" layoutX="686.0" layoutY="227.0" mnemonicParsing="false" onAction="#B1" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="B2" layoutX="731.0" layoutY="227.0" mnemonicParsing="false" onAction="#B2" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="B3" layoutX="772.0" layoutY="227.0" mnemonicParsing="false" onAction="#B3" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="B4" layoutX="815.0" layoutY="227.0" mnemonicParsing="false" onAction="#B4" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="B5" layoutX="857.0" layoutY="227.0" mnemonicParsing="false" onAction="#B5" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="B6" layoutX="902.0" layoutY="228.0" mnemonicParsing="false" onAction="#B6" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="B7" layoutX="944.0" layoutY="228.0" mnemonicParsing="false" onAction="#B7" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="B8" layoutX="989.0" layoutY="228.0" mnemonicParsing="false" onAction="#B8" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="C1" layoutX="686.0" layoutY="262.0" mnemonicParsing="false" onAction="#C1" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="C2" layoutX="731.0" layoutY="262.0" mnemonicParsing="false" onAction="#C2" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="C3" layoutX="772.0" layoutY="262.0" mnemonicParsing="false" onAction="#C3" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="C4" layoutX="815.0" layoutY="262.0" mnemonicParsing="false" onAction="#C4" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="C5" layoutX="857.0" layoutY="262.0" mnemonicParsing="false" onAction="#C5" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="C6" layoutX="902.0" layoutY="263.0" mnemonicParsing="false" onAction="#C6" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="C7" layoutX="944.0" layoutY="263.0" mnemonicParsing="false" onAction="#C7" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="C8" layoutX="989.0" layoutY="263.0" mnemonicParsing="false" onAction="#C8" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="D1" layoutX="686.0" layoutY="297.0" mnemonicParsing="false" onAction="#D1" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="D2" layoutX="731.0" layoutY="297.0" mnemonicParsing="false" onAction="#D2" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="D3" layoutX="772.0" layoutY="297.0" mnemonicParsing="false" onAction="#D3" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="D4" layoutX="815.0" layoutY="297.0" mnemonicParsing="false" onAction="#D4" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="D5" layoutX="857.0" layoutY="297.0" mnemonicParsing="false" onAction="#D5" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="D6" layoutX="902.0" layoutY="298.0" mnemonicParsing="false" onAction="#D6" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="D7" layoutX="944.0" layoutY="298.0" mnemonicParsing="false" onAction="#D7" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="D8" layoutX="989.0" layoutY="298.0" mnemonicParsing="false" onAction="#D8" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="E1" layoutX="686.0" layoutY="332.0" mnemonicParsing="false" onAction="#E1" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="E2" layoutX="731.0" layoutY="332.0" mnemonicParsing="false" onAction="#E2" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="E3" layoutX="772.0" layoutY="332.0" mnemonicParsing="false" onAction="#E3" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="E4" layoutX="815.0" layoutY="332.0" mnemonicParsing="false" onAction="#E4" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="E5" layoutX="857.0" layoutY="333.0" mnemonicParsing="false" onAction="#E5" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="E6" layoutX="902.0" layoutY="333.0" mnemonicParsing="false" onAction="#E6" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="E7" layoutX="944.0" layoutY="333.0" mnemonicParsing="false" onAction="#E7" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="E8" layoutX="989.0" layoutY="333.0" mnemonicParsing="false" onAction="#E8" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="F1" layoutX="686.0" layoutY="367.0" mnemonicParsing="false" onAction="#F1" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="F2" layoutX="731.0" layoutY="367.0" mnemonicParsing="false" onAction="#F2" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="F3" layoutX="772.0" layoutY="367.0" mnemonicParsing="false" onAction="#F3" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="F4" layoutX="815.0" layoutY="367.0" mnemonicParsing="false" onAction="#F4" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="F5" layoutX="857.0" layoutY="368.0" mnemonicParsing="false" onAction="#F5" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="F6" layoutX="902.0" layoutY="368.0" mnemonicParsing="false" onAction="#F6" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="F7" layoutX="944.0" layoutY="368.0" mnemonicParsing="false" onAction="#F7" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="F8" layoutX="989.0" layoutY="368.0" mnemonicParsing="false" onAction="#F8" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="G1" layoutX="686.0" layoutY="402.0" mnemonicParsing="false" onAction="#G1" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="G2" layoutX="731.0" layoutY="402.0" mnemonicParsing="false" onAction="#G2" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="G3" layoutX="772.0" layoutY="402.0" mnemonicParsing="false" onAction="#G3" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="G4" layoutX="815.0" layoutY="402.0" mnemonicParsing="false" onAction="#G4" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="G5" layoutX="857.0" layoutY="403.0" mnemonicParsing="false" onAction="#G5" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="G6" layoutX="902.0" layoutY="403.0" mnemonicParsing="false" onAction="#G6" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="G7" layoutX="944.0" layoutY="403.0" mnemonicParsing="false" onAction="#G7" prefHeight="25.0" prefWidth="30.0" />
-        <Button fx:id="G8" layoutX="989.0" layoutY="403.0" mnemonicParsing="false" onAction="#G8" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="A1a" layoutX="576.0" layoutY="193.0" mnemonicParsing="false" onAction="#A1" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="A2" layoutX="621.0" layoutY="193.0" mnemonicParsing="false" onAction="#A2" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="A3" layoutX="662.0" layoutY="193.0" mnemonicParsing="false" onAction="#A3" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="A4" layoutX="705.0" layoutY="193.0" mnemonicParsing="false" onAction="#A4" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="A5" layoutX="747.0" layoutY="193.0" mnemonicParsing="false" onAction="#A5" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="A6" layoutX="792.0" layoutY="194.0" mnemonicParsing="false" onAction="#A6" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="A7" layoutX="834.0" layoutY="194.0" mnemonicParsing="false" onAction="#A7" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="A8" layoutX="879.0" layoutY="194.0" mnemonicParsing="false" onAction="#A8" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="B1" layoutX="576.0" layoutY="228.0" mnemonicParsing="false" onAction="#B1" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="B2" layoutX="621.0" layoutY="228.0" mnemonicParsing="false" onAction="#B2" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="B3" layoutX="662.0" layoutY="228.0" mnemonicParsing="false" onAction="#B3" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="B4" layoutX="705.0" layoutY="228.0" mnemonicParsing="false" onAction="#B4" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="B5" layoutX="747.0" layoutY="228.0" mnemonicParsing="false" onAction="#B5" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="B6" layoutX="792.0" layoutY="229.0" mnemonicParsing="false" onAction="#B6" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="B7" layoutX="834.0" layoutY="229.0" mnemonicParsing="false" onAction="#B7" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="B8" layoutX="879.0" layoutY="229.0" mnemonicParsing="false" onAction="#B8" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="C1" layoutX="576.0" layoutY="263.0" mnemonicParsing="false" onAction="#C1" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="C2" layoutX="621.0" layoutY="263.0" mnemonicParsing="false" onAction="#C2" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="C3" layoutX="662.0" layoutY="263.0" mnemonicParsing="false" onAction="#C3" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="C4" layoutX="705.0" layoutY="263.0" mnemonicParsing="false" onAction="#C4" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="C5" layoutX="747.0" layoutY="263.0" mnemonicParsing="false" onAction="#C5" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="C6" layoutX="792.0" layoutY="264.0" mnemonicParsing="false" onAction="#C6" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="C7" layoutX="834.0" layoutY="264.0" mnemonicParsing="false" onAction="#C7" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="C8" layoutX="879.0" layoutY="264.0" mnemonicParsing="false" onAction="#C8" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="D1" layoutX="576.0" layoutY="298.0" mnemonicParsing="false" onAction="#D1" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="D2" layoutX="621.0" layoutY="298.0" mnemonicParsing="false" onAction="#D2" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="D3" layoutX="662.0" layoutY="298.0" mnemonicParsing="false" onAction="#D3" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="D4" layoutX="705.0" layoutY="298.0" mnemonicParsing="false" onAction="#D4" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="D5" layoutX="747.0" layoutY="298.0" mnemonicParsing="false" onAction="#D5" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="D6" layoutX="792.0" layoutY="299.0" mnemonicParsing="false" onAction="#D6" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="D7" layoutX="834.0" layoutY="299.0" mnemonicParsing="false" onAction="#D7" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="D8" layoutX="879.0" layoutY="299.0" mnemonicParsing="false" onAction="#D8" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="E1" layoutX="576.0" layoutY="333.0" mnemonicParsing="false" onAction="#E1" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="E2" layoutX="621.0" layoutY="333.0" mnemonicParsing="false" onAction="#E2" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="E3" layoutX="662.0" layoutY="333.0" mnemonicParsing="false" onAction="#E3" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="E4" layoutX="705.0" layoutY="333.0" mnemonicParsing="false" onAction="#E4" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="E5" layoutX="747.0" layoutY="334.0" mnemonicParsing="false" onAction="#E5" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="E6" layoutX="792.0" layoutY="334.0" mnemonicParsing="false" onAction="#E6" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="E7" layoutX="834.0" layoutY="334.0" mnemonicParsing="false" onAction="#E7" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="E8" layoutX="879.0" layoutY="334.0" mnemonicParsing="false" onAction="#E8" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="F1" layoutX="576.0" layoutY="368.0" mnemonicParsing="false" onAction="#F1" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="F2" layoutX="621.0" layoutY="368.0" mnemonicParsing="false" onAction="#F2" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="F3" layoutX="662.0" layoutY="368.0" mnemonicParsing="false" onAction="#F3" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="F4" layoutX="705.0" layoutY="368.0" mnemonicParsing="false" onAction="#F4" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="F5" layoutX="747.0" layoutY="369.0" mnemonicParsing="false" onAction="#F5" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="F6" layoutX="792.0" layoutY="369.0" mnemonicParsing="false" onAction="#F6" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="F7" layoutX="834.0" layoutY="369.0" mnemonicParsing="false" onAction="#F7" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="F8" layoutX="879.0" layoutY="369.0" mnemonicParsing="false" onAction="#F8" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="G1" layoutX="576.0" layoutY="403.0" mnemonicParsing="false" onAction="#G1" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="G2" layoutX="621.0" layoutY="403.0" mnemonicParsing="false" onAction="#G2" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="G3" layoutX="662.0" layoutY="403.0" mnemonicParsing="false" onAction="#G3" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="G4" layoutX="705.0" layoutY="403.0" mnemonicParsing="false" onAction="#G4" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="G5" layoutX="747.0" layoutY="404.0" mnemonicParsing="false" onAction="#G5" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="G6" layoutX="792.0" layoutY="404.0" mnemonicParsing="false" onAction="#G6" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="G7" layoutX="834.0" layoutY="404.0" mnemonicParsing="false" onAction="#G7" prefHeight="25.0" prefWidth="30.0" />
+        <Button fx:id="G8" layoutX="879.0" layoutY="404.0" mnemonicParsing="false" onAction="#G8" prefHeight="25.0" prefWidth="30.0" />
         <Button layoutX="377.0" layoutY="327.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: red;" />
         <Button layoutX="377.0" layoutY="362.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: #228B22;">
             <effect>
@@ -139,77 +144,77 @@
             </effect>
         </Button>
         <Button layoutX="377.0" layoutY="397.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" />
-        <Label alignment="CENTER" layoutX="689.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="1" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="579.0" layoutY="437.0" prefHeight="24.0" prefWidth="24.0" text="1" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="734.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="2" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="624.0" layoutY="437.0" prefHeight="24.0" prefWidth="24.0" text="2" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="775.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="3" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="665.0" layoutY="437.0" prefHeight="24.0" prefWidth="24.0" text="3" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="818.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="4" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="708.0" layoutY="437.0" prefHeight="24.0" prefWidth="24.0" text="4" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="860.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="5" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="750.0" layoutY="437.0" prefHeight="24.0" prefWidth="24.0" text="5" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="905.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="6" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="795.0" layoutY="437.0" prefHeight="24.0" prefWidth="24.0" text="6" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="948.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="7" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="838.0" layoutY="437.0" prefHeight="24.0" prefWidth="24.0" text="7" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="992.0" layoutY="436.0" prefHeight="24.0" prefWidth="24.0" text="8" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="882.0" layoutY="437.0" prefHeight="24.0" prefWidth="24.0" text="8" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="1030.0" layoutY="194.0" prefHeight="24.0" prefWidth="24.0" text="A" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="920.0" layoutY="195.0" prefHeight="24.0" prefWidth="24.0" text="A" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="1030.0" layoutY="229.0" prefHeight="24.0" prefWidth="24.0" text="B" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="920.0" layoutY="230.0" prefHeight="24.0" prefWidth="24.0" text="B" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="1030.0" layoutY="264.0" prefHeight="24.0" prefWidth="24.0" text="C" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="920.0" layoutY="265.0" prefHeight="24.0" prefWidth="24.0" text="C" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="1030.0" layoutY="299.0" prefHeight="24.0" prefWidth="24.0" text="D" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="920.0" layoutY="300.0" prefHeight="24.0" prefWidth="24.0" text="D" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="1030.0" layoutY="334.0" prefHeight="24.0" prefWidth="24.0" text="E" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="920.0" layoutY="335.0" prefHeight="24.0" prefWidth="24.0" text="E" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="1030.0" layoutY="369.0" prefHeight="24.0" prefWidth="24.0" text="F" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="920.0" layoutY="370.0" prefHeight="24.0" prefWidth="24.0" text="F" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="1030.0" layoutY="404.0" prefHeight="24.0" prefWidth="24.0" text="G" textFill="#d9d9d9">
+        <Label alignment="CENTER" layoutX="920.0" layoutY="405.0" prefHeight="24.0" prefWidth="24.0" text="G" textFill="#d9d9d9">
             <font>
                 <Font size="15.0" />
             </font>
@@ -224,128 +229,123 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="1135.0" layoutY="231.0" text="Quantos ingressos desses são meia?" textFill="WHITE">
+        <Label layoutX="1004.0" layoutY="267.0" text="Quantos ingressos desses são meia?" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label layoutX="1135.0" layoutY="265.0" text="Total selecionado:" textFill="WHITE">
+        <Label layoutX="1004.0" layoutY="301.0" text="Total selecionado:" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="totalSelecionado" layoutX="1264.0" layoutY="265.0" text="0" textFill="#30ff29">
+        <Label fx:id="totalSelecionado" layoutX="1133.0" layoutY="301.0" text="0" textFill="#30ff29">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <TextField fx:id="total_de_meias" layoutX="1314.0" layoutY="305.0" prefHeight="25.0" prefWidth="75.0" />
-        <Label layoutX="1137.0" layoutY="307.0" text="Digite quantos são meia:" textFill="WHITE">
+        <TextField fx:id="total_de_meias" layoutX="1183.0" layoutY="341.0" prefHeight="25.0" prefWidth="75.0" />
+        <Label layoutX="1006.0" layoutY="343.0" text="Digite quantos são meia:" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="msg_de_erro" layoutX="1287.0" layoutY="334.0" opacity="0.0" text="Digite um valor interiro" textFill="RED">
+        <Label fx:id="msg_de_erro" layoutX="1144.0" layoutY="369.0" opacity="0.0" text="Digite um valor interiro" textFill="RED">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Label fx:id="msg_erro2" layoutX="1208.0" layoutY="554.0" opacity="0.0" prefHeight="21.0" prefWidth="333.0" text="Tem mais meia do que o total de ingressos" textFill="RED">
+        <Label fx:id="msg_erro2" layoutX="932.0" layoutY="445.0" opacity="0.0" prefHeight="21.0" prefWidth="333.0" text="Tem mais meia do que o total de ingressos" textFill="RED">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <Button layoutX="1382.0" layoutY="387.0" mnemonicParsing="false" onAction="#btpix" style="-fx-background-color: #00FFFF;" text="Pix" textFill="#1a2232">
+        <Button fx:id="btpix" layoutX="1169.0" layoutY="533.0" mnemonicParsing="false" onAction="#btpix" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Pix" textFill="#1a2232">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
-        <Button layoutX="1293.0" layoutY="387.0" mnemonicParsing="false" onAction="#btdinheiro" style="-fx-background-color: #00FFFF;" text="Dinheiro" textFill="#1a2232">
+        <Button fx:id="btdinheiro" layoutX="1084.0" layoutY="533.0" mnemonicParsing="false" onAction="#btdinheiro" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Dinheiro" textFill="#1a2232">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
-        <Button layoutX="1212.0" layoutY="387.0" mnemonicParsing="false" onAction="#btcredito" style="-fx-background-color: #00FFFF;" text="Crédito" textFill="#1a2232">
+        <Button fx:id="btcredito" layoutX="1004.0" layoutY="533.0" mnemonicParsing="false" onAction="#btcredito" opacity="0.0" style="-fx-background-color: #00FFFF;" text="Crédito" textFill="#1a2232">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
-        <Button layoutX="1135.0" layoutY="387.0" mnemonicParsing="false" onAction="#btdebito" style="-fx-background-color: #00FFFF;" text="Débito" textFill="#1a2232">
-            <font>
-                <Font size="15.0" />
-            </font>
-        </Button>
-        <Label layoutX="1137.0" layoutY="350.0" text="Valor a ser pago R$:" textFill="WHITE">
+        <Label fx:id="valor_a_ser_pago" layoutX="1005.0" layoutY="494.0" opacity="0.0" text="Valor a ser pago R$:" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-        <ImageView fx:id="imgqrcode" fitHeight="136.0" fitWidth="179.0" layoutX="1046.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true" visible="false">
-            <image>
-                <Image url="@img/qrcode.png" />
-            </image>
-        </ImageView>
-        <Label fx:id="labelcomprar" layoutX="1189.0" layoutY="428.0" textFill="WHITE">
+        <Label fx:id="labelcomprar" layoutX="646.0" layoutY="496.0" prefHeight="21.0" prefWidth="352.0" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Label>
-      <Label fx:id="id_filme" layoutX="422.0" layoutY="125.0" text="1" textFill="WHITE" />
-      <Label fx:id="sala_do_filme" layoutX="387.0" layoutY="184.0" text="Sala" textFill="#d9d9d9">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="283.0" layoutY="183.0" text="Sala" textFill="#d9d9d9">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label fx:id="valorDaInteiraLabel" layoutX="1212.0" layoutY="154.0" text="00" textFill="WHITE">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label fx:id="valorDaMeiaLabel" layoutX="1204.0" layoutY="194.0" text="00" textFill="WHITE">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Text fill="WHITE" layoutX="1137.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inteira R$:">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="1136.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meia R$:">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Text>
-      <Label fx:id="duracao_label" layoutX="167.0" layoutY="412.0" text="000" textFill="WHITE">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label fx:id="duracao_label1" layoutX="100.0" layoutY="412.0" text="Duração:" textFill="WHITE">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="100.0" layoutY="455.0" text="Gênero:" textFill="WHITE">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label fx:id="genero_label" layoutX="160.0" layoutY="455.0" textFill="WHITE">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label fx:id="sinopse_label" layoutX="177.0" layoutY="498.0" prefHeight="110.0" prefWidth="187.0" textFill="WHITE" />
-      <Label fx:id="precototal_label" layoutX="1287.0" layoutY="352.0" prefHeight="21.0" prefWidth="104.0" text="..." textFill="WHITE">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
+        <Label fx:id="id_filme" layoutX="422.0" layoutY="125.0" text="1" textFill="WHITE" />
+        <Label fx:id="sala_do_filme" layoutX="387.0" layoutY="184.0" text="Sala" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="283.0" layoutY="183.0" text="Sala" textFill="#d9d9d9">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="valorDaInteiraLabel" layoutX="1076.0" layoutY="190.0" text="00" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="valorDaMeiaLabel" layoutX="1073.0" layoutY="230.0" text="00" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Text fill="WHITE" layoutX="1006.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inteira R$:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="1005.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meia R$:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Label fx:id="duracao_label" layoutX="167.0" layoutY="412.0" text="000" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="duracao_label1" layoutX="100.0" layoutY="412.0" text="Duração:" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="100.0" layoutY="455.0" text="Gênero:" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="genero_label" layoutX="160.0" layoutY="455.0" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="sinopse_label" layoutX="177.0" layoutY="498.0" prefHeight="110.0" prefWidth="187.0" textFill="WHITE" />
+        <Label fx:id="precototal_label" layoutX="1155.0" layoutY="496.0" opacity="0.0" prefHeight="21.0" prefWidth="104.0" text="..." textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button layoutX="1006.0" layoutY="379.0" mnemonicParsing="false" onAction="#btn_comprar" style="-fx-background-color: #00FFFF;" text="Comprar" textFill="#1a2232">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
     </children>
 </Pane>
