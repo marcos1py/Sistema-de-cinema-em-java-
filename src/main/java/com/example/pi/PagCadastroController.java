@@ -34,7 +34,8 @@ public class PagCadastroController {
 
     TextField textField = new TextField();
 
-
+    @FXML
+    private Label avisolabelsalvo;
     @FXML
     private Button btnOpenFile;
 
@@ -155,11 +156,12 @@ public class PagCadastroController {
         String idadeMinima = "10";
         System.out.println("-------------------------------------------------------");
 
-        if ( Objects.equals(sinopse, "") || datacadastrolabel.getText().equals(null)  || duracao == null || Objects.equals(nomeFilme, "") || sala == null || horario == null ||  Objects.equals(valorInteira,"") ||  Objects.equals(valorMeia, "")|| Objects.equals(genero, "")) {
-
+        if ( Objects.equals(sinopse, "") || datacadastrolabel.getText().equals(null)  || Objects.equals(duracao, "") || Objects.equals(nomeFilme, "") || choiceboxsala.getValue() == null || horario == null ||  Objects.equals(valorInteira,"") ||  Objects.equals(valorMeia, "")|| Objects.equals(genero, "")) {
+            avisolabelsalvo.setText("");
             avisolabel.setText("Por favor, preencha todos os campos corretamente");
         }else {
-            avisolabel.setText("Salvo!");
+            avisolabel.setText("");
+            avisolabelsalvo.setText("Salvo!");
 
 
             // add a img

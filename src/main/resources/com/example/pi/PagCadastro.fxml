@@ -15,7 +15,7 @@
 <Pane style="-fx-background-color: #1F293D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pi.PagCadastroController">
     <children>
         <Label fx:id="horariocadastrolabel" layoutX="178.0" layoutY="249.0" text="Label" />
-        <Label fx:id="salacadastrolabel" layoutX="178.0" layoutY="119.0" text="Label" />
+        <Label fx:id="salacadastrolabel" layoutX="178.0" layoutY="119.0" text="Label" textFill="#1f293d" />
         <Pane prefHeight="90.0" prefWidth="1920.0" style="-fx-background-color: #1A2232;">
             <children>
                 <Label layoutX="100.0" layoutY="30.0" text="CINE ABC" textFill="#d9d9d9">
@@ -40,7 +40,7 @@
             </graphic>
         </Button>
         <Label fx:id="avisocadastrolabel" layoutX="1305.0" layoutY="561.0" prefHeight="35.0" prefWidth="208.0" textFill="WHITE" />
-        <Text fill="#d9d9d9" layoutX="154.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sala">
+        <Text fill="#d9d9d9" layoutX="154.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sala">
             <font>
                 <Font size="15.0" />
             </font>
@@ -50,12 +50,12 @@
                 <Font size="15.0" />
             </font>
         </Text>
-        <Text fill="#d9d9d9" layoutX="154.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário">
+        <Text fill="#d9d9d9" layoutX="154.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário">
             <font>
                 <Font size="15.0" />
             </font>
         </Text>
-        <Text fill="#d9d9d9" layoutX="154.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data">
+        <Text fill="#d9d9d9" layoutX="154.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data">
             <font>
                 <Font size="15.0" />
             </font>
@@ -65,7 +65,7 @@
                 <Font size="15.0" />
             </font>
         </Text>
-        <DatePicker fx:id="datepicker" layoutX="154.0" layoutY="381.0" onAction="#pegarData" prefHeight="25.0" prefWidth="237.0" promptText="Escolha uma data" />
+        <DatePicker fx:id="datepicker" layoutX="154.0" layoutY="373.0" onAction="#pegarData" prefHeight="25.0" prefWidth="237.0" promptText="Escolha uma data" />
         <TextField fx:id="textGenero" layoutX="609.0" layoutY="425.0" prefHeight="25.0" prefWidth="290.0" promptText="Ex: Ação, Drama, Comédia,Etc" />
         <TextField fx:id="nomeFilmeCadastro" layoutX="154.0" layoutY="202.0" prefHeight="25.0" prefWidth="237.0" promptText="Nome do Filme" />
         <Label fx:id="datacadastrolabel" layoutX="350.0" layoutY="299.75" textFill="#1f293d" />
@@ -81,24 +81,24 @@
                 <Font size="17.0" />
             </font>
         </Text>
-        <ChoiceBox fx:id="choiceboxsala" layoutX="154.0" layoutY="266.0" prefHeight="25.0" prefWidth="237.0" />
-        <ChoiceBox fx:id="choiceboxhorario" layoutX="154.0" layoutY="319.0" prefHeight="25.0" prefWidth="237.0" />
-        <Text fill="#d9d9d9" layoutX="154.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da inteira">
+        <ChoiceBox fx:id="choiceboxsala" layoutX="154.0" layoutY="258.0" prefHeight="25.0" prefWidth="237.0" />
+        <ChoiceBox fx:id="choiceboxhorario" layoutX="154.0" layoutY="313.0" prefHeight="25.0" prefWidth="237.0" />
+        <Text fill="#d9d9d9" layoutX="154.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da inteira">
             <font>
                 <Font size="17.0" />
             </font>
         </Text>
-        <Text fill="#d9d9d9" layoutX="154.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da meia">
+        <Text fill="#d9d9d9" layoutX="154.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor da meia">
             <font>
                 <Font size="17.0" />
             </font>
         </Text>
-        <TextField fx:id="valorDaInteiraCadastro" layoutX="154.0" layoutY="453.0" prefHeight="25.0" prefWidth="237.0" />
-        <TextField fx:id="valorDaMeiaCadastro" layoutX="154.0" layoutY="513.0" prefHeight="25.0" prefWidth="237.0" />
+        <TextField fx:id="valorDaInteiraCadastro" layoutX="154.0" layoutY="436.0" prefHeight="25.0" prefWidth="237.0" promptText="R$:" />
+        <TextField fx:id="valorDaMeiaCadastro" layoutX="154.0" layoutY="497.0" prefHeight="25.0" prefWidth="237.0" promptText="R$:" />
         <Button fx:id="btnOpenFile" layoutX="609.0" layoutY="203.0" mnemonicParsing="false" onAction="#img_do_filme" text="Imagem" />
         <Button fx:id="img_do_filme_tela_de_cadastro" layoutX="1116.0" layoutY="220.0" mnemonicParsing="false" prefHeight="216.0" prefWidth="144.0" style="-fx-background-color: D9D9D9;" />
         <Label layoutX="777.0" layoutY="372.0" opacity="0.0" text="VOCE ESCREVEL ALGO ERRADO!!!!" textAlignment="CENTER" textFill="RED" underline="true" />
-        <Label fx:id="avisolabel" layoutX="800.0" layoutY="600.0" textAlignment="CENTER" textFill="RED" underline="true">
+        <Label fx:id="avisolabel" layoutX="610.0" layoutY="600.0" textAlignment="CENTER" textFill="RED" underline="true">
             <font>
                 <Font size="20.0" />
             </font></Label>
@@ -112,6 +112,12 @@
       <Label layoutX="609.0" layoutY="178.0" text="Clique no botao 'Imagem' para selecionar a imagem do cartaz" textFill="WHITE">
          <font>
             <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1124.0" layoutY="314.0" prefHeight="17.0" prefWidth="144.0" text="SEM IMAGEM DO FIILME" />
+      <Label fx:id="avisolabelsalvo" layoutX="1180.0" layoutY="554.0" textAlignment="CENTER" textFill="#00ff05" underline="true">
+         <font>
+            <Font size="20.0" />
          </font>
       </Label>
     </children>
