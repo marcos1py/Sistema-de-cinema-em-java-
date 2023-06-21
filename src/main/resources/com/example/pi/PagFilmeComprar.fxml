@@ -355,5 +355,10 @@
             <Font size="15.0" />
          </font>
       </Label>
+      <Label fx:id="aviso_de_selecionar" layoutX="1131.0" layoutY="408.0" opacity="0.0" prefHeight="31.0" prefWidth="192.0" text="Selecione uma poltrona" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
     </children>
 </Pane>

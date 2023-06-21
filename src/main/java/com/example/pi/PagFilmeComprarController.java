@@ -1034,17 +1034,26 @@ private Label duracao_label;
         }
     }
     @FXML
+    private Label aviso_de_selecionar;
+    @FXML
     void btn_comprar(ActionEvent event) {
         msg_de_erro.setOpacity(0);
         msg_erro2.setOpacity(0);
+        aviso_de_selecionar.setOpacity(0);
         try {
             int totalMeias = Integer.parseInt(total_de_meias.getText());
+            if (totalMeias == 0 ){
+                aviso_de_selecionar.setOpacity(1);
+            }
 
-            if (totalMeias > contadorPoltronas) {
+            else if (totalMeias > contadorPoltronas) {
                 System.out.println("Tem mais meia do que ingressos.");
+                aviso_de_selecionar.setOpacity(0);
                 msg_erro2.setOpacity(1);
+
             }
             else {
+                aviso_de_selecionar.setOpacity(0);
                 msg_de_erro.setOpacity(0);
                 msg_erro2.setOpacity(0);
 

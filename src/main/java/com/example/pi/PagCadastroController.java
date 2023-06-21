@@ -149,6 +149,7 @@ public class PagCadastroController {
         }else {
             avisolabel.setText("Salvo!");
 
+
             // add a img
             System.out.println("Caminho da imagem: " + caminhoImagem);
             Image novaImagem = new Image("file:" + caminhoImagem);
