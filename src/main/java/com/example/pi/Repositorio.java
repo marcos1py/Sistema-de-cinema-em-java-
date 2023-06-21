@@ -56,27 +56,39 @@ public class Repositorio {
 
     private static void salvarPoltronas(int id, List<String> poltronas) {
         String nomeArquivo = "poltoronas_" + id + ".txt";
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo, true))) {
             StringBuilder linha = new StringBuilder();
-            linha.append("[");
 
-            for (int i = 0; i < poltronas.size(); i++) {
-                linha.append(poltronas.get(i));
-
-                if (i < poltronas.size() - 1) {
-                    linha.append(",");
+            // Lê o conteúdo existente do arquivo
+            List<String> conteudoExistente = new ArrayList<>();
+            try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
+                String conteudo;
+                while ((conteudo = reader.readLine()) != null) {
+                    conteudoExistente.add(conteudo);
                 }
             }
 
+            // Adiciona as novas poltronas ao conteúdo existente
+            conteudoExistente.addAll(poltronas);
+
+            linha.append("[");
+            for (int i = 0; i < conteudoExistente.size(); i++) {
+                linha.append(conteudoExistente.get(i));
+
+                if (i < conteudoExistente.size() - 1) {
+                    linha.append(",");
+                }
+            }
             linha.append("]");
 
             writer.write(linha.toString());
 
-            System.out.println("Poltronas salvas com sucesso no arquivo 'poltoronas_" + id + ".txt'.");
+            System.out.println("Poltronas adicionadas com sucesso no arquivo 'poltronas_" + id + ".txt'.");
         } catch (IOException e) {
-            System.out.println("Erro ao salvar as poltronas: " + e.getMessage());
+            System.out.println("Erro ao adicionar as poltronas: " + e.getMessage());
         }
     }
+
 
     public static void resetarValores() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(NOME_ARQUIVO))) {
