@@ -8,7 +8,7 @@ public class FilmeRepository {
     private static Filme[] filmes = new Filme[14];
 
     public static boolean adicionarFilme(Filme filme) {
-        if (!salaEstaOcupada(filme.getSala(), filme.getHorario())) {
+        if (!salaEstaOcupada(filme.getSala(), filme.getHorario(), filme.getData())) {
             for (int index = 0; index < filmes.length; index++) {
                 if (filmes[index] == null) {
                     filmes[index] = filme;
@@ -19,26 +19,29 @@ public class FilmeRepository {
             }
             System.out.println("A lista de filmes está cheia. Não é possível adicionar mais filmes.");
         } else {
-            System.out.println("Erro: Sala já ocupada no horário especificado.");
+            System.out.println("Erro: Sala já ocupada no horário e data especificados.");
             return false;
         }
         return false;
     }
 
-    private static boolean salaEstaOcupada(String sala, String horario) {
+    private static boolean salaEstaOcupada(String sala, String horario, LocalDate data) {
         for (int index = 0; index < filmes.length; index++) {
             if (filmes[index] != null && filmes[index].getSala().equalsIgnoreCase(sala)
-                    && filmes[index].getHorario().equalsIgnoreCase(horario)) {
-                return true; // Sala ocupada no horário especificado
+                    && filmes[index].getHorario().equalsIgnoreCase(horario)
+                    && filmes[index].getData().isEqual(data)) {
+                return true; // Sala ocupada no horário e data especificados
             }
         }
-        return false; // Sala disponível no horário especificado
+        return false; // Sala disponível no horário e data especificados
     }
 
     public static boolean salaEstaDisponivel(String sala, String horario) {
-        System.out.println(!salaEstaOcupada(sala, horario));
-        return !salaEstaOcupada(sala, horario);
+        LocalDate data = LocalDate.now();
+        System.out.println(!salaEstaOcupada(sala, horario, data));
+        return !salaEstaOcupada(sala, horario, data);
     }
+
 
     public static void deletarFilme(String nomeDelet) {
         boolean deletado = false;

@@ -114,10 +114,14 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="1124.0" layoutY="314.0" prefHeight="17.0" prefWidth="144.0" text="SEM IMAGEM DO FIILME" />
       <Label fx:id="avisolabelsalvo" layoutX="1180.0" layoutY="554.0" textAlignment="CENTER" textFill="#00ff05" underline="true">
          <font>
             <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="horario_ocupado" layoutX="1140.0" layoutY="559.0" opacity="0.0" prefHeight="21.0" prefWidth="182.0" text="Ja tem filme nesse horario." textFill="RED">
+         <font>
+            <Font size="15.0" />
          </font>
       </Label>
     </children>

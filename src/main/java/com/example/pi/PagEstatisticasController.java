@@ -28,6 +28,7 @@ public class PagEstatisticasController {
     }
     @FXML
     void btcadastroestatistica(ActionEvent event) {
+
         Main.mudarTela("cadastro");
     }
     @FXML

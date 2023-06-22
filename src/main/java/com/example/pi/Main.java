@@ -16,8 +16,7 @@ public class Main extends Application {
     private static Scene pagUsuarioFilme;
     private static Scene pagFilmeComprar;
     private static Scene pagTipoIngresso;
-    private static Scene pagTipoPagamento;
-    private static Scene pagTipoPagamentoPainel;
+
     private static Scene pagCadastro;
     private static Scene pagEstatisticas;
 

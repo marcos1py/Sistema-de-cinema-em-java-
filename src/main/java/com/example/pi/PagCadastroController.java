@@ -28,8 +28,7 @@ import java.util.Map;
 import java.util.Objects;
 
 public class PagCadastroController {
-    private Map<Integer, String> caminhosImagens = new HashMap<>();
-    private PagUsuarioFilmeController usuarioFilmeController;
+
     private int indiceBotao = 1;
 
     TextField textField = new TextField();
@@ -114,21 +113,13 @@ public class PagCadastroController {
             imageView.setFitHeight(216);
             img_do_filme_tela_de_cadastro.setGraphic(imageView);
         }
-        else {
-            caminhoImagem = "C:\\Users\\marco\\OneDrive\\Área de Trabalho\\download (1).png";
-            System.out.println("Caminho da imagem: " + caminhoImagem);
 
-            // Criar uma nova imagem com base no caminho do arquivo selecionado
-            Image novaImagem = new Image("file:" + caminhoImagem);
-
-            ImageView imageView = new ImageView(novaImagem);
-            imageView.setFitWidth(144);
-            imageView.setFitHeight(216);
-            img_do_filme_tela_de_cadastro.setGraphic(imageView);
-        }
     }
     @FXML
     private Label avisolabel;
+
+    @FXML
+    private Label horario_ocupado;
 
     @FXML
     void btsalvar(ActionEvent event) {
@@ -184,9 +175,33 @@ public class PagCadastroController {
                 imageView.setFitWidth(144);
                 imageView.setFitHeight(216);
                 usuarioFilmeController.atualizarImagemBotao(indiceBotao, imageView);
-                System.out.println("indiceBotao_'''''''''''''''''''''''''''''''''''''''''''''''" + indiceBotao);
                 indiceBotao++;
+                horario_ocupado.setOpacity(0);
             }
+            else {
+                avisolabelsalvo.setOpacity(0);
+                horario_ocupado.setOpacity(1);
+            }
+            int numero_aux = indiceBotao;
+            numero_aux--;
+            SinopseCadastro.setText(null);
+            datepicker.setValue(null);
+            duraçaoDoFilmeCadastro.setText("");
+            nomeFilmeCadastro.setText(null);
+            choiceboxsala.setValue(null);
+            choiceboxhorario.setValue(null);
+            valorDaInteiraCadastro.setText("");
+            valorDaMeiaCadastro.setText("");
+            textGenero.setText("");
+
+
+            caminhoImagem = "C:\\Users\\marco\\OneDrive\\Área de Trabalho\\download (1).png";
+            Image novaImagem1 = new Image("file:" + caminhoImagem);
+
+            ImageView imageView1 = new ImageView(novaImagem1);
+            imageView1.setFitWidth(144);
+            imageView1.setFitHeight(216);
+            img_do_filme_tela_de_cadastro.setGraphic(imageView1);
         }
     }
 
@@ -199,6 +214,9 @@ public class PagCadastroController {
     void btvoltarcadastro(ActionEvent event) {
         Main.mudarTela("estatisticas");
         avisolabel.setText("");
+        avisolabelsalvo.setOpacity(0);
+        horario_ocupado.setOpacity(0);
+
         resetarinput();
 
     }
@@ -242,7 +260,8 @@ public class PagCadastroController {
         String valor = choiceboxsala.getValue();
         labelsala.setText(valor);
     }
-
+    private Map<Integer, String> caminhosImagens = new HashMap<>();
+    private PagUsuarioFilmeController usuarioFilmeController;
     public void setUsuarioFilmeController(PagUsuarioFilmeController usuarioFilmeController) {
         this.usuarioFilmeController = usuarioFilmeController;
     }

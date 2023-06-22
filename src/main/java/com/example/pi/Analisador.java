@@ -16,7 +16,7 @@ public class Analisador {
         try (BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo))) {
             String linha;
             while ((linha = reader.readLine()) != null) {
-                String horario = linha.trim(); // Lê o horário diretamente e remove espaços em branco
+                String horario = linha.trim();
                 contagemHorarios.put(horario, contagemHorarios.getOrDefault(horario, 0) + 1);
             }
         } catch (IOException e) {
@@ -39,6 +39,11 @@ public class Analisador {
             }
         }
 
+
+
+
+
+
         return horarioMaisComprado;
     }
 
@@ -54,7 +59,6 @@ public class Analisador {
                 horarioMenosComprido = horario;
             }
         }
-
         return horarioMenosComprido;
     }
 }
